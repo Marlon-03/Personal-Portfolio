@@ -15,7 +15,7 @@
         'ml-0': !isSidebarOpen || isMobile,
         'flex-1': true
       }"
-     class="bg-[#151616] p-8 flex justify-center items-center">
+     class="bg-[#030014] p-8 flex justify-center items-center">
     >
       <router-view />
     </main>
