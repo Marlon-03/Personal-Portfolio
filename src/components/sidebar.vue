@@ -4,7 +4,7 @@
       <!-- Sidebar container -->
       <div
         :class="{
-          'fixed top-0 left-0 h-screen bg-gray-800 text-white shadow-lg z-50': true,
+          'fixed top-0 left-0 h-screen bg-[#151616]    text-white shadow-lg z-50': true,
           'w-64': true,
           'transform transition-transform duration-300': true,
           '-translate-x-full': !isSidebarOpen,
