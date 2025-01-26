@@ -77,16 +77,12 @@
           </button>
        </div>
 
-
-
-
-
     </div>
 
 
 
     <div class="w-2/5">
-       <img src="../assets/heroBanner.gif" alt="Hero Banner" class="w-full h-auto" />
+      <img src="../assets/hero.svg" alt="Hero Banner" class="w-full h-auto animate-jump" />
     </div>
   </div>
 
@@ -98,11 +94,11 @@
     data() {
       return {
         words: ["Developer", "Designer", "Creator"],
-        currentText: "", // Current text being displayed
-        wordIndex: 0, // Current word index
-        charIndex: 0, // Current character index
-        isDeleting: false, // Typing or deleting state
-        cursorVisible: true, // Controls cursor blinking visibility
+        currentText: "", 
+        wordIndex: 0,
+        charIndex: 0, 
+        isDeleting: false, 
+        cursorVisible: true, 
       };
     },
     mounted() {
@@ -114,31 +110,26 @@
         const currentWord = this.words[this.wordIndex];
   
         if (!this.isDeleting) {
-          // Add letters
           this.currentText = currentWord.substring(0, this.charIndex + 1);
           this.charIndex++;
         } else {
-          // Remove letters
           this.currentText = currentWord.substring(0, this.charIndex - 1);
           this.charIndex--;
         }
   
-        // Handle end of typing or deleting
         if (!this.isDeleting && this.charIndex === currentWord.length) {
           this.isDeleting = true;
-          setTimeout(this.type, 1500); // Pause before deleting
+          setTimeout(this.type, 1500);
           return;
         } else if (this.isDeleting && this.charIndex === 0) {
           this.isDeleting = false;
-          this.wordIndex = (this.wordIndex + 1) % this.words.length; // Move to the next word
+          this.wordIndex = (this.wordIndex + 1) % this.words.length; 
         }
   
-        // Adjust speed for smoother transitions
-        const speed = this.isDeleting ? 80 : 120; // Slightly faster for deleting
+        const speed = this.isDeleting ? 80 : 120;
         setTimeout(this.type, speed);
       },
       blinkCursor() {
-        // Toggles cursor visibility every 500ms
         setInterval(() => {
           this.cursorVisible = !this.cursorVisible;
         }, 500);
@@ -146,7 +137,6 @@
     },
     computed: {
       displayText() {
-        // Appends the blinking cursor (|) to the text
         return this.currentText + (this.cursorVisible ? "|" : "");
       },
     },
@@ -169,5 +159,18 @@
       opacity: 0;
     }
   }
+
+  @keyframes jump {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-jump {
+  animation: jump 1s ease-in-out infinite;
+}
   </style>
   
