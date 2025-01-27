@@ -63,7 +63,7 @@
           <button onclick="window.location.href='/projects'" class="group relative p-3 block w-fit cursor-pointer">
             <div class="absolute inset-0 bg-gradient-to-r from-[#05CEA8] to-[#07FFD0] rounded-full blur opacity-20 group-hover:opacity-40 transition duration-300"></div>
             <div class="relative rounded-full bg-black/50 backdrop-blur-xl px-8 py-4 flex items-center justify-center border border-white/10 group-hover:border-white/20 transition-all duration-300">
-              <span class="text-gray-400 group-hover:text-white transition-colors">Projects</span>
+              <span class="text-gray-400 group-hover:text-white transition-colors">Download CV</span>
             </div>
           </button>
 
