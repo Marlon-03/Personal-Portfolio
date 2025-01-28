@@ -3,25 +3,25 @@
         <h1 class="text-6xl font-bold mb-4 bg-gradient-to-r from-[#6366f1] to-[#a855f7] bg-clip-text text-transparent pb-20">About Me</h1>
       <div class="tabs w-96">
         <!-- Tab container with glass-like background -->
-        <div class="flex space-x-4 border border-gray-600 p-2  bg-opacity-50 backdrop-blur-lg bg-black/40 w-full rounded-xl">
+        <div class="flex flex-col md:flex-row space-x-4 border border-gray-600 p-2  bg-opacity-50 backdrop-blur-lg bg-black/40 w-full rounded-xl">
           <button
-            @click="activeTab = 'story'" :class="['tab-button', activeTab === 'story' && 'active']" role="tab" class="w-full rounded-lg  text-2xl font-semibold">
+            @click="activeTab = 'story'" :class="['tab-button', activeTab === 'story' && 'active']" role="tab" class="w-full rounded-lg  text-2xl font-semibold"style="margin: 0;">
             My Story
           </button>
           <button
-            @click="activeTab = 'experience'" :class="['tab-button', activeTab === 'experience' && 'active']" role="tab" class="w-full rounded-lg text-2xl font-semibold">
+            @click="activeTab = 'experience'" :class="['tab-button', activeTab === 'experience' && 'active']" role="tab" class="w-full rounded-lg text-2xl font-semibold "style="margin: 0;">
             Experience
           </button>
           <button
-            @click="activeTab = 'education'" :class="['tab-button', activeTab === 'education' && 'active']" role="tab" class="w-full rounded-lg text-2xl font-semibold">
+            @click="activeTab = 'education'" :class="['tab-button', activeTab === 'education' && 'active']" role="tab" class="w-full rounded-lg text-2xl font-semibold " style="margin: 0;">
             Education
           </button>
         </div>
   
         <!-- Tab Content -->
         <div class="mt-6 w-full border border-gray-600 rounded-xl">
-          <div v-if="activeTab === 'story'" class="tab-content h-full bg-white/10 backdrop-blur-xl flex justify-around items-center p-10">
-            <div class="w-3/5">
+          <div v-if="activeTab === 'story'" class="flex flex-col-reverse md:flex-row items-center justify-between w-full h-screen p-6 md:px-8 lg:px-12 overflow-hidden " style="height:max-content">
+            <div class="w-full md:w-3/5 max-w-full">
               <h4 class="font-semibold text-xl text-white text-start">Hi, I'm Marlon, a passionate web developer whose hobby turned into a career. Coding is not just a job for me; it's a habit that has naturally become my profession. Outside of work, I unwind by playing online games, which helps me relax and stay sharp. I'm also an avid cyclist, using my bike to explore new places and enjoy the outdoors. Additionally, I play chess online, a pastime that hones my strategic thinking and parallels the problem-solving skills I use in web development. This blend of interests and my career in technology reflects my love for continuous learning and embracing challenges, both professionally and personally.</h4>
               <div class="flex space-x-4 pt-4">
 
@@ -42,112 +42,132 @@
                 </button>
               </div>
             </div>
-            <div class="w-2/5 flex justify-center">
+            <div class="w-full md:w-2/5 flex justify-center max-w-full max-h-full">
               <img src="../assets/aboutBanner.png" alt="Hero Banner" class="w-80 h-auto" />
             </div>
             
           </div>
 
 
-          <div v-if="activeTab === 'experience'" class="tab-content h-full bg-white/10 backdrop-blur-xl p-6 rounded-lg">
+          <div v-if="activeTab === 'experience'"  class="flex flex-col-reverse md:flex-row items-center justify-between w-full h-screen p-6 md:px-8 lg:px-12 overflow-hidden " style="height:max-content">
           
-          <div class="flex items-center mb-4">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#6366f1] mr-2" width="24" height="24" viewBox="0 0 24 24">
-              <path fill="currentColor" d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z" />
-            </svg>
-            <h3 class="text-xl font-bold text-white">Freelance (Full Stack Developer)</h3>
+            <div class="w-full md:w-3/5 max-w-full">
+              <div class="flex items-center flex-wrap mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#6366f1] mr-2 shrink-0" width="24" height="24" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z" />
+                </svg>
+                <h3 class="text-xl font-bold text-white">
+                  IFormatLogicITSolutions 
+                  <span class="block sm:inline"> (Full Stack Developer)</span>
+                </h3>
+              </div>
+
+              <ul class="space-y-3">
+                <li class="flex items-center pl-6">
+                  <span class="w-2.5 h-2.5 flex-shrink-0 rounded-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] mr-3"></span>
+                  <p class="text-white text-start">Utilized the Mailchimp API to automate the email marketing process, increasing productivity by 40%
+                    and reducing manual emailing efforts.</p>
+                </li>
+                <li class="flex items-center pl-6">
+                  <span class="w-2.5 h-2.5 flex-shrink-0 rounded-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] mr-3"></span>
+                  <p class="text-white text-start">Incorporated Stripe API and PayPal API to create smooth and secure payment gateways, enhancing
+                    user payment experience and ensuring seamless transactions, leading to a 30% increase in successful
+                    payments.</p>
+                </li>
+                <li class="flex items-center pl-6">
+                  <span class="w-2.5 h-2.5 flex-shrink-0 rounded-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] mr-3"></span>
+                  <p class="text-white text start">Actively collaborating with other web dev members to design and implement website features</p>
+                </li>
+              </ul>
+
+              <div class="flex items-center mt-10 mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#6366f1] mr-2" width="24" height="24" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z" />
+                </svg>
+                <h3 class="text-xl font-bold text-white">Freelance (Full Stack Developer)</h3>
+              </div>
+
+              <ul class="space-y-3">
+                <li class="flex items-center pl-6">
+                  <span class="w-2.5 h-2.5 flex-shrink-0 rounded-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] mr-3"></span>
+                  <p class="text-white text-start">Effectively employed WordPress, Laravel, Vue.js, and Figma to develop dynamic websites and web
+                    applications, ensuring seamless user experiences across diverse projects.</p>
+                </li>
+                <li class="flex items-center pl-6">
+                  <span class="w-2.5 h-2.5 flex-shrink-0 rounded-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] mr-3"></span>
+                  <p class="text-white text-start">Led the effort to enhance the website's speed and accessibility, driving the performance to achieve a
+                    faster load time and improved user experience.</p>
+                </li>
+                <li class="flex items-center pl-6">
+                  <span class="w-2.5 h-2.5 flex-shrink-0 rounded-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] mr-3"></span>
+                  <p class="text-white text start">Utilized HTML5, CSS3, and JavaScript to create responsive and visually appealing user interfaces.</p>
+                </li>
+              </ul>
+
+              
+            </div>
+
+            <div class="w-full md:w-2/5 flex justify-center max-w-full max-h-full">
+              <img src="../assets/aboutBanner.png" alt="Hero Banner" class="w-80 h-auto" />
+            </div>
+
           </div>
 
-          <ul class="space-y-3">
-            <li class="flex items-center pl-6">
-              <span class="w-2.5 h-2.5 rounded-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] mr-3"></span>
-              <p class="text-white text-start">Effectively employed WordPress, Laravel, Vue.js, and Figma to develop dynamic websites and web
-                applications, ensuring seamless user experiences across diverse projects.</p>
-            </li>
-            <li class="flex items-center pl-6">
-              <span class="w-2.5 h-2.5 rounded-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] mr-3"></span>
-              <p class="text-white text-start">Led the effort to enhance the website's speed and accessibility, driving the performance to achieve a
-                faster load time and improved user experience.</p>
-            </li>
-            <li class="flex items-center pl-6">
-              <span class="w-2.5 h-2.5 rounded-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] mr-3"></span>
-              <p class="text-white text start">Utilized HTML5, CSS3, and JavaScript to create responsive and visually appealing user interfaces.</p>
-            </li>
-          </ul>
 
-          <div class="flex items-center mt-10 mb-4">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#6366f1] mr-2" width="24" height="24" viewBox="0 0 24 24">
-              <path fill="currentColor" d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z" />
-            </svg>
-            <h3 class="text-xl font-bold text-white">IFormatLogicITSolutions (Full Stack Developer)</h3>
-          </div>
+          <div v-if="activeTab === 'education'" class="flex flex-col-reverse md:flex-row items-center justify-between w-full h-screen p-6 md:px-8 lg:px-12 overflow-hidden " style="height:max-content">
 
-          <ul class="space-y-3">
-            <li class="flex items-center pl-6">
-              <span class="w-2.5 h-2.5 rounded-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] mr-3"></span>
-              <p class="text-white text-start">Utilized the Mailchimp API to automate the email marketing process, increasing productivity by 40%
-                and reducing manual emailing efforts.</p>
-            </li>
-            <li class="flex items-center pl-6">
-              <span class="w-2.5 h-2.5 rounded-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] mr-3"></span>
-              <p class="text-white text-start">Incorporated Stripe API and PayPal API to create smooth and secure payment gateways, enhancing
-                user payment experience and ensuring seamless transactions, leading to a 30% increase in successful
-                payments.</p>
-            </li>
-            <li class="flex items-center pl-6">
-              <span class="w-2.5 h-2.5 rounded-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] mr-3"></span>
-              <p class="text-white text start">Actively collaborating with other web dev members to design and implement website features</p>
-            </li>
-          </ul>
-        </div>
+            <div class="w-full md:w-3/5 max-w-full">
+              <div class="flex items-center mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#6366f1] mr-2" width="24" height="24" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z" />
+                </svg>
+                <h3 class="text-xl font-bold text-white">Tertiary</h3>
+              </div>
 
+              <ul class="space-y-3">
+                <li class="flex items-center pl-6">
+                  <span class="w-2.5 h-2.5 flex-shrink-0 rounded-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] mr-3"></span>
+                  <p class="text-white text-start">President Ramon Magsaysay State University</p>
+                </li>
+                <li class="flex items-center pl-6">
+                  <span class="w-2.5 h-2.5 flex-shrink-0 rounded-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] mr-3"></span>
+                  <p class="text-white text-start">(Bachelor of Science in Computer Engineering)</p>
+                </li>
+              </ul>
 
-          <div v-if="activeTab === 'education'"class="tab-content h-full bg-white/10 backdrop-blur-xl p-6 rounded-lg">
-            <div class="flex items-center mb-4">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#6366f1] mr-2" width="24" height="24" viewBox="0 0 24 24">
-                <path fill="currentColor" d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z" />
-              </svg>
-              <h3 class="text-xl font-bold text-white">Tertiary</h3>
+              <div class="flex items-center mb-4 mt-10">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#6366f1] mr-2" width="24" height="24" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z" />
+                </svg>
+                <h3 class="text-xl font-bold text-white">Secondary</h3>
+              </div>
+
+              <ul class="space-y-3">
+                <li class="flex items-center pl-6">
+                  <span class="w-2.5 h-2.5 flex-shrink-0 rounded-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] mr-3"></span>
+                  <p class="text-white text-start">Guisguis National High School</p>
+                </li>
+              </ul>
+
+              <div class="flex items-center mb-4 mt-10">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#6366f1] mr-2" width="24" height="24" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z" />
+                </svg>
+                <h3 class="text-xl font-bold text-white">Primary</h3>
+              </div>
+
+              <ul class="space-y-3">
+                <li class="flex items-center pl-6">
+                  <span class="w-2.5 h-2.5 flex-shrink-0 rounded-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] mr-3"></span>
+                  <p class="text-white text-start">Guisguis Elementary School</p>
+                </li>
+              </ul>
             </div>
 
-            <ul class="space-y-3">
-              <li class="flex items-center pl-6">
-                <span class="w-2.5 h-2.5 rounded-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] mr-3"></span>
-                <p class="text-white text-start">President Ramon Magsaysay State University</p>
-              </li>
-              <li class="flex items-center pl-6">
-                <span class="w-2.5 h-2.5 rounded-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] mr-3"></span>
-                <p class="text-white text-start">(Bachelor of Science in Computer Engineering)</p>
-              </li>
-            </ul>
-
-            <div class="flex items-center mb-4 mt-10">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#6366f1] mr-2" width="24" height="24" viewBox="0 0 24 24">
-                <path fill="currentColor" d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z" />
-              </svg>
-              <h3 class="text-xl font-bold text-white">Secondary</h3>
+            <div class="w-full md:w-2/5 flex justify-center max-w-full max-h-full">
+              <img src="../assets/aboutBanner.png" alt="Hero Banner" class="w-80 h-auto" />
             </div>
 
-            <ul class="space-y-3">
-              <li class="flex items-center pl-6">
-                <span class="w-2.5 h-2.5 rounded-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] mr-3"></span>
-                <p class="text-white text-start">Guisguis National High School</p>
-              </li>
-            </ul>
-
-            <div class="flex items-center mb-4 mt-10">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#6366f1] mr-2" width="24" height="24" viewBox="0 0 24 24">
-                <path fill="currentColor" d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z" />
-              </svg>
-              <h3 class="text-xl font-bold text-white">Primary</h3>
-            </div>
-
-            <ul class="space-y-3">
-              <li class="flex items-center pl-6">
-                <span class="w-2.5 h-2.5 rounded-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] mr-3"></span>
-                <p class="text-white text-start">Guisguis Elementary School</p>
-              </li>
-            </ul>
           </div>
         </div>
       </div>

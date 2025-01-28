@@ -1,6 +1,6 @@
 <template>
   <div class="flex justify-center  gap-3">
-    <div class="w-3/5 flex justify-center flex-col items-center gap-6">
+    <div class="w-full md:w-3/5 flex justify-center flex-col items-center gap-6">
       <h1   class="text-6xl font-bold mb-4 bg-gradient-to-r from-[#6366f1] to-[#a855f7] bg-clip-text text-transparent">Hi, I'm Marlon</h1>
       <h1 
         class="text-5xl font-bold mb-4 bg-gradient-to-r from-[#05CEA8] to-[#07FFD0] bg-clip-text text-transparent pb-2" >
@@ -81,7 +81,7 @@
 
 
 
-    <div class="w-2/5">
+    <div class="w-full md:w-2/5 flex justify-center items-center">
       <img src="../assets/hero.svg" alt="Hero Banner" class="w-full h-auto animate-jump" />
     </div>
   </div>

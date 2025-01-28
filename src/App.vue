@@ -15,7 +15,7 @@
         'ml-0': !isSidebarOpen || isMobile,
         'flex-1': true
       }"
-     class="bg-[#030014] p-8 flex justify-center items-center">
+     class="bg-[#030014] p-8 flex justify-center items-center overflow-hidden">
     >
       <router-view />
     </main>
@@ -32,11 +32,11 @@ export default {
     Sidebar,
   },
   setup() {
-    const isSidebarOpen = ref(window.innerWidth >= 768);
+    const isSidebarOpen = ref(window.innerWidth >= 800);
     const isMobile = ref(false);
 
     const checkMobile = () => {
-      isMobile.value = window.innerWidth < 768;
+      isMobile.value = window.innerWidth < 800;
       if (isMobile.value) {
         isSidebarOpen.value = false;
       }
