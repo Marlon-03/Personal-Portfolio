@@ -1,13 +1,10 @@
 <template>
     <div class="p-6 w-full">
-      <!-- Skills Title -->
       <h1 class="text-6xl font-bold mb-8 bg-gradient-to-r from-[#6366f1] to-[#a855f7] bg-clip-text text-transparent text-center pb-20">
         Skills
       </h1>
   
-      <!-- Skills Grid -->
-      <div class="grid grid-cols-5 gap-6">
-        <!-- Skill Card -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
         <div
           v-for="(skill, index) in skills"
           :key="index"
