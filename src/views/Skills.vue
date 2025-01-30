@@ -1,6 +1,6 @@
 <template>
-    <div class="p-6 w-full">
-      <h1 class="text-6xl font-bold mb-8 bg-gradient-to-r from-[#6366f1] to-[#a855f7] bg-clip-text text-transparent text-center pb-20">
+    <div class=" p-1 md:p-6 w-full">
+      <h1 class="text-5xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-[#6366f1] to-[#a855f7] bg-clip-text text-transparent text-center pb-7 md:pb-20">
         Skills
       </h1>
   

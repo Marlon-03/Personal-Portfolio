@@ -1,6 +1,6 @@
 <template>
-    <div class="p-6 w-full">
-        <h1 class="text-6xl font-bold mb-4 bg-gradient-to-r from-[#6366f1] to-[#a855f7] bg-clip-text text-transparent pb-20">About Me</h1>
+    <div class=" p-1 md:p-6 w-full">
+      <h1 class="text-5xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-[#6366f1] to-[#a855f7] bg-clip-text text-transparent text-center pb-7 md:pb-20">About Me</h1>
       <div class="tabs w-96">
         <!-- Tab container with glass-like background -->
         <div class="flex flex-col md:flex-row space-x-4 border border-gray-600 p-2  bg-opacity-50 backdrop-blur-lg bg-black/40 w-full rounded-xl">
@@ -23,10 +23,11 @@
           <div v-if="activeTab === 'story'" class="flex flex-col-reverse md:flex-row items-center justify-between w-full h-screen p-6 md:px-8 lg:px-12 overflow-hidden " style="height:max-content">
             <div class="w-full md:w-3/5 max-w-full">
               <h4 class="font-semibold text-xl text-white text-start">Hi, I'm Marlon, a passionate web developer whose hobby turned into a career. Coding is not just a job for me; it's a habit that has naturally become my profession. Outside of work, I unwind by playing online games, which helps me relax and stay sharp. I'm also an avid cyclist, using my bike to explore new places and enjoy the outdoors. Additionally, I play chess online, a pastime that hones my strategic thinking and parallels the problem-solving skills I use in web development. This blend of interests and my career in technology reflects my love for continuous learning and embracing challenges, both professionally and personally.</h4>
-              <div class="flex space-x-4 pt-4">
+             
+              <div class="flex flex-col md:flex-row  pt-4 gap-4 justify-center items-center">
 
                 <!--CV Button -->
-                <button onclick="window.location.href='/projects'" class="group relative p-3 pl-0 block w-fit cursor-pointer">
+                <button onclick="window.location.href='/projects'" class="group relative p-0 md:p-1 lg:p-3 pl-0 block w-fit cursor-pointer">
                   <div class="absolute inset-0 bg-gradient-to-r from-[#6366f1] to-[#a855f7] rounded-full blur opacity-20 group-hover:opacity-40 transition duration-300"></div>
                   <div class="relative rounded-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] px-8 py-4 flex items-center justify-center border border-white/10 group-hover:border-white/20 transition-all duration-300">
                     <span class="text-white font-medium">Download CV</span>
@@ -34,7 +35,7 @@
                 </button>
 
                 <!-- Contact Button -->
-                <button onclick="window.location.href='/contact'" class="group relative p-3 block w-fit cursor-pointer">
+                <button onclick="window.location.href='/contact'" class="group relative p-0 md:p-1 lg:p-3 block  w-fit cursor-pointer">
                   <div class="absolute inset-0 bg-gradient-to-r from-[#6366f1] to-[#a855f7] rounded-full blur opacity-20 group-hover:opacity-40 transition duration-300"></div>
                   <div class="relative rounded-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] px-8 py-4 flex items-center justify-center border border-white/10 group-hover:border-white/20 transition-all duration-300">
                     <span class="text-white font-medium">Contact</span>
@@ -53,7 +54,7 @@
           
             <div class="w-full md:w-3/5 max-w-full">
               <div class="flex items-center flex-wrap mb-4">
-                <h3 class="text-xl font-bold text-white">
+                <h3 class="text-lg md:text-xl font-bold text-white">
                   IFormatLogicITSolutions 
                   <span class="block sm:inline"> (Full Stack Developer)</span>
                 </h3>
@@ -78,7 +79,7 @@
               </ul>
 
               <div class="flex items-center mt-10 mb-4">
-                <h3 class="text-xl font-bold text-white">Freelance (Full Stack Developer)</h3>
+                <h3 class="text-lg md:text-xl font-bold text-white">Freelance (Full Stack Developer)</h3>
               </div>
 
               <ul class="space-y-3">
@@ -187,7 +188,7 @@
   
   .tab-button {
     padding: 12px 20px;
-    background-color: rgba(0, 0, 0, 0.2); /* Transparent background */
+    background-color: rgba(0, 0, 0, 0.2);
     color: #ddd;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
@@ -202,30 +203,20 @@
   }
   
   .tab-button.active {
-    background-color: rgba(99, 102, 241, 0.3); /* Glass-like background for active */
+    background-color: rgba(99, 102, 241, 0.3);
     color: #fff;
     font-weight: bold;
-    backdrop-filter: blur(10px); /* Apply glass effect */
+    backdrop-filter: blur(10px); 
   }
-  
-  h3 {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  .mt-6 {
-    margin-top: 1.5rem;
-  }
-
 
 
   .tabs .tab-button {
-    background: rgba(0, 0, 0, 0.3); /* Slight transparency */
-    backdrop-filter: blur(10px); /* Blur the background */
+    background: rgba(0, 0, 0, 0.3); 
+    backdrop-filter: blur(10px); 
   }
 
   .tabs .tab-button.active {
-    background: rgba(99, 102, 241, 0.3); /* Active tab glass effect */
+    background: rgba(99, 102, 241, 0.3);
     backdrop-filter: blur(10px);
   }
   

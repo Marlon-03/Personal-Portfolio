@@ -1,6 +1,6 @@
 <template>
-     <div class="p-6 w-full">
-        <h1 class="text-6xl font-bold mb-8 bg-gradient-to-r from-[#6366f1] to-[#a855f7] bg-clip-text text-transparent text-center pb-20">
+    <div class=" p-1 md:p-6 w-full">
+      <h1 class="text-5xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-[#6366f1] to-[#a855f7] bg-clip-text text-transparent text-center pb-7 md:pb-20">
         Contact Me
       </h1>
 
@@ -36,8 +36,8 @@
 
 
             <div class="w-full md:w-1/2 bg-gradient-to-br from-white/10 to-white/5 rounded-2xl p-6 py-8 backdrop-blur-xl">
-                  <h3 class="text-2xl font-bold bg-gradient-to-r from-[#6366f1] to-[#a855f7] bg-clip-text text-transparent mb-6 flex items-center gap-2">
-                  <span class="inline-block w-8 h-1 bg-indigo-500 rounded-full"></span>Connect With Me</h3>
+                  <h3 class="text-xl md:text-2xl font-bold bg-gradient-to-r from-[#6366f1] to-[#a855f7] bg-clip-text text-transparent mb-6 flex items-center gap-2">
+                  <span class="inline-block w-4 md:w-8 h-1 bg-indigo-500 rounded-full"></span>Connect With Me</h3>
                   <p class="text-white mb-6 text-start font-medium">Need an experienced Full Stack Developer to help out? Send me an email to discuss in more detail. You can also connect with me on social media. Feel free to follow me on these platforms.</p>
                   <div class="flex flex-col gap-4">
                                           

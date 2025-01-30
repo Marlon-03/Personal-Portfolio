@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-center  gap-3">
+  <div class="flex justify-center  gap-3 p-1 md:p-6">
     <div class="w-full md:w-3/5 flex justify-center flex-col items-center gap-6">
       <h1   class="text-6xl font-bold mb-4 bg-gradient-to-r from-[#6366f1] to-[#a855f7] bg-clip-text text-transparent">Hi, I'm Marlon</h1>
       <h1 
@@ -13,7 +13,7 @@
 
       <div class="flex space-x-4">
         <!-- LinkedIn -->
-        <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fmarlon-movilla-5254a3289%3Futm_source%3Dshare%26utm_campaign%3Dshare_via%26utm_content%3Dprofile%26utm_medium%3Dandroid_app%26fbclid%3DIwZXh0bgNhZW0CMTAAAR3iL7cuSLw5TPOcFbtY68hjeKXreggLaS2B1gJxAXWZ13nl9dOdDmnrIks_aem_vysyus2SwiG9KL0Fa5gumQ&h=AT1-bcf4qHSHB4Fa49Ss7hFEEi9pb913pARCsj8S3PAPY7CoxeNSCVrr9kjkCaN85QiKQ7w84m8cWLnqCB9kXVj-hWLWw16lCRvksrJ9UaOs5P9ZeRvR-hVc6H2t14a9fNBpwQ" target="_blank" class="group relative p-3 block w-fit">
+        <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fmarlon-movilla-5254a3289%3Futm_source%3Dshare%26utm_campaign%3Dshare_via%26utm_content%3Dprofile%26utm_medium%3Dandroid_app%26fbclid%3DIwZXh0bgNhZW0CMTAAAR3iL7cuSLw5TPOcFbtY68hjeKXreggLaS2B1gJxAXWZ13nl9dOdDmnrIks_aem_vysyus2SwiG9KL0Fa5gumQ&h=AT1-bcf4qHSHB4Fa49Ss7hFEEi9pb913pARCsj8S3PAPY7CoxeNSCVrr9kjkCaN85QiKQ7w84m8cWLnqCB9kXVj-hWLWw16lCRvksrJ9UaOs5P9ZeRvR-hVc6H2t14a9fNBpwQ" target="_blank" class="group relative p-1 md:p-3 block w-fit">
           <div class="absolute inset-0 bg-gradient-to-r from-[#05CEA8] to-[#07FFD0] rounded-lg blur opacity-20 group-hover:opacity-40 transition duration-300"></div>
           <div class="relative rounded-lg bg-black/50 backdrop-blur-xl p-4 flex items-center justify-center border border-white/10 group-hover:border-white/20 transition-all duration-300">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin w-6 h-6 text-gray-400 group-hover:text-white transition-colors">
@@ -25,7 +25,7 @@
         </a>
 
         <!-- GitHub -->
-        <a href="https://github.com/Marlon-03" target="_blank" class="group relative p-3 block w-fit">
+        <a href="https://github.com/Marlon-03" target="_blank" class="group relative p-1 md:p-3 block w-fit">
           <div class="absolute inset-0 bg-gradient-to-r from-[#05CEA8] to-[#07FFD0] rounded-lg blur opacity-20 group-hover:opacity-40 transition duration-300"></div>
           <div class="relative rounded-lg bg-black/50 backdrop-blur-xl p-4 flex items-center justify-center border border-white/10 group-hover:border-white/20 transition-all duration-300">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github w-6 h-6 text-gray-400 group-hover:text-white transition-colors">
@@ -35,7 +35,7 @@
         </a>
 
         <!-- Facebook -->
-        <a href="https://www.facebook.com/share/1CJJPiQzAE/" target="_blank" class="group relative p-3 block w-fit">
+        <a href="https://www.facebook.com/share/1CJJPiQzAE/" target="_blank" class="group relative p-1 md:p-3 block w-fit">
           <div class="absolute inset-0 bg-gradient-to-r from-[#05CEA8] to-[#07FFD0] rounded-lg blur opacity-20 group-hover:opacity-40 transition duration-300"></div>
           <div class="relative rounded-lg bg-black/50 backdrop-blur-xl p-4 flex items-center justify-center border border-white/10 group-hover:border-white/20 transition-all duration-300">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook w-6 h-6 text-gray-400 group-hover:text-white transition-colors">
@@ -45,7 +45,7 @@
         </a>
 
         <!-- Instagram -->
-        <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fpost_marlonely%3Figsh%3DMXo3NXY3cDh3NXFw%26fbclid%3DIwZXh0bgNhZW0CMTAAAR0k_wJsxWMzRoPHZg6YsGSna2iAxyckThR0CdaxoW5aNHRzrL7d6VxisVA_aem_gNY8FdrRCWucIh_xrcgGNg&h=AT1-bcf4qHSHB4Fa49Ss7hFEEi9pb913pARCsj8S3PAPY7CoxeNSCVrr9kjkCaN85QiKQ7w84m8cWLnqCB9kXVj-hWLWw16lCRvksrJ9UaOs5P9ZeRvR-hVc6H2t14a9fNBpwQ" target="_blank" class="group relative p-3 block w-fit">
+        <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fpost_marlonely%3Figsh%3DMXo3NXY3cDh3NXFw%26fbclid%3DIwZXh0bgNhZW0CMTAAAR0k_wJsxWMzRoPHZg6YsGSna2iAxyckThR0CdaxoW5aNHRzrL7d6VxisVA_aem_gNY8FdrRCWucIh_xrcgGNg&h=AT1-bcf4qHSHB4Fa49Ss7hFEEi9pb913pARCsj8S3PAPY7CoxeNSCVrr9kjkCaN85QiKQ7w84m8cWLnqCB9kXVj-hWLWw16lCRvksrJ9UaOs5P9ZeRvR-hVc6H2t14a9fNBpwQ" target="_blank" class="group relative p-1 md:p-3 block w-fit">
           <div class="absolute inset-0 bg-gradient-to-r from-[#05CEA8] to-[#07FFD0] rounded-lg blur opacity-20 group-hover:opacity-40 transition duration-300"></div>
           <div class="relative rounded-lg bg-black/50 backdrop-blur-xl p-4 flex items-center justify-center border border-white/10 group-hover:border-white/20 transition-all duration-300">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram w-6 h-6 text-gray-400 group-hover:text-white transition-colors">
@@ -60,7 +60,7 @@
       <div class="flex space-x-4">
 
           <!-- CV Button -->
-          <button onclick="window.location.href='/projects'" class="group relative p-3 block w-fit cursor-pointer">
+          <button onclick="window.location.href='/projects'" class="group relative p-0 md:p-3 block w-fit cursor-pointer">
             <div class="absolute inset-0 bg-gradient-to-r from-[#05CEA8] to-[#07FFD0] rounded-full blur opacity-20 group-hover:opacity-40 transition duration-300"></div>
             <div class="relative rounded-full bg-black/50 backdrop-blur-xl px-8 py-4 flex items-center justify-center border border-white/10 group-hover:border-white/20 transition-all duration-300">
               <span class="text-gray-400 group-hover:text-white transition-colors">Download CV</span>
@@ -69,7 +69,7 @@
 
           <!-- Contact Button -->
           <button
-            onclick="window.location.href='/contact'" class="group relative p-3 block w-fit cursor-pointer">
+            onclick="window.location.href='/contact'" class="group relative p-1 md:p-3 block w-fit cursor-pointer">
             <div class="absolute inset-0 bg-gradient-to-r from-[#05CEA8] to-[#07FFD0] rounded-full blur opacity-20 group-hover:opacity-40 transition duration-300"></div>
             <div class="relative rounded-full bg-black/50 backdrop-blur-xl px-8 py-4 flex items-center justify-center border border-white/10 group-hover:border-white/20 transition-all duration-300">
               <span class="text-gray-400 group-hover:text-white transition-colors">Contact</span>
