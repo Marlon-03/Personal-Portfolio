@@ -53,9 +53,6 @@
           
             <div class="w-full md:w-3/5 max-w-full">
               <div class="flex items-center flex-wrap mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#6366f1] mr-2 shrink-0" width="24" height="24" viewBox="0 0 24 24">
-                  <path fill="currentColor" d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z" />
-                </svg>
                 <h3 class="text-xl font-bold text-white">
                   IFormatLogicITSolutions 
                   <span class="block sm:inline"> (Full Stack Developer)</span>
@@ -81,9 +78,6 @@
               </ul>
 
               <div class="flex items-center mt-10 mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#6366f1] mr-2" width="24" height="24" viewBox="0 0 24 24">
-                  <path fill="currentColor" d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z" />
-                </svg>
                 <h3 class="text-xl font-bold text-white">Freelance (Full Stack Developer)</h3>
               </div>
 

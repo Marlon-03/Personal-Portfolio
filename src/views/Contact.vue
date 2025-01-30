@@ -9,14 +9,12 @@
         <div data-aos="fade-right" data-aos-duration="1200" class="w-full md:w-1/2 bg-white/5 backdrop-blur-xl rounded-3xl shadow-2xl p-5 py-10 sm:p-10 transform transition-all duration-300 hover:shadow-[#6366f1]/10 aos-init aos-animate">
             <div class="flex justify-between items-start mb-8">
                   <div>
-                        <h2 class="text-4xl font-bold mb-3 text-transparent bg-clip-text bg-gradient-to-r from-[#6366f1] to-[#a855f7]">Get in Touch</h2>
+                        <h2 class="text-4xl text-start font-bold mb-3 text-transparent bg-clip-text bg-gradient-to-r from-[#6366f1] to-[#a855f7]">Get in Touch</h2>
                         <p class="text-white mb-6 text-start font-medium">Have something to discuss? Send me a message and let's talk.</p>
                   </div>
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-share2 w-10 h-10 text-[#6366f1] opacity-50"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"></line><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"></line></svg>
             </div>
-            <form action="https://formsubmit.co/ekizulfarrachman@gmail.com" method="POST" class="space-y-6">
-                  <input type="hidden" name="_template" value="table">
-                  <input type="hidden" name="_captcha" value="false">
+            <form action="https://formspree.io/f/mrgnkqee" method="POST" class="space-y-6">
                   <div data-aos="fade-up" data-aos-delay="100" class="relative group aos-init aos-animate">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user absolute left-4 top-4 w-5 h-5 text-gray-400 group-focus-within:text-[#6366f1] transition-colors"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
                         <input type="text" name="name" placeholder="Your Name" class="w-full p-4 pl-12 bg-white/10 rounded-xl border border-white/20 placeholder-gray-500 text-white focus:outline-none focus:ring-2 focus:ring-[#6366f1]/30 transition-all duration-300 hover:border-[#6366f1]/30 disabled:opacity-50" required="" value="">
@@ -54,7 +52,7 @@
                                     </div>
                                     <div class="flex flex-col min-w-0">
                                           <span class="text-sm font-bold text-gray-200 group-hover:text-white transition-colors duration-300">Instagram</span>
-                                          <span class="text-xs text-gray-400 truncate group-hover:text-gray-300 transition-colors duration-300">@ekizr_</span>
+                                     
                                     </div>
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link w-4 h-4 text-gray-500 group-hover:text-white ml-auto opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:translate-x-0 -translate-x-2"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
                                     <div class="absolute inset-0 opacity-0 group-hover:opacity-100 pointer-events-none overflow-hidden">
@@ -73,7 +71,7 @@
                                     </div>
                                     <div class="flex flex-col min-w-0">
                                           <span class="text-sm font-bold text-gray-200 group-hover:text-white transition-colors duration-300">LinkedIn</span>
-                                          <span class="text-xs text-gray-400 truncate group-hover:text-gray-300 transition-colors duration-300">@eki zulfar</span>
+                                 
                                     </div>
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link w-4 h-4 text-gray-500 group-hover:text-white ml-auto opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:translate-x-0 -translate-x-2"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
                                     <div class="absolute inset-0 opacity-0 group-hover:opacity-100 pointer-events-none overflow-hidden">
@@ -93,7 +91,7 @@
                                     </div>
                                     <div class="flex flex-col min-w-0">
                                           <span class="text-sm font-bold text-gray-200 group-hover:text-white transition-colors duration-300">Github</span>
-                                          <span class="text-xs text-gray-400 truncate group-hover:text-gray-300 transition-colors duration-300">@EkiZR</span>
+                                         
                                     </div>
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link w-4 h-4 text-gray-500 group-hover:text-white ml-auto opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:translate-x-0 -translate-x-2"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
                                     <div class="absolute inset-0 opacity-0 group-hover:opacity-100 pointer-events-none overflow-hidden">
@@ -112,7 +110,7 @@
                                     </div>
                                     <div class="flex flex-col min-w-0">
                                           <span class="text-sm font-bold text-gray-200 group-hover:text-white transition-colors duration-300">Tiktok</span>
-                                          <span class="text-xs text-gray-400 truncate group-hover:text-gray-300 transition-colors duration-300">@eki_zulfar</span>
+                                 
                                     </div>
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link w-4 h-4 text-gray-500 group-hover:text-white ml-auto opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:translate-x-0 -translate-x-2"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
                                     <div class="absolute inset-0 opacity-0 group-hover:opacity-100 pointer-events-none overflow-hidden">
