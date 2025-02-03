@@ -42,7 +42,7 @@
                   <div class="flex flex-col gap-4">
                                           
                         <div class="flex flex-col gap-6">
-                              <a href="https://www.instagram.com/ekizr_/?hl=id" target="_blank" rel="noopener noreferrer" class="group relative flex items-center gap-3 p-4 rounded-xl bg-white/5 border border-white/10 overflow-hiddenhover:border-white/20 transition-all duration-500">
+                              <a href="https://www.instagram.com/post_marlonely/" target="_blank" rel="noopener noreferrer" class="group relative flex items-center gap-3 p-4 rounded-xl bg-white/5 border border-white/10 overflow-hiddenhover:border-white/20 transition-all duration-500">
                                     <div class="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-500 bg-gradient-to-r from-[#833AB4] via-[#E4405F] to-[#FCAF45]"></div>
                                     <div class="relative flex items-center justify-center">
                                           <div class="absolute inset-0 opacity-20 rounded-lg transition-all duration-500 group-hover:scale-125 group-hover:opacity-30" style="background-color: rgb(228, 64, 95);"></div>
@@ -61,7 +61,7 @@
                               </a>
 
                                     
-                              <a href="https://www.youtube.com/@eki_zulfar" target="_blank" rel="noopener noreferrer" class="group relative flex items-center gap-3 p-4 rounded-xl bg-white/5 border border-white/10 overflow-hiddenhover:border-white/20 transition-all duration-500">
+                              <a href="https://www.linkedin.com/in/marlon-movilla-5254a3289/" target="_blank" rel="noopener noreferrer" class="group relative flex items-center gap-3 p-4 rounded-xl bg-white/5 border border-white/10 overflow-hiddenhover:border-white/20 transition-all duration-500">
                                     <div class="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-500 bg-gradient-to-r from-[#0A66C2] to-[#0077B5]"></div>
                                     <div class="relative flex items-center justify-center">
                                           <div class="absolute inset-0 opacity-20 rounded-md transition-all duration-500 group-hover:scale-110 group-hover:opacity-30" style="background-color: rgb(10, 102, 194);"></div>
@@ -81,7 +81,7 @@
                         
                         
                         
-                              <a href="https://github.com/EkiZR" target="_blank" rel="noopener noreferrer" class="group relative flex items-center gap-3 p-4 rounded-xl  bg-white/5 border border-white/10 overflow-hidden hover:border-white/20 transition-all duration-500">
+                              <a href="https://github.com/Marlon-03" target="_blank" rel="noopener noreferrer" class="group relative flex items-center gap-3 p-4 rounded-xl  bg-white/5 border border-white/10 overflow-hidden hover:border-white/20 transition-all duration-500">
                                     <div class="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-500 bg-gradient-to-r from-[#333] to-[#24292e]"></div>
                                     <div class="relative flex items-center justify-center">
                                           <div class="absolute inset-0 opacity-20 rounded-lg transition-all duration-500 group-hover:scale-125 group-hover:opacity-30" style="background-color: rgb(255, 255, 255);"></div>
@@ -100,7 +100,7 @@
                               </a>
 
 
-                              <a href="https://tiktok.com/@eki_zulfar" target="_blank" rel="noopener noreferrer" class="group relative flex items-center gap-3 p-4 rounded-xl bg-white/5 border border-white/10 overflow-hidden hover:border-white/20 transition-all duration-500">
+                              <a href="https://www.facebook.com/marlon.movilla.10" target="_blank" rel="noopener noreferrer" class="group relative flex items-center gap-3 p-4 rounded-xl bg-white/5 border border-white/10 overflow-hidden hover:border-white/20 transition-all duration-500">
                                     <div class="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-500 bg-gradient-to-r from-[#0A66C2] to-[#0077B5]"></div>
                                     <div class="relative flex items-center justify-center">
                                           <div class="absolute inset-0 opacity-20 rounded-md transition-all duration-500 group-hover:scale-110 group-hover:opacity-30" style="background-color: rgb(10, 102, 194);"></div>
@@ -109,7 +109,7 @@
                                           </div>
                                     </div>
                                     <div class="flex flex-col min-w-0">
-                                          <span class="text-sm font-bold text-gray-200 group-hover:text-white transition-colors duration-300">Tiktok</span>
+                                          <span class="text-sm font-bold text-gray-200 group-hover:text-white transition-colors duration-300">Facebook</span>
                                  
                                     </div>
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link w-4 h-4 text-gray-500 group-hover:text-white ml-auto opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:translate-x-0 -translate-x-2"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
