@@ -5,6 +5,7 @@ import Skills from '../views/Skills.vue';
 import Project from '../views/Project.vue';
 import Contact from '../views/Contact.vue';
 import SingleProject from '../components/singleProject.vue';
+import Pizza from '../components/pizza.vue';
 
 const routes = [
   {
@@ -41,6 +42,12 @@ const routes = [
     path: '/:singleProject',
     name: 'SingleProject',
     component: SingleProject
+  },
+
+  {
+    path: '/project/pizza',
+    name: 'Pizza',
+    component: Pizza
   }
 
 ];
