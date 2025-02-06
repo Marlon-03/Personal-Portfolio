@@ -7,6 +7,7 @@ import Contact from '../views/Contact.vue';
 import SingleProject from '../components/singleProject.vue';
 import Pizza from '../components/pizza.vue';
 import Artruls from'../components/artruls.vue';
+import PersonalBlog from '../components/personalBlog.vue';
 
 const routes = [
   {
@@ -55,6 +56,12 @@ const routes = [
     path: '/project/artruls',
     name: 'Artruls',
     component: Artruls
+  },
+
+  {
+    path: '/project/personalBlog',
+    name: 'PersonalBlog',
+    component: PersonalBlog
   }
 
 ];
