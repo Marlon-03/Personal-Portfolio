@@ -6,6 +6,7 @@ import Project from '../views/Project.vue';
 import Contact from '../views/Contact.vue';
 import SingleProject from '../components/singleProject.vue';
 import Pizza from '../components/pizza.vue';
+import Artruls from'../components/artruls.vue';
 
 const routes = [
   {
@@ -48,6 +49,12 @@ const routes = [
     path: '/project/pizza',
     name: 'Pizza',
     component: Pizza
+  },
+
+  {
+    path: '/project/artruls',
+    name: 'Artruls',
+    component: Artruls
   }
 
 ];
