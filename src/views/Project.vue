@@ -72,7 +72,7 @@
                 <div class="relative overflow-hidden rounded-xl bg-gradient-to-br from-slate-900/90 to-slate-800/90 backdrop-blur-lg border border-white/10 shadow-2xl transition-all duration-300 hover:shadow-purple-500/20">
                     <div class="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-purple-500/10 to-pink-500/10 opacity-50 group-hover:opacity-70 transition-opacity duration-300"></div>
                     <div class="relative p-5 z-10"><div class="relative overflow-hidden rounded-lg">
-                        <img src="https://lh3.googleusercontent.com/pw/AP1GczN8nCgz3uDAYTz959bL9wjcgXhPsT2-czigri6o-HkkyyIJ2uEagCkxFUsJtdcFFKoSblBWf0VUi_UY2bgrcHCmgG-cFxBz8zH7CM9AM0B6YpxmkMJ1gmL6dGSzzb0efVgKBcnDg_4eWmhmv0TSypNx=w1326-h679-s-no-gm?authuser=0" alt="Aritmatika Solver" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"></div>
+                        <img src="../assets/blogBanner.png" alt="Personal Blog" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"></div>
                         <div class="mt-4 space-y-3">
                             <h3 class="text-xl font-semibold bg-gradient-to-r from-blue-200 via-purple-200 to-pink-200 bg-clip-text text-transparent">Personal Blog</h3>
                             <p class="text-gray-300/80 text-sm leading-relaxed line-clamp-2">Designed and developed a versatile blog web application as a personal project, featuring user-friendly dashboards tailored for both administrators and users. The platform includes intuitive sorting options for categories and a robust search functionality, ensuring effortless navigation and enhanced content discovery for an enriched blogging experience</p>
