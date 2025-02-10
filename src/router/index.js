@@ -8,6 +8,7 @@ import SingleProject from '../components/singleProject.vue';
 import Pizza from '../components/pizza.vue';
 import Artruls from'../components/artruls.vue';
 import PersonalBlog from '../components/personalBlog.vue';
+import Interlinked from '../components/interlinked.vue';
 
 const routes = [
   {
@@ -62,6 +63,12 @@ const routes = [
     path: '/project/personalBlog',
     name: 'PersonalBlog',
     component: PersonalBlog
+  },
+
+  {
+    path: '/project/interlinked',
+    name: 'Interlinked',
+    component: Interlinked
   }
 
 ];

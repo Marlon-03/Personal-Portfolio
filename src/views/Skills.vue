@@ -56,7 +56,7 @@
             { name: "Vue", icon: vueIcon },
             { name: "React", icon: reactIcon },
             { name: "Bootstrap", icon: bootsrapIcon },
-            { name: "Tailwind", icon: tailwindIcon },
+            { name: "Tailwind CSS", icon: tailwindIcon },
           ],
         };
       },
