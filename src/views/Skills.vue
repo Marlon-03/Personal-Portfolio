@@ -35,7 +35,7 @@
     import cssIcon from "../assets/css.svg";
     import phpIcon from "../assets/php.png";
     import laravelIcon from "../assets/laravel.png";
-    import wpIcon from "../assets/wP.jpg";
+    import wpIcon from "../assets/wp.jpg";
     import jsIcon from "../assets/javascript.png";
     import vueIcon from "../assets/vue.png";
     import reactIcon from "../assets/reactjs.svg";
