@@ -9,6 +9,7 @@ import Pizza from '../components/pizza.vue';
 import Artruls from'../components/artruls.vue';
 import PersonalBlog from '../components/personalBlog.vue';
 import Interlinked from '../components/interlinked.vue';
+import ShelfWise from '../components/shelfwise.vue';
 
 const routes = [
   {
@@ -69,6 +70,12 @@ const routes = [
     path: '/project/interlinked',
     name: 'Interlinked',
     component: Interlinked
+  },
+
+  {
+    path: '/project/shelfwise',
+    name: 'ShelfWise',
+    component: ShelfWise
   }
 
 ];
