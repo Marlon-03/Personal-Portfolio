@@ -9,7 +9,7 @@ import Pizza from '../components/pizza.vue';
 import Artruls from'../components/artruls.vue';
 import PersonalBlog from '../components/personalBlog.vue';
 import Interlinked from '../components/interlinked.vue';
-import ShelfWise from '../components/shelfwise.vue';
+import ShelfWise from '../components/shelfWise.vue';
 
 const routes = [
   {
