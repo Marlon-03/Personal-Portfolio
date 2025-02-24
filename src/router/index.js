@@ -4,12 +4,12 @@ import About from '../views/About.vue';
 import Skills from '../views/Skills.vue';
 import Project from '../views/Project.vue';
 import Contact from '../views/Contact.vue';
-import SingleProject from '../components/singleProject.vue';
 import Pizza from '../components/pizza.vue';
 import Artruls from'../components/artruls.vue';
 import PersonalBlog from '../components/personalBlog.vue';
 import Interlinked from '../components/interlinked.vue';
 import ShelfWise from '../components/shelfWise.vue';
+import DixonDental from '../components/dixonDental.vue';
 
 const routes = [
   {
@@ -41,13 +41,6 @@ const routes = [
     name: 'Contact',
     component: Contact
   },
-
-  {
-    path: '/:singleProject',
-    name: 'SingleProject',
-    component: SingleProject
-  },
-
   {
     path: '/project/pizza',
     name: 'Pizza',
@@ -76,6 +69,12 @@ const routes = [
     path: '/project/shelfwise',
     name: 'ShelfWise',
     component: ShelfWise
+  },
+
+  {
+    path: '/project/dixonDental',
+    name: 'DixonDental',
+    component: DixonDental
   }
 
 ];
