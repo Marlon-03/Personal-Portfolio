@@ -14,7 +14,7 @@
         <div class="grid lg:grid-cols-2 gap-8 md:gap-16">
             <div class="space-y-6 md:space-y-10 animate-slideInLeft">
                 <div class="space-y-4 md:space-y-6">
-                    <h1 class="text-3xl md:text-6xl font-bold bg-gradient-to-r from-blue-200 via-purple-200 to-pink-200 bg-clip-text text-transparent leading-tight">Interlinked</h1>
+                    <h1 class="text-3xl md:text-6xl font-bold bg-gradient-to-r from-blue-200 via-purple-200 to-pink-200 bg-clip-text text-transparent leading-tight pb-3">Interlinked</h1>
                     <div class="relative h-1 w-16 md:w-24">
                         <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full animate-pulse"></div>
                         <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full blur-sm"></div>
