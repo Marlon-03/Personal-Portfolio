@@ -27,7 +27,7 @@
               <div class="flex flex-col md:flex-row  pt-4 gap-4 justify-center items-center">
 
                 <!--CV Button -->
-                <a href="https://drive.google.com/file/d/13Xxhbf26KafwOf-d5GYn0RPmpWqGCaOI/view?usp=sharing" target="_blank" class="group relative p-0 md:p-1 lg:p-3 pl-0 block w-fit cursor-pointer">
+                <a href="https://drive.google.com/file/d/15lKN9rK4GYerLNLhBY0nAj2k_GlJhdZ-/view?usp=sharing" target="_blank" class="group relative p-0 md:p-1 lg:p-3 pl-0 block w-fit cursor-pointer">
                   <div class="absolute inset-0 bg-gradient-to-r from-[#6366f1] to-[#a855f7] rounded-full blur opacity-20 group-hover:opacity-40 transition duration-300"></div>
                   <div class="relative rounded-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] px-8 py-4 flex items-center justify-center border border-white/10 group-hover:border-white/20 transition-all duration-300">
                     <span class="text-white font-medium">Download CV</span>
