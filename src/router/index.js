@@ -10,6 +10,7 @@ import PersonalBlog from '../components/personalBlog.vue';
 import Interlinked from '../components/interlinked.vue';
 import ShelfWise from '../components/shelfWise.vue';
 import DixonDental from '../components/dixonDental.vue';
+import NeoLeader from '../components/neoleader.vue';
 
 const routes = [
   {
@@ -75,6 +76,12 @@ const routes = [
     path: '/project/dixonDental',
     name: 'DixonDental',
     component: DixonDental
+  },
+
+  {
+    path: '/project/neoleader',
+    name: 'NeoLeader',
+    component: NeoLeader
   }
 
 ];
