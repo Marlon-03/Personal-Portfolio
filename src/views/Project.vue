@@ -1,7 +1,7 @@
 <template>
     <div class=" p-1 md:p-6 w-full">
         <h1 class="text-5xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-[#6366f1] to-[#a855f7] bg-clip-text text-transparent text-center pb-7 md:pb-20">
-            Porfolio Showcase
+            Portfolio Showcase
         </h1>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
