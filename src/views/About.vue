@@ -22,7 +22,16 @@
         <div class="mt-6 w-full border border-gray-600 rounded-xl">
           <div v-if="activeTab === 'story'" class="flex flex-col-reverse md:flex-row items-center justify-between w-full h-screen p-6 md:px-8 lg:px-12 overflow-hidden " style="height:max-content">
             <div class="w-full md:w-3/5 max-w-full">
-              <h4 class="font-semibold text-xl text-white text-start">Hi, I'm Marlon, a passionate web developer whose hobby turned into a career. Coding is not just a job for me; it's a habit that has naturally become my profession. Outside of work, I unwind by playing online games, which helps me relax and stay sharp. I'm also an avid cyclist, using my bike to explore new places and enjoy the outdoors. Additionally, I play chess online, a pastime that hones my strategic thinking and parallels the problem-solving skills I use in web development. This blend of interests and my career in technology reflects my love for continuous learning and embracing challenges, both professionally and personally.</h4>
+              <h4 class="font-semibold text-xl text-white text-start">
+                Hi, I’m Marlon, a web developer and WordPress designer who helps businesses build 
+                  professional, user-friendly websites that attract customers and grow online presence.  
+
+                  I specialize in creating fast, mobile-responsive websites with WordPress, Elementor, Laravel and Vue JS making it easy for clients to manage their content and scale their business.  
+
+                  When I’m not working on websites, you’ll probably find me cycling, playing strategy games, 
+                  or exploring new ideas in tech. My mix of creativity and problem-solving helps me deliver 
+                  web solutions that are both functional and visually appealing.  
+               </h4>
              
               <div class="flex flex-col md:flex-row  pt-4 gap-4 justify-center items-center">
 
