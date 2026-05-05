@@ -41,6 +41,9 @@
     import reactIcon from "../assets/reactjs.svg";
     import bootsrapIcon from "../assets/bootstrap.svg";
     import tailwindIcon from "../assets/tailwind.svg";
+    import typeScriptIcon from "../assets/typescript.png";
+    import nextjsIcon from "../assets/next.webp";
+    import supabaseIcon from "../assets/supabase.webp";
   
     export default {
       name: "Skills",
@@ -53,17 +56,16 @@
             { name: "Laravel", icon: laravelIcon },
             { name: "WordPress", icon: wpIcon },
             { name: "JavaScript", icon: jsIcon },
-            { name: "Vue", icon: vueIcon },
-            { name: "React", icon: reactIcon },
+            { name: "TypeScript", icon: typeScriptIcon },
+            { name: "Vue Js", icon: vueIcon },
+            { name: "React Js", icon: reactIcon },
+            { name: "Next Js", icon: nextjsIcon },
             { name: "Bootstrap", icon: bootsrapIcon },
             { name: "Tailwind CSS", icon: tailwindIcon },
+            { name: "Supabase", icon: supabaseIcon },
           ],
         };
       },
     };
   </script>
-  
-  <style scoped>
-  /* Add custom styles if needed */
-  </style>
   

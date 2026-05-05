@@ -4,7 +4,6 @@ import About from '../views/About.vue';
 import Skills from '../views/Skills.vue';
 import Project from '../views/Project.vue';
 import Contact from '../views/Contact.vue';
-import Pizza from '../components/pizza.vue';
 import Artruls from'../components/artruls.vue';
 import PersonalBlog from '../components/personalBlog.vue';
 import Interlinked from '../components/interlinked.vue';
@@ -12,6 +11,7 @@ import ShelfWise from '../components/shelfWise.vue';
 import DixonDental from '../components/dixonDental.vue';
 import NeoLeader from '../components/neoleader.vue';
 import Buildovate from '../components/buildovate.vue';
+import HookScope from '../components/hookScope.vue';
 
 const routes = [
   {
@@ -43,11 +43,7 @@ const routes = [
     name: 'Contact',
     component: Contact
   },
-  {
-    path: '/project/pizza',
-    name: 'Pizza',
-    component: Pizza
-  },
+
 
   {
     path: '/project/artruls',
@@ -87,6 +83,11 @@ const routes = [
     path: '/project/buildovate',
     name: 'Buildovate',
     component: Buildovate
+  },
+  {
+    path: '/project/hookScope',
+    name: 'HookScope',
+    component: HookScope
   }
 
 ];
