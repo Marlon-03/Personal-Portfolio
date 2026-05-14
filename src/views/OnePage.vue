@@ -8,14 +8,14 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="min-h-screen flex items-center justify-center bg-gray-50">
+    <section id="about" class="min-h-screen flex items-center justify-center bg-white">
       <div class="w-full max-w-7xl px-2">
         <About />
       </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="min-h-screen flex items-center justify-center bg-gray-50">
+    <section id="projects" class="min-h-screen flex items-center justify-center bg-white">
       <div class="w-full max-w-7xl px-2">
         <Project />
       </div>
