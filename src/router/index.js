@@ -3,6 +3,7 @@ import Home from '../views/Home.vue';
 import About from '../views/About.vue';
 import Project from '../views/Project.vue';
 import Contact from '../views/Contact.vue';
+import OnePage from '../views/OnePage.vue';
 import Artruls from'../components/artruls.vue';
 import PersonalBlog from '../components/personalBlog.vue';
 import Interlinked from '../components/interlinked.vue';
@@ -16,7 +17,7 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: OnePage
   },
 
   {
@@ -87,7 +88,28 @@ const routes = [
 
 const router = createRouter({
   history: createWebHistory(),
-  routes
+  routes,
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition;
+    } else if (to.hash) {
+      return new Promise((resolve) => {
+        setTimeout(() => {
+          const element = document.querySelector(to.hash);
+          if (element) {
+            resolve({
+              el: element,
+              behavior: 'smooth',
+            });
+          } else {
+            resolve({ top: 0 });
+          }
+        }, 0);
+      });
+    } else {
+      return { top: 0 };
+    }
+  }
 });
 
 export default router;
