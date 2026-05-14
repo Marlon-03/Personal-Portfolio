@@ -1,234 +1,118 @@
 <template>
-    <div class=" p-1 md:p-6 w-full">
-      <h1 class="text-5xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-[#6366f1] to-[#a855f7] bg-clip-text text-transparent text-center pb-7 md:pb-20">About Me</h1>
-      <div class="tabs w-96">
-        <!-- Tab container with glass-like background -->
-        <div class="flex flex-col md:flex-row space-x-4 border border-gray-600 p-2  bg-opacity-50 backdrop-blur-lg bg-black/40 w-full rounded-xl">
-          <button
-            @click="activeTab = 'story'" :class="['tab-button', activeTab === 'story' && 'active']" role="tab" class="w-full rounded-lg  text-2xl font-semibold"style="margin: 0;">
-            My Story
-          </button>
-          <button
-            @click="activeTab = 'experience'" :class="['tab-button', activeTab === 'experience' && 'active']" role="tab" class="w-full rounded-lg text-2xl font-semibold "style="margin: 0;">
-            Experience
-          </button>
-          <button
-            @click="activeTab = 'education'" :class="['tab-button', activeTab === 'education' && 'active']" role="tab" class="w-full rounded-lg text-2xl font-semibold " style="margin: 0;">
-            Education
-          </button>
+  <div class="w-full bg-white py-12 md:py-20 px-4 md:px-6">
+    <div class="max-w-7xl mx-auto">
+      <!-- About Title -->
+      <h1 class="text-5xl md:text-6xl font-bold mb-12 bg-gradient-to-r from-[#6366f1] to-[#a855f7] bg-clip-text text-transparent text-center pb-4">About Me</h1>
+
+      <!-- Main Row Layout: Story Left, Skills Right -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+        <!-- Story Section Left -->
+        <div>
+          <h2 class="text-3xl font-bold text-gray-900 mb-6">Crafting Digital Experiences</h2>
+          <p class="text-gray-700 text-lg leading-relaxed mb-4">
+            Hi, I'm Marlon, a web developer and WordPress designer who helps businesses build professional, user-friendly websites that attract customers and grow online presence.
+          </p>
+          <p class="text-gray-700 text-lg leading-relaxed mb-4">
+            I specialize in creating fast, mobile-responsive websites with WordPress, Elementor, Laravel and Vue JS making it easy for clients to manage their content and scale their business.
+          </p>
+          <p class="text-gray-700 text-lg leading-relaxed mb-8">
+            When I'm not working on websites, you'll probably find me cycling, playing strategy games, or exploring new ideas in tech. My mix of creativity and problem-solving helps me deliver web solutions that are both functional and visually appealing.
+          </p>
+
+          <div class="flex justify-center items-center sm:flex-row gap-4">
+           <a href="https://drive.google.com/file/d/1P-TE2lcCShPqZ0KuovV6o9uv2PDkGSS5/view?usp=drive_link" target="_blank" class="group relative p-0 md:p-3 block w-fit cursor-pointer">
+              <div class="absolute inset-0 bg-gradient-to-r from-[#6366f1] to-[#a855f7] rounded-full blur opacity-20 group-hover:opacity-40 transition duration-300"></div>
+              <div class="relative rounded-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] px-6 py-3 flex items-center justify-center border border-transparent group-hover:shadow-lg transition-all duration-300">
+                <span class="text-white font-medium transition-colors">Download CV</span>
+              </div>
+            </a>
+
+            <button @click="scrollToContact" class="group relative block w-fit">
+              <div class="absolute inset-0 bg-gradient-to-r from-[#6366f1] to-[#a855f7] rounded-full blur opacity-20 group-hover:opacity-40 transition duration-300"></div>
+              <div class="relative rounded-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] px-8 py-3 flex items-center justify-center border border-transparent group-hover:shadow-lg transition-all duration-300">
+                <span class="text-white font-medium">Contact</span>
+              </div>
+            </button>
+          </div>
         </div>
-  
-        <!-- Tab Content -->
-        <div class="mt-6 w-full border border-gray-600 rounded-xl">
-          <div v-if="activeTab === 'story'" class="flex flex-col-reverse md:flex-row items-center justify-between w-full h-screen p-6 md:px-8 lg:px-12 overflow-hidden " style="height:max-content">
-            <div class="w-full md:w-3/5 max-w-full">
-              <h4 class="font-semibold text-xl text-white text-start">
-                Hi, I’m Marlon, a web developer and WordPress designer who helps businesses build 
-                  professional, user-friendly websites that attract customers and grow online presence.  
 
-                  I specialize in creating fast, mobile-responsive websites with WordPress, Elementor, Laravel and Vue JS making it easy for clients to manage their content and scale their business.  
-
-                  When I’m not working on websites, you’ll probably find me cycling, playing strategy games, 
-                  or exploring new ideas in tech. My mix of creativity and problem-solving helps me deliver 
-                  web solutions that are both functional and visually appealing.  
-               </h4>
-             
-              <div class="flex flex-col md:flex-row  pt-4 gap-4 justify-center items-center">
-
-                <!--CV Button -->
-                <a href="https://drive.google.com/file/d/1P-TE2lcCShPqZ0KuovV6o9uv2PDkGSS5/view?usp=drive_link" target="_blank" class="group relative p-0 md:p-1 lg:p-3 pl-0 block w-fit cursor-pointer">
-                  <div class="absolute inset-0 bg-gradient-to-r from-[#6366f1] to-[#a855f7] rounded-full blur opacity-20 group-hover:opacity-40 transition duration-300"></div>
-                  <div class="relative rounded-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] px-8 py-4 flex items-center justify-center border border-white/10 group-hover:border-white/20 transition-all duration-300">
-                    <span class="text-white font-medium">Download CV</span>
-                  </div>
-                </a>
-
-                <!-- Contact Button -->
-                <button onclick="window.location.href='/contact'" class="group relative p-0 md:p-1 lg:p-3 block  w-fit cursor-pointer">
-                  <div class="absolute inset-0 bg-gradient-to-r from-[#6366f1] to-[#a855f7] rounded-full blur opacity-20 group-hover:opacity-40 transition duration-300"></div>
-                  <div class="relative rounded-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] px-8 py-4 flex items-center justify-center border border-white/10 group-hover:border-white/20 transition-all duration-300">
-                    <span class="text-white font-medium">Contact</span>
-                  </div>
-                </button>
+        <div>
+          <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Skills & Technologies</h2>
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+            <div
+              v-for="(skill, index) in skills"
+              :key="index"
+              class="w-full group p-4 rounded-2xl bg-gray-100 hover:bg-gray-200 transition-all duration-300 ease-in-out flex flex-col items-center justify-center gap-2 hover:scale-105 cursor-pointer shadow-md hover:shadow-lg"
+            >
+              <div class="relative">
+                <div
+                  class="absolute -inset-1 bg-gradient-to-r from-[#6366f1] to-[#a855f7] rounded-full opacity-0 group-hover:opacity-50 blur transition duration-300"
+                ></div>
+                <img
+                  :src="skill.icon"
+                  :alt="skill.name"
+                  class="relative h-12 w-12 md:h-16 md:w-16 transform transition-transform duration-300"
+                />
               </div>
+              <span
+                class="text-gray-700 font-semibold text-xs md:text-sm text-center tracking-wide group-hover:text-gray-900 transition-colors duration-300"
+              >
+                {{ skill.name }}
+              </span>
             </div>
-            <div class="w-full md:w-2/5 flex justify-center max-w-full max-h-full">
-              <img src="../assets/aboutBanner.png" alt="Hero Banner" class="w-80 h-auto" />
-            </div>
-            
-          </div>
-
-
-          <div v-if="activeTab === 'experience'"  class="flex flex-col-reverse md:flex-row items-center justify-between w-full h-screen p-6 md:px-8 lg:px-12 overflow-hidden " style="height:max-content">
-          
-            <div class="w-full md:w-3/5 max-w-full">
-              <div class="flex items-center flex-wrap mb-4">
-                <h3 class="text-lg md:text-xl font-bold text-white">
-                  IFormatLogicITSolutions 
-                  <span class="block sm:inline"> (Full Stack Developer)</span>
-                </h3>
-              </div>
-
-              <ul class="space-y-3">
-                <li class="flex items-center pl-6">
-                  <span class="w-2.5 h-2.5 flex-shrink-0 rounded-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] mr-3"></span>
-                  <p class="text-white text-start">Utilized the Mailchimp API to automate the email marketing process, increasing productivity by 40%
-                    and reducing manual emailing efforts.</p>
-                </li>
-                <li class="flex items-center pl-6">
-                  <span class="w-2.5 h-2.5 flex-shrink-0 rounded-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] mr-3"></span>
-                  <p class="text-white text-start">Incorporated Stripe API and PayPal API to create smooth and secure payment gateways, enhancing
-                    user payment experience and ensuring seamless transactions, leading to a 30% increase in successful
-                    payments.</p>
-                </li>
-                <li class="flex items-center pl-6">
-                  <span class="w-2.5 h-2.5 flex-shrink-0 rounded-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] mr-3"></span>
-                  <p class="text-white text start">Actively collaborating with other web dev members to design and implement website features</p>
-                </li>
-              </ul>
-
-              <div class="flex items-center mt-10 mb-4">
-                <h3 class="text-lg md:text-xl font-bold text-white">Freelance (Full Stack Developer)</h3>
-              </div>
-
-              <ul class="space-y-3">
-                <li class="flex items-center pl-6">
-                  <span class="w-2.5 h-2.5 flex-shrink-0 rounded-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] mr-3"></span>
-                  <p class="text-white text-start">Effectively employed WordPress, Laravel, Vue.js, and Figma to develop dynamic websites and web
-                    applications, ensuring seamless user experiences across diverse projects.</p>
-                </li>
-                <li class="flex items-center pl-6">
-                  <span class="w-2.5 h-2.5 flex-shrink-0 rounded-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] mr-3"></span>
-                  <p class="text-white text-start">Led the effort to enhance the website's speed and accessibility, driving the performance to achieve a
-                    faster load time and improved user experience.</p>
-                </li>
-                <li class="flex items-center pl-6">
-                  <span class="w-2.5 h-2.5 flex-shrink-0 rounded-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] mr-3"></span>
-                  <p class="text-white text start">Utilized HTML5, CSS3, and JavaScript to create responsive and visually appealing user interfaces.</p>
-                </li>
-              </ul>
-
-              
-            </div>
-
-            <div class="w-full md:w-2/5 flex justify-center max-w-full max-h-full">
-              <img src="../assets/aboutBanner.png" alt="Hero Banner" class="w-80 h-auto" />
-            </div>
-
-          </div>
-
-
-          <div v-if="activeTab === 'education'" class="flex flex-col-reverse md:flex-row items-center justify-between w-full h-screen p-6 md:px-8 lg:px-12 overflow-hidden " style="height:max-content">
-
-            <div class="w-full md:w-3/5 max-w-full">
-              <div class="flex items-center mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#6366f1] mr-2" width="24" height="24" viewBox="0 0 24 24">
-                  <path fill="currentColor" d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z" />
-                </svg>
-                <h3 class="text-xl font-bold text-white">Tertiary</h3>
-              </div>
-
-              <ul class="space-y-3">
-                <li class="flex items-center pl-6">
-                  <span class="w-2.5 h-2.5 flex-shrink-0 rounded-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] mr-3"></span>
-                  <p class="text-white text-start">President Ramon Magsaysay State University</p>
-                </li>
-                <li class="flex items-center pl-6">
-                  <span class="w-2.5 h-2.5 flex-shrink-0 rounded-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] mr-3"></span>
-                  <p class="text-white text-start">(Bachelor of Science in Computer Engineering)</p>
-                </li>
-              </ul>
-
-              <div class="flex items-center mb-4 mt-10">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#6366f1] mr-2" width="24" height="24" viewBox="0 0 24 24">
-                  <path fill="currentColor" d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z" />
-                </svg>
-                <h3 class="text-xl font-bold text-white">Secondary</h3>
-              </div>
-
-              <ul class="space-y-3">
-                <li class="flex items-center pl-6">
-                  <span class="w-2.5 h-2.5 flex-shrink-0 rounded-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] mr-3"></span>
-                  <p class="text-white text-start">Guisguis National High School</p>
-                </li>
-              </ul>
-
-              <div class="flex items-center mb-4 mt-10">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#6366f1] mr-2" width="24" height="24" viewBox="0 0 24 24">
-                  <path fill="currentColor" d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z" />
-                </svg>
-                <h3 class="text-xl font-bold text-white">Primary</h3>
-              </div>
-
-              <ul class="space-y-3">
-                <li class="flex items-center pl-6">
-                  <span class="w-2.5 h-2.5 flex-shrink-0 rounded-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] mr-3"></span>
-                  <p class="text-white text-start">Guisguis Elementary School</p>
-                </li>
-              </ul>
-            </div>
-
-            <div class="w-full md:w-2/5 flex justify-center max-w-full max-h-full">
-              <img src="../assets/aboutBanner.png" alt="Hero Banner" class="w-80 h-auto" />
-            </div>
-
           </div>
         </div>
       </div>
     </div>
-  </template>
-  
-  <script>
-  export default {
-    name: 'About',
-    data() {
-      return {
-        activeTab: 'story',
-      };
+  </div>
+</template>
+
+<script>
+import htmlIcon from "../assets/html.svg";
+import cssIcon from "../assets/css.svg";
+import phpIcon from "../assets/php.png";
+import laravelIcon from "../assets/laravel.png";
+import wpIcon from "../assets/wp.jpg";
+import jsIcon from "../assets/javascript.png";
+import vueIcon from "../assets/vue.png";
+import reactIcon from "../assets/reactjs.svg";
+import bootsrapIcon from "../assets/bootstrap.svg";
+import tailwindIcon from "../assets/tailwind.svg";
+import typeScriptIcon from "../assets/typescript.png";
+import nextjsIcon from "../assets/next.webp";
+import supabaseIcon from "../assets/supabase.webp";
+
+export default {
+  name: 'About',
+  data() {
+    return {
+      skills: [
+        { name: "HTML", icon: htmlIcon },
+        { name: "CSS", icon: cssIcon },
+        { name: "PHP", icon: phpIcon },
+        { name: "Laravel", icon: laravelIcon },
+        { name: "WordPress", icon: wpIcon },
+        { name: "JavaScript", icon: jsIcon },
+        { name: "TypeScript", icon: typeScriptIcon },
+        { name: "Vue Js", icon: vueIcon },
+        { name: "React Js", icon: reactIcon },
+        { name: "Next Js", icon: nextjsIcon },
+        { name: "Bootstrap", icon: bootsrapIcon },
+        { name: "Tailwind CSS", icon: tailwindIcon },
+        { name: "Supabase", icon: supabaseIcon },
+      ],
+    };
+  },
+  methods: {
+    scrollToContact() {
+      const element = document.getElementById('contact');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
     },
-  };
-  </script>
-  
-  <style scoped>
-  .tabs {
-    width: 100%;
-    margin: 0 auto;
-  }
-  
-  .tab-button {
-    padding: 12px 20px;
-    background-color: rgba(0, 0, 0, 0.2);
-    color: #ddd;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-    border: none;
-    flex-grow: 1;
-    text-align: center;
-  }
-  
-  .tab-button:hover {
-    background-color: #6366f1;
-    color: #fff;
-  }
-  
-  .tab-button.active {
-    background-color: rgba(99, 102, 241, 0.3);
-    color: #fff;
-    font-weight: bold;
-    backdrop-filter: blur(10px); 
-  }
+  },
+};
+</script>
 
-
-  .tabs .tab-button {
-    background: rgba(0, 0, 0, 0.3); 
-    backdrop-filter: blur(10px); 
-  }
-
-  .tabs .tab-button.active {
-    background: rgba(99, 102, 241, 0.3);
-    backdrop-filter: blur(10px);
-  }
-  
-
+<style scoped>
 </style>
-

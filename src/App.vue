@@ -1,65 +1,21 @@
 <template>
-  <div class="flex min-h-screen">
-    <!-- Sidebar component -->
-    <Sidebar
-      :isSidebarOpen="isSidebarOpen"
-      :isMobile="isMobile"
-      @toggle-sidebar="toggleSidebar"
-    />
-    
-    <!-- Main content area -->
-    <main
-      :class="{
-        'transition-all duration-300': true,
-        'ml-64': isSidebarOpen && !isMobile,
-        'ml-0': !isSidebarOpen || isMobile,
-        'flex-1': true
-      }"
-     class="bg-[#030014] p-8 flex justify-center items-center overflow-hidden">
-    >
-      <router-view />
+  <div class="flex flex-col min-h-screen bg-white">
+    <Navbar />
+    <main class="flex-1">
+      <OnePage />
     </main>
   </div>
 </template>
 
 <script>
-import { ref, onMounted, onUnmounted } from 'vue';
-import Sidebar from './components/sidebar.vue';
+import Navbar from './components/sidebar.vue';
+import OnePage from './views/OnePage.vue';
 
 export default {
   name: 'App',
   components: {
-    Sidebar,
-  },
-  setup() {
-    const isSidebarOpen = ref(window.innerWidth >= 800);
-    const isMobile = ref(false);
-
-    const checkMobile = () => {
-      isMobile.value = window.innerWidth < 800;
-      if (isMobile.value) {
-        isSidebarOpen.value = false;
-      }
-    };
-
-    const toggleSidebar = () => {
-      isSidebarOpen.value = !isSidebarOpen.value;
-    };
-
-    onMounted(() => {
-      checkMobile();
-      window.addEventListener('resize', checkMobile);
-    });
-
-    onUnmounted(() => {
-      window.removeEventListener('resize', checkMobile);
-    });
-
-    return {
-      isSidebarOpen,
-      isMobile,
-      toggleSidebar,
-    };
+    Navbar,
+    OnePage,
   },
 };
 </script>

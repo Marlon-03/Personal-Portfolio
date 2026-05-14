@@ -1,116 +1,133 @@
 <template>
-  <div>
-    <!-- Sidebar container -->
-    <div
-      :class="{
-        'fixed top-0 left-0 h-screen bg-[#151616] flex items-center justify-center flex-col text-white shadow-lg z-50': true,
-        'w-64': true,
-        'transform transition-transform duration-300': true,
-        '-translate-x-full': !isSidebarOpen,
-        'translate-x-0': isSidebarOpen
-      }"
-    >
-      <div class="p-6">
-        <h2 class="px-4 rounded text-3xl font-bold mb-8 ">My Portfolio</h2>
-        <ul class="space-y-2">
-          <li>
-            <router-link to="/" :class="getLinkClass('/')" class="block py-2 px-4 rounded " >Home</router-link>
-          </li>
+  <nav class="sticky top-0 bg-white shadow-sm z-50 border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 py-4">
+      <div class="flex items-center justify-between">
+        <!-- Logo/Name -->
+        <router-link to="#home" @click.prevent="scrollToSection('home')" class="text-xl md:text-2xl font-bold bg-gradient-to-r from-[#6366f1] to-[#a855f7] bg-clip-text text-transparent cursor-pointer hover:opacity-80 transition-opacity">
+          Marlon
+        </router-link>
 
-          <li>
-            <router-link to="/about" :class="getLinkClass('/about')" class="block py-2 px-4 rounded" >About</router-link>
-          </li>
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex items-center space-x-8">
+          <ul class="flex space-x-8">
+            <li>
+              <a href="#home" @click.prevent="scrollToSection('home')" :class="getLinkClass('home')" class="transition-all duration-300">Home</a>
+            </li>
+            <li>
+              <a href="#about" @click.prevent="scrollToSection('about')" :class="getLinkClass('about')" class="transition-all duration-300">About</a>
+            </li>
+            <li>
+              <a href="#projects" @click.prevent="scrollToSection('projects')" :class="getLinkClass('projects')" class="transition-all duration-300">Projects</a>
+            </li>
+            <li>
+              <a href="#contact" @click.prevent="scrollToSection('contact')" :class="getLinkClass('contact')" class="transition-all duration-300">Contact</a>
+            </li>
+          </ul>
+          
+        </div>
 
-          <li>
-            <router-link to="/skills" :class="getLinkClass('/skills')" class="block py-2 px-4 rounded" >Skills</router-link>
-          </li>
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden flex items-center space-x-4">
 
-          <li>
-            <router-link to="/projects" :class="getLinkClass('/projects')" class="block py-2 px-4 rounded" >Projects</router-link>
-          </li>
-
-          <li>
-           <router-link to="/contact" :class="getLinkClass('/contact')" class="block py-2 px-4 rounded" >Contact</router-link>
-          </li>
-        </ul>
+          
+          <button @click="toggleMobileMenu" class="p-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors">
+            <svg v-if="!isMobileMenuOpen" class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+            <svg v-else class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
       </div>
+
+      <!-- Mobile Menu -->
+      <transition name="slide">
+        <div v-if="isMobileMenuOpen" class="md:hidden mt-4 pb-4 border-t border-gray-200 pt-4">
+          <ul class="flex flex-col space-y-3">
+            <li>
+              <a href="#home" @click.prevent="handleMobileNavClick('home')" :class="getLinkClass('home')" class="block py-2 transition-all duration-300">Home</a>
+            </li>
+            <li>
+              <a href="#about" @click.prevent="handleMobileNavClick('about')" :class="getLinkClass('about')" class="block py-2 transition-all duration-300">About</a>
+            </li>
+            <li>
+              <a href="#projects" @click.prevent="handleMobileNavClick('projects')" :class="getLinkClass('projects')" class="block py-2 transition-all duration-300">Projects</a>
+            </li>
+            <li>
+              <a href="#contact" @click.prevent="handleMobileNavClick('contact')" :class="getLinkClass('contact')" class="block py-2 transition-all duration-300">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </transition>
     </div>
-
-    <!-- Mobile overlay backdrop -->
-    <div
-      v-if="isSidebarOpen && isMobile"
-      class="fixed inset-0 bg-black/50 z-40"
-      @click="toggleSidebar"
-    ></div>
-
-    <!-- Toggle button -->
-    <button
-      class="fixed top-4 left-4 z-50 p-3 rounded-lg bg-gray-800 text-white hover:bg-gray-700"
-      @click="toggleSidebar"
-      :class="{ 'transform transition-transform duration-300': true }"
-    >
-      <span v-if="isSidebarOpen">✖</span>
-      <span v-else>☰</span>
-    </button>
-  </div>
+  </nav>
 </template>
 
 <script>
 export default {
-  name: "Sidebar",
-  props: {
-    isSidebarOpen: {
-      type: Boolean,
-      required: true,
-    },
-    isMobile: {
-      type: Boolean,
-      required: true,
-    },
-  },
-  computed: {
-    currentPath() {
-      return this.$route.path;
-    },
+  name: "Navbar",
+  data() {
+    return {
+      activeSection: 'home',
+      isMobileMenuOpen: false,
+      isDarkMode: false,
+    };
   },
   methods: {
-    toggleSidebar() {
-      this.$emit("toggle-sidebar");
+    scrollToSection(sectionId) {
+      this.activeSection = sectionId;
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
     },
-    getLinkClass(targetPath) {
-      return this.currentPath === targetPath
-        ? "gradient-text underline-gradient text-3xl font-bold"
-        : 'text-xl font-semibold text-gray-300 hover:text-white';
+    handleMobileNavClick(sectionId) {
+      this.scrollToSection(sectionId);
+      this.isMobileMenuOpen = false;
     },
+    updateActiveSection() {
+      const sections = ['home', 'about', 'projects', 'contact'];
+      for (let section of sections) {
+        const element = document.getElementById(section);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          if (rect.top <= 100) {
+            this.activeSection = section;
+          }
+        }
+      }
+    },
+    toggleMobileMenu() {
+      this.isMobileMenuOpen = !this.isMobileMenuOpen;
+    },
+    getLinkClass(sectionId) {
+      return this.activeSection === sectionId
+        ? "text-base font-bold bg-gradient-to-r from-[#6366f1] to-[#a855f7] bg-clip-text text-transparent"
+        : 'text-base font-semibold text-gray-700 hover:text-gray-900';
+    },
+  },
+  mounted() {
+    window.addEventListener('scroll', this.updateActiveSection);
+  },
+  unmounted() {
+    window.removeEventListener('scroll', this.updateActiveSection);
   },
 };
 </script>
 
 <style scoped>
-.gradient-text {
-  background: linear-gradient(to right, #6366f1, #a855f7);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.slide-enter-active, .slide-leave-active {
+  transition: all 0.3s ease;
 }
 
-
-.underline-gradient {
-  position: relative;
-}
-.underline-gradient::after {
-  content: '';
-  position: absolute;
-  bottom: -2px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80%;
-  height: 3px;
-  background: linear-gradient(to right, #05cea8, #07ffd0);
-  border-radius: 2px;
-  transition: transform 0.3s ease-in-out;
+.slide-enter-from {
+  opacity: 0;
+  transform: translateY(-10px);
 }
 
-.underline-gradient:hover::after {
-  transform: translateX(-50%) scaleX(1.1);
+.slide-leave-to {
+  opacity: 0;
+  transform: translateY(-10px);
 }
 </style>

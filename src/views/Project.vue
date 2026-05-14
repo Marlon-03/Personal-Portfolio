@@ -13,7 +13,7 @@
                         <img src="../assets/buildovate.png" alt="Buildovate" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"></div>
                         <div class="mt-4 space-y-3 flex-1">
                             <h3 class="text-xl font-semibold bg-gradient-to-r from-blue-200 via-purple-200 to-pink-200 bg-clip-text text-transparent">Buildovate</h3>
-                            <p class="text-gray-300/80 text-sm leading-relaxed line-clamp-2">Contributed to the development of a construction-focused CRM platform.  Implemented backend and frontend features supporting core system workflows  Ensured scalable data handling and smooth user interactions.</p>
+                            <p class="text-gray-700 text-sm leading-relaxed line-clamp-2">Contributed to the development of a construction-focused CRM platform.  Implemented backend and frontend features supporting core system workflows  Ensured scalable data handling and smooth user interactions.</p>
                             
                             <div class="flex flex-wrap gap-2 md:gap-3">
                                 <div class="group relative overflow-hidden px-3 py-2 md:px-4 md:py-2.5 bg-gradient-to-r from-blue-600/10 to-purple-600/10 rounded-xl border border-blue-500/10 hover:border-blue-500/30 transition-all duration-300 cursor-default">

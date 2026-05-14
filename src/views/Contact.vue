@@ -6,26 +6,26 @@
 
       <div class="flex flex-col md:flex-row gap-6">
 
-        <div data-aos="fade-right" data-aos-duration="1200" class="w-full md:w-1/2 bg-white/5 backdrop-blur-xl rounded-3xl shadow-2xl p-5 py-10 sm:p-10 transform transition-all duration-300 hover:shadow-[#6366f1]/10 aos-init aos-animate">
+        <div data-aos="fade-right" data-aos-duration="1200" class="w-full md:w-1/2 bg-gray-50 backdrop-blur-xl rounded-3xl shadow-lg p-5 py-10 sm:p-10 transform transition-all duration-300 hover:shadow-purple-200/20 aos-init aos-animate">
             <div class="flex justify-between items-start mb-8">
                   <div>
                         <h2 class="text-4xl text-start font-bold mb-3 text-transparent bg-clip-text bg-gradient-to-r from-[#6366f1] to-[#a855f7]">Get in Touch</h2>
-                        <p class="text-white mb-6 text-start font-medium">Have something to discuss? Send me a message and let's talk.</p>
+                        <p class="text-gray-700 mb-6 text-start font-medium">Have something to discuss? Send me a message and let's talk.</p>
                   </div>
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-share2 w-10 h-10 text-[#6366f1] opacity-50"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"></line><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"></line></svg>
             </div>
             <form action="https://formspree.io/f/mrgnkqee" method="POST" class="space-y-6">
                   <div data-aos="fade-up" data-aos-delay="100" class="relative group aos-init aos-animate">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user absolute left-4 top-4 w-5 h-5 text-gray-400 group-focus-within:text-[#6366f1] transition-colors"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-                        <input type="text" name="name" placeholder="Your Name" class="w-full p-4 pl-12 bg-white/10 rounded-xl border border-white/20 placeholder-gray-500 text-white focus:outline-none focus:ring-2 focus:ring-[#6366f1]/30 transition-all duration-300 hover:border-[#6366f1]/30 disabled:opacity-50" required="" value="">
+                        <input type="text" name="name" placeholder="Your Name" class="w-full p-4 pl-12 bg-white rounded-xl border border-gray-300 placeholder-gray-400 text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#6366f1]/50 transition-all duration-300 hover:border-gray-400 disabled:opacity-50" required="" value="">
                   </div>
                   <div data-aos="fade-up" data-aos-delay="200" class="relative group aos-init aos-animate">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail absolute left-4 top-4 w-5 h-5 text-gray-400 group-focus-within:text-[#6366f1] transition-colors"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
-                        <input type="email" name="email" placeholder="Your Email" class="w-full p-4 pl-12 bg-white/10 rounded-xl border border-white/20 placeholder-gray-500 text-white focus:outline-none focus:ring-2 focus:ring-[#6366f1]/30 transition-all duration-300 hover:border-[#6366f1]/30 disabled:opacity-50" required="" value="">
+                        <input type="email" name="email" placeholder="Your Email" class="w-full p-4 pl-12 bg-white rounded-xl border border-gray-300 placeholder-gray-400 text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#6366f1]/50 transition-all duration-300 hover:border-gray-400 disabled:opacity-50" required="" value="">
                   </div>
                   <div data-aos="fade-up" data-aos-delay="300" class="relative group aos-init aos-animate">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-square absolute left-4 top-4 w-5 h-5 text-gray-400 group-focus-within:text-[#6366f1] transition-colors"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
-                        <textarea name="message" placeholder="Your Message" class="w-full resize-none p-4 pl-12 bg-white/10 rounded-xl border border-white/20 placeholder-gray-500 text-white focus:outline-none focus:ring-2 focus:ring-[#6366f1]/30 transition-all duration-300 hover:border-[#6366f1]/30 h-[9.9rem] disabled:opacity-50" required=""></textarea>
+                        <textarea name="message" placeholder="Your Message" class="w-full resize-none p-4 pl-12 bg-white rounded-xl border border-gray-300 placeholder-gray-400 text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#6366f1]/50 transition-all duration-300 hover:border-gray-400 h-[9.9rem] disabled:opacity-50" required=""></textarea>
                   </div>
                   <button data-aos="fade-up" data-aos-delay="400" type="submit" class="w-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] text-white py-4 rounded-xl font-semibold transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-[#6366f1]/20 active:scale-[0.98] flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 aos-init aos-animate">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send w-5 h-5"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path><path d="m21.854 2.147-10.94 10.939"></path></svg>Send Message</button>
@@ -35,10 +35,10 @@
 
 
 
-            <div class="w-full md:w-1/2 bg-gradient-to-br from-white/10 to-white/5 rounded-2xl p-6 py-8 backdrop-blur-xl">
+            <div class="w-full md:w-1/2 bg-white rounded-2xl p-6 py-8 shadow-lg">
                   <h3 class="text-xl md:text-2xl font-bold bg-gradient-to-r from-[#6366f1] to-[#a855f7] bg-clip-text text-transparent mb-6 flex items-center gap-2">
                   <span class="inline-block w-4 md:w-8 h-1 bg-indigo-500 rounded-full"></span>Connect With Me</h3>
-                  <p class="text-white mb-6 text-start font-medium">Need an experienced Full Stack Developer to help out? Send me an email to discuss in more detail. You can also connect with me on social media. Feel free to follow me on these platforms.</p>
+                  <p class="text-gray-700 mb-6 text-start font-medium">Need an experienced Full Stack Developer to help out? Send me an email to discuss in more detail. You can also connect with me on social media. Feel free to follow me on these platforms.</p>
                   <div class="flex flex-col gap-4">
                                           
                         <div class="flex flex-col gap-6">
