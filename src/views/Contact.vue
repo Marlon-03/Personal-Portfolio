@@ -1,6 +1,6 @@
 <template>
-    <div class="p-1 md:p-6 w-full bg-white">
-      <h1 class="text-5xl md:text-6xl font-bold mb-12 bg-gradient-to-r from-[#6366f1] to-[#a855f7] bg-clip-text text-transparent text-center pb-4">
+    <div class="w-full py-12 md:py-20 px-3 md:px-6">
+      <h1 class="text-5xl md:text-6xl font-bold  bg-gradient-to-r from-[#6366f1] to-[#a855f7] bg-clip-text text-transparent text-center pb-4">
         Contact Me
       </h1>
 

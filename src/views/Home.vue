@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-center  gap-3 p-1 md:p-6">
+  <div class="flex justify-center  md:py-20 px-3 md:px-6">
     <div class="w-full md:w-3/5 flex justify-center flex-col items-center gap-6">
       <h1   class="text-6xl font-bold mb-4 bg-gradient-to-r from-[#6366f1] to-[#a855f7] bg-clip-text text-transparent">Hi, I'm Marlon</h1>
       <h1 class="text-5xl font-bold mb-4 pb-2">
@@ -10,7 +10,6 @@
       </p>
 
       <div class="flex space-x-4">
-        <!-- LinkedIn -->
         <a href="https://www.linkedin.com/in/marlon-movilla-5254a3289/" target="_blank" class="group relative p-1 md:p-3 block w-fit">
           <div class="absolute inset-0 bg-gradient-to-r from-[#6366f1] to-[#a855f7] rounded-lg blur opacity-20 group-hover:opacity-40 transition duration-300"></div>
           <div class="relative rounded-lg bg-white border border-gray-300 p-3 flex items-center justify-center hover:border-gray-400 transition-all duration-300">
@@ -22,7 +21,6 @@
           </div>
         </a>
 
-        <!-- GitHub -->
         <a href="https://github.com/Marlon-03" target="_blank" class="group relative p-1 md:p-3 block w-fit">
           <div class="absolute inset-0 bg-gradient-to-r from-[#6366f1] to-[#a855f7] rounded-lg blur opacity-20 group-hover:opacity-40 transition duration-300"></div>
           <div class="relative rounded-lg bg-white border border-gray-300 p-3 flex items-center justify-center hover:border-gray-400 transition-all duration-300">
@@ -32,7 +30,6 @@
           </div>
         </a>
 
-        <!-- Facebook -->
         <a href="https://www.facebook.com/marlon.movilla.10" target="_blank" class="group relative p-1 md:p-3 block w-fit">
           <div class="absolute inset-0 bg-gradient-to-r from-[#6366f1] to-[#a855f7] rounded-lg blur opacity-20 group-hover:opacity-40 transition duration-300"></div>
           <div class="relative rounded-lg bg-white border border-gray-300 p-3 flex items-center justify-center hover:border-gray-400 transition-all duration-300">
@@ -42,7 +39,6 @@
           </div>
         </a>
 
-        <!-- Instagram -->
         <a href="https://www.instagram.com/post_marlonely/" target="_blank" class="group relative p-1 md:p-3 block w-fit">
           <div class="absolute inset-0 bg-gradient-to-r from-[#6366f1] to-[#a855f7] rounded-lg blur opacity-20 group-hover:opacity-40 transition duration-300"></div>
           <div class="relative rounded-lg bg-white border border-gray-300 p-3 flex items-center justify-center hover:border-gray-400 transition-all duration-300">
@@ -57,7 +53,6 @@
 
       <div class="flex space-x-4 justify-center items-center">
 
-          <!-- CV Button -->
           <a href="https://drive.google.com/file/d/1P-TE2lcCShPqZ0KuovV6o9uv2PDkGSS5/view?usp=drive_link" target="_blank" class="group relative p-0 md:p-3 block w-fit cursor-pointer">
             <div class="absolute inset-0 bg-gradient-to-r from-[#6366f1] to-[#a855f7] rounded-full blur opacity-20 group-hover:opacity-40 transition duration-300"></div>
             <div class="relative rounded-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] px-6 py-3 flex items-center justify-center border border-transparent group-hover:shadow-lg transition-all duration-300">
@@ -65,7 +60,6 @@
             </div>
           </a>
 
-          <!-- Contact Button -->
           <button
             @click="scrollToContact" class="group relative p-1 md:p-3 block w-fit cursor-pointer">
             <div class="absolute inset-0 bg-gradient-to-r from-[#6366f1] to-[#a855f7] rounded-full blur opacity-20 group-hover:opacity-40 transition duration-300"></div>
@@ -80,15 +74,13 @@
 
 
     <div class="w-full md:w-2/5 flex justify-center items-center">
-      <img src="../assets/hero.svg" alt="Hero Banner" class="w-full h-auto animate-jump" />
+      <img src="../assets/hero.png" alt="Hero Banner" class="w-full h-auto animate-jump" />
     </div>
   </div>
 
-  <!-- Feature Cards -->
   <div class="w-full bg-gray-50 py-20">
     <div class="max-w-7xl mx-auto px-4 md:px-6">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <!-- Clean Code -->
         <div class="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-gray-100">
           <div class="w-12 h-12 bg-gradient-to-r from-[#6366f1] to-[#a855f7] rounded-lg flex items-center justify-center mb-4">
             <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -99,7 +91,6 @@
           <p class="text-gray-600 text-sm">Maintainable & scalable solutions built with best practices</p>
         </div>
 
-        <!-- Performance -->
         <div class="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-gray-100">
           <div class="w-12 h-12 bg-gradient-to-r from-[#6366f1] to-[#a855f7] rounded-lg flex items-center justify-center mb-4">
             <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -110,7 +101,6 @@
           <p class="text-gray-600 text-sm">Fast & optimized applications that deliver results</p>
         </div>
 
-        <!-- Modern UI -->
         <div class="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-gray-100">
           <div class="w-12 h-12 bg-gradient-to-r from-[#6366f1] to-[#a855f7] rounded-lg flex items-center justify-center mb-4">
             <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -121,7 +111,6 @@
           <p class="text-gray-600 text-sm">Pixel-perfect designs that look amazing</p>
         </div>
 
-        <!-- Client First -->
         <div class="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-gray-100">
           <div class="w-12 h-12 bg-gradient-to-r from-[#6366f1] to-[#a855f7] rounded-lg flex items-center justify-center mb-4">
             <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">

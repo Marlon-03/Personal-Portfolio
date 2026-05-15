@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full bg-white py-12 md:py-20 px-3 md:px-6">
+  <div class="w-full py-12 md:py-20 px-3 md:px-6">
     <div class="max-w-7xl mx-auto">
       <h1 class="text-5xl md:text-6xl font-bold mb-12 bg-gradient-to-r from-[#6366f1] to-[#a855f7] bg-clip-text text-transparent text-center pb-4">About Me</h1>
 
@@ -37,7 +37,7 @@
 
         <div>
           <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Skills & Technologies</h2>
-          <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             <div
               v-for="(skill, index) in skills"
               :key="index"
@@ -80,6 +80,9 @@ import tailwindIcon from "../assets/tailwind.svg";
 import typeScriptIcon from "../assets/typescript.png";
 import nextjsIcon from "../assets/next.webp";
 import supabaseIcon from "../assets/supabase.webp";
+import viteIcon from "../assets/vite.svg";
+import Git from "../assets/git.svg";
+import Figma from "../assets/figma.png";
 
 export default {
   name: 'About',
@@ -99,6 +102,9 @@ export default {
         { name: "Bootstrap", icon: bootsrapIcon },
         { name: "Tailwind CSS", icon: tailwindIcon },
         { name: "Supabase", icon: supabaseIcon },
+        { name: "Vite", icon: viteIcon},
+        { name: "Git", icon: Git},
+        { name: "Figma", icon: Figma}
       ],
     };
   },
