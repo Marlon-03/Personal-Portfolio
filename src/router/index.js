@@ -12,6 +12,9 @@ import DixonDental from '../components/dixonDental.vue';
 import NeoLeader from '../components/neoleader.vue';
 import Buildovate from '../components/buildovate.vue';
 import HookScope from '../components/hookScope.vue';
+import GoodWoodCarpentry from '../components/goodWoodCarpentry.vue';
+import SingaGroup from '../components/singa.vue';
+import KaibaConstruction from '../components/kaiba.vue';
 
 const routes = [
   {
@@ -82,6 +85,21 @@ const routes = [
     path: '/project/hookScope',
     name: 'HookScope',
     component: HookScope
+  },
+  {
+    path: '/project/goodWoodCarpentry',
+    name: 'goodWoodCarpentry',
+    component: GoodWoodCarpentry
+  },
+  {
+    path: '/project/singaGroup',
+    name: 'SingaGroup',
+    component: SingaGroup
+  },
+  {
+    path: '/project/kaibaConstruction',
+    name: 'KaibaConstruction',
+    component: KaibaConstruction
   }
 
 ];

@@ -100,6 +100,9 @@ import blogImg from '../assets/blogBanner.webp'
 import shelfwiseImg from '../assets/shelfwiseBanner.webp'
 import artrulsImg from '../assets/museumbanner.webp'
 import travelImg from '../assets/TravelBanner.webp'
+import goodWoodCarpentryImg from '../assets/goodwoodBanner.png'
+import kaibaImg from '../assets/kaibaBanner.png'
+import singaImg from '../assets/singaBanner.png'
 
 export default {
   name: 'Project',
@@ -162,14 +165,36 @@ export default {
           inProgress: false,
         },
         {
-          id: 'personalblog',
-          title: 'Personal Blog',
-          image: blogImg,
-          description: 'Versatile blog web application with dashboards for administrators and users, intuitive category sorting, and robust search functionality.',
-          tags: ['Laravel', 'Vue Js', 'Tailwind CSS', 'MySQL', 'API Integration'],
-          liveUrl: 'https://drive.google.com/drive/folders/1mHdEqQcUoClQlwn9RaqK9y40kU9WQtjc?usp=sharing',
-          liveLabel: 'Preview',
-          detailRoute: '/project/personalBlog',
+          id: 'goodWoodCarpentry',
+          title: 'Good Wood Carpentry',
+          image: goodWoodCarpentryImg,
+          description: 'Professional carpentry business website featuring service portfolios, client testimonials, and contact forms. Optimized for lead generation and mobile experience.',
+          tags: ['Wordpress', 'Elementor', 'PHP', 'Javascript'],
+          liveUrl: 'https://sggoodwood.com/',
+          liveLabel: 'Live Demo',
+          detailRoute: '/project/goodWoodCarpentry',
+          inProgress: false,
+        },
+        {
+          id: 'kaibaConstruction',
+          title: 'Kaiba Construction',
+          image: kaibaImg,
+          description: 'A construction company website with a focus on showcasing projects, services, and contact information.',
+          tags: ['Wordpress', 'Elementor', 'PHP', 'Javascript'],
+          liveUrl: 'https://kaiba.com.sg/',
+          liveLabel: 'Live Demo',
+          detailRoute: '/project/kaibaConstruction',
+          inProgress: false,
+        },
+        {
+          id: 'singaGroup',
+          title: 'Singa Group',
+          image: singaImg,
+          description: 'Furniture and construction company website featuring comprehensive service offerings. Built with WordPress focusing on professional presentation and user experience.',
+          tags: ['Wordpress', 'Elementor', 'PHP', 'Javascript'],
+          liveUrl: 'https://singagroup.com.sg/',
+          liveLabel: 'Live Demo',
+          detailRoute: '/project/singaGroup',
           inProgress: false,
         },
         {
