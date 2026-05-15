@@ -1,12 +1,9 @@
 <template>
-  <div class="w-full bg-white py-12 md:py-20 px-4 md:px-6">
+  <div class="w-full bg-white py-12 md:py-20 px-3 md:px-6">
     <div class="max-w-7xl mx-auto">
-      <!-- About Title -->
       <h1 class="text-5xl md:text-6xl font-bold mb-12 bg-gradient-to-r from-[#6366f1] to-[#a855f7] bg-clip-text text-transparent text-center pb-4">About Me</h1>
 
-      <!-- Main Row Layout: Story Left, Skills Right -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-        <!-- Story Section Left -->
         <div>
           <h2 class="text-3xl font-bold text-gray-900 mb-6">Crafting Digital Experiences</h2>
           <p class="text-gray-700 text-lg leading-relaxed mb-4">
@@ -19,21 +16,23 @@
             When I'm not working on websites, you'll probably find me cycling, playing strategy games, or exploring new ideas in tech. My mix of creativity and problem-solving helps me deliver web solutions that are both functional and visually appealing.
           </p>
 
-          <div class="flex justify-center items-center sm:flex-row gap-4">
-           <a href="https://drive.google.com/file/d/1P-TE2lcCShPqZ0KuovV6o9uv2PDkGSS5/view?usp=drive_link" target="_blank" class="group relative p-0 md:p-3 block w-fit cursor-pointer">
-              <div class="absolute inset-0 bg-gradient-to-r from-[#6366f1] to-[#a855f7] rounded-full blur opacity-20 group-hover:opacity-40 transition duration-300"></div>
-              <div class="relative rounded-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] px-6 py-3 flex items-center justify-center border border-transparent group-hover:shadow-lg transition-all duration-300">
-                <span class="text-white font-medium transition-colors">Download CV</span>
-              </div>
-            </a>
+          <div class="flex space-x-4 justify-center items-center">
 
-            <button @click="scrollToContact" class="group relative block w-fit">
-              <div class="absolute inset-0 bg-gradient-to-r from-[#6366f1] to-[#a855f7] rounded-full blur opacity-20 group-hover:opacity-40 transition duration-300"></div>
-              <div class="relative rounded-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] px-8 py-3 flex items-center justify-center border border-transparent group-hover:shadow-lg transition-all duration-300">
-                <span class="text-white font-medium">Contact</span>
-              </div>
-            </button>
-          </div>
+          <a href="https://drive.google.com/file/d/1P-TE2lcCShPqZ0KuovV6o9uv2PDkGSS5/view?usp=drive_link" target="_blank" class="group relative p-0 md:p-3 block w-fit cursor-pointer">
+            <div class="absolute inset-0 bg-gradient-to-r from-[#6366f1] to-[#a855f7] rounded-full blur opacity-20 group-hover:opacity-40 transition duration-300"></div>
+            <div class="relative rounded-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] px-6 py-3 flex items-center justify-center border border-transparent group-hover:shadow-lg transition-all duration-300">
+              <span class="text-white font-medium transition-colors">Download CV</span>
+            </div>
+          </a>
+
+          <button
+            @click="scrollToContact" class="group relative p-1 md:p-3 block w-fit cursor-pointer">
+            <div class="absolute inset-0 bg-gradient-to-r from-[#6366f1] to-[#a855f7] rounded-full blur opacity-20 group-hover:opacity-40 transition duration-300"></div>
+            <div class="relative rounded-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] px-6 py-3 flex items-center justify-center border border-transparent group-hover:shadow-lg transition-all duration-300">
+              <span class="text-white font-medium transition-colors">Contact</span>
+            </div>
+          </button>
+       </div>
         </div>
 
         <div>
