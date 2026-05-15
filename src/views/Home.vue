@@ -1,6 +1,6 @@
 <template>
   <div class="flex justify-center  md:py-20 px-3 md:px-6">
-    <div class="w-full md:w-3/5 flex justify-center flex-col items-center gap-6">
+    <div class="w-full md:w-3/5 flex flex-col justify-center items-center text-center py-5 gap-6">
       <h1   class="text-6xl font-bold mb-4 bg-gradient-to-r from-[#6366f1] to-[#a855f7] bg-clip-text text-transparent">Hi, I'm Marlon</h1>
       <h1 class="text-5xl font-bold mb-4 pb-2">
         <span class="bg-gradient-to-r from-[#6366f1] to-[#a855f7] bg-clip-text text-transparent">{{ displayText }}</span>
@@ -71,9 +71,7 @@
 
     </div>
 
-
-
-    <div class="w-full md:w-2/5 flex justify-center items-center">
+    <div class="hidden md:flex md:w-2/5 justify-center items-center">
       <img src="../assets/hero.png" alt="Hero Banner" class="w-full h-auto animate-jump" />
     </div>
   </div>
