@@ -87,7 +87,7 @@
             <div class="space-y-6 md:space-y-10 animate-slideInRight">
                 <div class="relative rounded-2xl overflow-hidden border border-gray-200 shadow-lg group">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                    <img src="../assets/goodWoodBanner.png" alt="Good Wood Carpentry" class="w-full  object-cover transform transition-transform duration-700 will-change-transform group-hover:scale-105">
+                    <img src="../assets/goodwoodBanner.png" alt="Good Wood Carpentry" class="w-full  object-cover transform transition-transform duration-700 will-change-transform group-hover:scale-105">
                     <div class="absolute inset-0 border-2 border-gray-300/0 group-hover:border-gray-300/20 transition-colors duration-300 rounded-2xl"></div>
                 </div>
                 <div class="bg-gray-50 backdrop-blur-xl rounded-2xl p-8 border border-gray-200 space-y-6 hover:border-gray-300 transition-colors duration-300 group">
