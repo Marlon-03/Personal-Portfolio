@@ -103,6 +103,7 @@ import travelImg from '../assets/TravelBanner.webp'
 import goodWoodCarpentryImg from '../assets/goodwoodBanner.png'
 import kaibaImg from '../assets/kaibaBanner.png'
 import singaImg from '../assets/singaBanner.png'
+import pondDoseImg from '../assets/PondDoseBanner.png'
 
 export default {
   name: 'Project',
@@ -129,17 +130,6 @@ export default {
           liveUrl: 'https://app.interlinked.se/login',
           liveLabel: 'Live Demo',
           detailRoute: '/project/interlinked',
-          inProgress: false,
-        },
-        {
-          id: 'hookscope',
-          title: 'HookScope',
-          image: hookscopeImg,
-          description: 'Create custom endpoints, capture incoming requests, and inspect every detail in real-time. Perfect for testing and debugging webhooks.',
-          tags: ['NextJS', 'Supabase', 'TypeScript', 'Tailwind CSS'],
-          liveUrl: 'https://hookscope.vercel.app/',
-          liveLabel: 'Live Demo',
-          detailRoute: '/project/hookScope',
           inProgress: false,
         },
         {
@@ -195,6 +185,28 @@ export default {
           liveUrl: 'https://singagroup.com.sg/',
           liveLabel: 'Live Demo',
           detailRoute: '/project/singaGroup',
+          inProgress: false,
+        },
+        {
+          id: 'hookscope',
+          title: 'HookScope',
+          image: hookscopeImg,
+          description: 'Create custom endpoints, capture incoming requests, and inspect every detail in real-time. Perfect for testing and debugging webhooks.',
+          tags: ['NextJS', 'Supabase', 'TypeScript', 'Tailwind CSS'],
+          liveUrl: 'https://hookscope.vercel.app/',
+          liveLabel: 'Live Demo',
+          detailRoute: '/project/hookScope',
+          inProgress: false,
+        },
+        {
+          id: 'pondDose',
+          title: 'PondDose',
+          image: pondDoseImg,
+          description: 'A precision pond salt calculator built for Koi hobbyists. Supports forward calculation (how much salt to add) and reverse calculation (estimating pond volume from a known salt dose), with real-time unit conversion, salinity safety warnings, and a built-in beginner reference guide.',
+          tags: ['NextJS', 'TypeScript', 'Tailwind CSS'],
+          liveUrl: 'https://saltfrequencycalculator.vercel.app/',
+          liveLabel: 'Live Demo',
+          detailRoute: '/project/pondDose',
           inProgress: false,
         },
         {

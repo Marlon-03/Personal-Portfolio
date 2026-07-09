@@ -15,6 +15,7 @@ import HookScope from '../components/hookScope.vue';
 import GoodWoodCarpentry from '../components/goodWoodCarpentry.vue';
 import SingaGroup from '../components/singa.vue';
 import KaibaConstruction from '../components/kaiba.vue';
+import SaltCalculator from '../components/pondDose.vue';
 
 const routes = [
   {
@@ -100,6 +101,11 @@ const routes = [
     path: '/project/kaibaConstruction',
     name: 'KaibaConstruction',
     component: KaibaConstruction
+  },
+  {
+    path: '/project/pondDose',
+    name: 'PondDose',
+    component: SaltCalculator
   }
 
 ];
