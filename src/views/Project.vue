@@ -103,7 +103,7 @@ import travelImg from '../assets/TravelBanner.webp'
 import goodWoodCarpentryImg from '../assets/goodwoodBanner.png'
 import kaibaImg from '../assets/kaibaBanner.png'
 import singaImg from '../assets/singaBanner.png'
-import pondDoseImg from '../assets/PondDoseBanner.png'
+import pondDoseImg from '../assets/pondDoseBanner.png'
 
 export default {
   name: 'Project',
