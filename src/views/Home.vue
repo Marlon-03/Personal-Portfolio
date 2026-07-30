@@ -72,7 +72,19 @@
     </div>
 
     <div class="hidden md:flex md:w-2/5 justify-center items-center">
-      <img src="../assets/hero.png" alt="Hero Banner" class="w-full h-auto animate-jump" />
+      <div class="relative flex w-full max-w-md items-center justify-center">
+        <div class="absolute inset-8 rounded-full bg-[#6366f1]/20 blur-3xl"></div>
+        <div class="absolute inset-0 rounded-full border border-white/10 shadow-[0_0_80px_rgba(168,85,247,0.18)]"></div>
+        <div class="relative aspect-square w-[320px] lg:w-[380px] rounded-full bg-gradient-to-br from-[#6366f1] via-[#818cf8] to-[#a855f7] p-2 shadow-2xl">
+          <div class="h-full w-full overflow-hidden rounded-full border-4 border-white/20 bg-slate-950">
+            <img
+              src="../assets/Profile.png"
+              alt="Marlon profile portrait"
+              class="h-full w-full object-cover object-center scale-105"
+            />
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -211,8 +223,5 @@
   }
 }
 
-.animate-jump {
-  animation: jump 1s ease-in-out infinite;
-}
   </style>
   

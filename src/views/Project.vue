@@ -4,10 +4,34 @@
       Portfolio Showcase
     </h1>
 
+    <div class="flex flex-wrap items-center justify-center gap-3 md:gap-4 pb-8 md:pb-10">
+      <button
+        v-for="tab in categoryTabs"
+        :key="tab.key"
+        type="button"
+        @click="selectCategory(tab.key)"
+        class="group relative overflow-hidden rounded-full p-0 inline-flex items-center justify-center transition-all duration-300"
+        :class="activeCategory === tab.key
+          ? 'shadow-lg shadow-purple-500/25 scale-[1.02]'
+          : 'opacity-90 hover:opacity-100'"
+      >
+        <div class="absolute inset-0 bg-gradient-to-r from-[#6366f1] to-[#a855f7] rounded-full blur opacity-20 group-hover:opacity-40 transition duration-300"></div>
+        <div
+          class="relative rounded-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] px-6 py-3 flex items-center justify-center border transition-all duration-300"
+          :class="activeCategory === tab.key
+            ? 'border-white/20 shadow-lg shadow-purple-500/25'
+            : 'border-transparent group-hover:shadow-lg'"
+        >
+          <span class="text-white font-medium transition-colors">{{ tab.label }}</span>
+          <span class="ml-2 rounded-full bg-white/15 px-2 py-0.5 text-xs text-white/90">{{ tab.count }}</span>
+        </div>
+      </button>
+    </div>
+
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
       <div
-        v-for="project in projects"
+        v-for="project in displayedProjects"
         :key="project.id"
         class="group relative w-full"
       >
@@ -87,6 +111,22 @@
       </div>
 
     </div>
+
+    <div
+      v-if="showViewMore"
+      class="flex justify-center pt-10"
+    >
+      <button
+        type="button"
+        @click="viewMore"
+        class="group relative p-0 md:p-3 block w-fit cursor-pointer transition-all duration-300"
+      >
+        <div class="absolute inset-0 bg-gradient-to-r from-[#6366f1] to-[#a855f7] rounded-full blur opacity-20 group-hover:opacity-40 transition duration-300"></div>
+        <div class="relative rounded-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] px-6 py-3 flex items-center justify-center border border-transparent group-hover:shadow-lg transition-all duration-300">
+          <span class="text-white font-medium transition-colors">View More</span>
+        </div>
+      </button>
+    </div>
   </div>
 </template>
 
@@ -96,10 +136,8 @@ import interlinkImg from '../assets/InterlinkedBanner.webp'
 import hookscopeImg from '../assets/HookScopeBanner.png'
 import dentalImg from '../assets/dentalbanner.webp'
 import neoleaderImg from '../assets/neoleaderBanner.png'
-import blogImg from '../assets/blogBanner.webp'
 import shelfwiseImg from '../assets/shelfwiseBanner.webp'
 import artrulsImg from '../assets/museumbanner.webp'
-import travelImg from '../assets/TravelBanner.webp'
 import goodWoodCarpentryImg from '../assets/goodwoodBanner.png'
 import kaibaImg from '../assets/kaibaBanner.png'
 import singaImg from '../assets/singaBanner.png'
@@ -109,6 +147,8 @@ export default {
   name: 'Project',
   data() {
     return {
+      activeCategory: 'all',
+      visibleCount: 9,
       projects: [
         {
           id: 'buildovate',
@@ -116,6 +156,7 @@ export default {
           image: buildovateImg,
           description: 'Contributed to the development of a construction-focused CRM platform. Implemented backend and frontend features supporting core system workflows.',
           tags: ['Laravel', 'Nuxt JS', 'Vue JS', 'Tailwind CSS', 'MySQL', 'Third-party API Integration'],
+          category: 'project',
           liveUrl: 'https://www.app.buildovate.com/login',
           liveLabel: 'Live Demo',
           detailRoute: '/project/buildovate',
@@ -127,6 +168,7 @@ export default {
           image: interlinkImg,
           description: 'Contributed to the development of a professional web application. The platform enables marketers to create and manage articles while purchasing channels directly from publishers.',
           tags: ['Laravel', 'JQuery', 'Bootstrap', 'MariaDB', 'Third-party API Integration'],
+          category: 'project',
           liveUrl: 'https://app.interlinked.se/login',
           liveLabel: 'Live Demo',
           detailRoute: '/project/interlinked',
@@ -138,6 +180,7 @@ export default {
           image: dentalImg,
           description: 'Professional website for Rockingham Smile Dental Clinic built using WordPress and Elementor. Fully mobile-responsive with SEO best practices.',
           tags: ['Wordpress', 'Elementor', 'Javascript'],
+          category: 'website',
           liveUrl: 'https://dixonrddental.com.au/',
           liveLabel: 'Live Demo',
           detailRoute: '/project/dixonDental',
@@ -149,6 +192,7 @@ export default {
           image: neoleaderImg,
           description: 'Custom WordPress website with Elementor, WooCommerce integration, optimized for speed, mobile responsiveness, and user experience.',
           tags: ['Wordpress', 'Elementor', 'Woocommerce', 'Javascript'],
+          category: 'website',
           liveUrl: 'https://neoleadercrane.com/',
           liveLabel: 'Live Demo',
           detailRoute: '/project/neoleader',
@@ -160,6 +204,7 @@ export default {
           image: goodWoodCarpentryImg,
           description: 'Professional carpentry business website featuring service portfolios, client testimonials, and contact forms. Optimized for lead generation and mobile experience.',
           tags: ['Wordpress', 'Elementor', 'PHP', 'Javascript'],
+          category: 'website',
           liveUrl: 'https://sggoodwood.com/',
           liveLabel: 'Live Demo',
           detailRoute: '/project/goodWoodCarpentry',
@@ -171,6 +216,7 @@ export default {
           image: kaibaImg,
           description: 'A construction company website with a focus on showcasing projects, services, and contact information.',
           tags: ['Wordpress', 'Elementor', 'PHP', 'Javascript'],
+          category: 'website',
           liveUrl: 'https://kaiba.com.sg/',
           liveLabel: 'Live Demo',
           detailRoute: '/project/kaibaConstruction',
@@ -182,6 +228,7 @@ export default {
           image: singaImg,
           description: 'Furniture and construction company website featuring comprehensive service offerings. Built with WordPress focusing on professional presentation and user experience.',
           tags: ['Wordpress', 'Elementor', 'PHP', 'Javascript'],
+          category: 'website',
           liveUrl: 'https://singagroup.com.sg/',
           liveLabel: 'Live Demo',
           detailRoute: '/project/singaGroup',
@@ -193,6 +240,7 @@ export default {
           image: hookscopeImg,
           description: 'Create custom endpoints, capture incoming requests, and inspect every detail in real-time. Perfect for testing and debugging webhooks.',
           tags: ['NextJS', 'Supabase', 'TypeScript', 'Tailwind CSS'],
+          category: 'zapier',
           liveUrl: 'https://hookscope.vercel.app/',
           liveLabel: 'Live Demo',
           detailRoute: '/project/hookScope',
@@ -204,6 +252,7 @@ export default {
           image: pondDoseImg,
           description: 'A precision pond salt calculator built for Koi hobbyists. Supports forward calculation (how much salt to add) and reverse calculation (estimating pond volume from a known salt dose), with real-time unit conversion, salinity safety warnings, and a built-in beginner reference guide.',
           tags: ['NextJS', 'TypeScript', 'Tailwind CSS'],
+          category: 'project',
           liveUrl: 'https://saltfrequencycalculator.vercel.app/',
           liveLabel: 'Live Demo',
           detailRoute: '/project/pondDose',
@@ -215,6 +264,7 @@ export default {
           image: shelfwiseImg,
           description: 'Comprehensive library management system with roles for super admin, admin, and users. Allows borrowing and returning books with admin inventory tools.',
           tags: ['Laravel', 'Livewire', 'Bootstrap', 'MySQL'],
+          category: 'project',
           liveUrl: 'https://drive.google.com/drive/folders/1SnvzfUgy1h9S-W63n3vThjgIrZjk4dLY?usp=sharing',
           liveLabel: 'Preview',
           detailRoute: '/project/shelfwise',
@@ -226,24 +276,72 @@ export default {
           image: artrulsImg,
           description: 'Inspired by the museum of modern art, this is a simple static landing page website. Fully responsive and mobile friendly.',
           tags: ['HTML 5', 'CSS 3', 'Bootstrap'],
+          category: 'website',
           liveUrl: 'https://marlon-03.github.io/artruls/',
           liveLabel: 'Live Demo',
           detailRoute: '/project/artruls',
           inProgress: false,
         },
-        {
-          id: 'travel',
-          title: 'Travel Itinerary',
-          image: travelImg,
-          description: 'A travel itinerary for your group to create and share the experience with friends or a group.',
-          tags: [],
-          liveUrl: '',
-          liveLabel: '',
-          detailRoute: null,
-          inProgress: true,
-        },
+
       ]
     }
-  }
+  },
+  computed: {
+    categoryTabs() {
+      const seenCategories = new Set()
+      const tabs = [{ key: 'all', label: 'All' }]
+
+      this.projects.forEach((project) => {
+        if (!project.category || seenCategories.has(project.category)) {
+          return
+        }
+
+        seenCategories.add(project.category)
+        tabs.push({
+          key: project.category,
+          label: this.formatCategoryLabel(project.category),
+        })
+      })
+
+      return tabs.map((tab) => ({
+        ...tab,
+        count: tab.key === 'all'
+          ? this.projects.length
+          : this.projects.filter((project) => project.category === tab.key).length,
+      }))
+    },
+    filteredProjects() {
+      if (this.activeCategory === 'all') {
+        return this.projects
+      }
+
+      return this.projects.filter((project) => project.category === this.activeCategory)
+    },
+    displayedProjects() {
+      return this.filteredProjects.slice(0, this.visibleCount)
+    },
+    showViewMore() {
+      return this.filteredProjects.length > this.displayedProjects.length
+    },
+  },
+  methods: {
+    selectCategory(category) {
+      this.activeCategory = category
+      this.visibleCount = 9
+    },
+    viewMore() {
+      this.visibleCount = this.filteredProjects.length
+    },
+    formatCategoryLabel(category) {
+      const labels = {
+        project: 'Project',
+        website: 'Websites',
+        zapier: 'Zapier',
+        make: 'Make',
+      }
+
+      return labels[category] || category
+    },
+  },
 }
 </script>
