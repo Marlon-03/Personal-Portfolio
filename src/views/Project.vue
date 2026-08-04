@@ -1,8 +1,17 @@
 <template>
   <div class="w-full py-12 md:py-20 px-3 md:px-6">
-    <h1 class="text-5xl md:text-6xl font-bold bg-gradient-to-r from-[#6366f1] to-[#a855f7] bg-clip-text text-transparent text-center pb-7 md:pb-20">
-      Portfolio Showcase
-    </h1>
+
+    <div class="max-w-7xl mx-auto">
+      <div class="relative flex items-center justify-center h-28 sm:h-36 md:h-44 lg:h-52 mb-10 md:mb-16">
+        <span class="bg-title">
+          PORTFOLIO
+        </span>
+        <h1 class="relative z-10 text-4xl sm:text-5xl md:text-6xl font-bold text-[#13213C]">
+          Portfolio Showcase
+        </h1>
+
+      </div>
+    </div>
 
     <div class="flex flex-wrap items-center justify-center gap-3 md:gap-4 pb-8 md:pb-10">
       <button
@@ -12,18 +21,18 @@
         @click="selectCategory(tab.key)"
         class="group relative overflow-hidden rounded-full p-0 inline-flex items-center justify-center transition-all duration-300"
         :class="activeCategory === tab.key
-          ? 'shadow-lg shadow-purple-500/25 scale-[1.02]'
+          ? 'shadow-lg shadow-brand-accent/20 scale-[1.02]'
           : 'opacity-90 hover:opacity-100'"
       >
-        <div class="absolute inset-0 bg-gradient-to-r from-[#6366f1] to-[#a855f7] rounded-full blur opacity-20 group-hover:opacity-40 transition duration-300"></div>
+        <div class="absolute inset-0 rounded-full bg-white blur opacity-90 group-hover:opacity-100 transition duration-300"></div>
         <div
-          class="relative rounded-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] px-6 py-3 flex items-center justify-center border transition-all duration-300"
+          class="relative rounded-full bg-white px-6 py-3 flex items-center justify-center border transition-all duration-300 shadow-sm"
           :class="activeCategory === tab.key
-            ? 'border-white/20 shadow-lg shadow-purple-500/25'
-            : 'border-transparent group-hover:shadow-lg'"
+            ? 'border-brand-accent/30 shadow-lg'
+            : 'border-[#E8DDC8] group-hover:border-brand-accent/25 group-hover:shadow-md'"
         >
-          <span class="text-white font-medium transition-colors">{{ tab.label }}</span>
-          <span class="ml-2 rounded-full bg-white/15 px-2 py-0.5 text-xs text-white/90">{{ tab.count }}</span>
+          <span class="text-[#13213C] font-medium transition-colors">{{ tab.label }}</span>
+          <span class="ml-2 rounded-full bg-brand-accent/15 px-2 py-0.5 text-xs text-brand-accent">{{ tab.count }}</span>
         </div>
       </button>
     </div>
@@ -35,8 +44,8 @@
         :key="project.id"
         class="group relative w-full"
       >
-        <div class="relative overflow-hidden h-full rounded-xl bg-gradient-to-br from-slate-900/90 to-slate-800/90 backdrop-blur-lg border border-white/10 shadow-2xl transition-all duration-300 hover:shadow-purple-500/20">
-          <div class="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-purple-500/10 to-pink-500/10 opacity-50 group-hover:opacity-70 transition-opacity duration-300"></div>
+        <div class="relative overflow-hidden h-full rounded-xl bg-white backdrop-blur-lg border border-[#E8DDC8] shadow-[0_10px_30px_rgba(19,33,60,0.06)] transition-all duration-300 hover:shadow-[0_16px_36px_rgba(19,33,60,0.09)]">
+          <div class="absolute inset-0 bg-gradient-to-br from-white via-[#FBF7F1] to-[#F4EBD9] opacity-90 group-hover:opacity-100 transition-opacity duration-300"></div>
 
           <div class="relative p-5 z-10 h-full flex flex-col">
 
@@ -49,10 +58,10 @@
             </div>
 
             <div class="mt-4 space-y-3 flex-1">
-              <h3 class="text-xl font-semibold bg-gradient-to-r from-blue-200 via-purple-200 to-pink-200 bg-clip-text text-transparent">
+              <h3 class="text-xl font-semibold text-[#13213C]">
                 {{ project.title }}
               </h3>
-              <p class="text-gray-300/80 text-sm leading-relaxed line-clamp-2">
+              <p class="text-[#4B5563] text-sm leading-relaxed line-clamp-2">
                 {{ project.description }}
               </p>
 
@@ -60,12 +69,12 @@
                 <div
                   v-for="tag in project.tags"
                   :key="tag"
-                  class="group relative overflow-hidden px-3 py-2 md:px-4 md:py-2.5 bg-gradient-to-r from-blue-600/10 to-purple-600/10 rounded-xl border border-blue-500/10 hover:border-blue-500/30 transition-all duration-300 cursor-default"
+                  class="group relative overflow-hidden px-3 py-2 md:px-4 md:py-2.5 bg-[#FBF7F1] rounded-xl border border-[#E8DDC8] hover:border-[#1A2B56]/20 transition-all duration-300 cursor-default"
                 >
-                  <div class="absolute inset-0 bg-gradient-to-r from-blue-500/0 to-purple-500/0 group-hover:from-blue-500/10 group-hover:to-purple-500/10 transition-all duration-500"></div>
+                  <div class="absolute inset-0 bg-[#1A2B56]/0 group-hover:bg-[#1A2B56]/5 transition-all duration-500"></div>
                   <div class="relative flex items-center gap-1.5 md:gap-2">
-                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-package w-3.5 h-3.5 md:w-4 md:h-4 text-blue-400 group-hover:text-blue-300 transition-colors"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"></path><path d="M12 22V12"></path><path d="m3.3 7 7.703 4.734a2 2 0 0 0 1.994 0L20.7 7"></path><path d="m7.5 4.27 9 5.15"></path></svg>
-                    <span class="text-xs md:text-sm font-medium text-blue-300/90 group-hover:text-blue-200 transition-colors">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-package w-3.5 h-3.5 md:w-4 md:h-4 text-[#1A2B56] group-hover:text-[#13213C] transition-colors"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"></path><path d="M12 22V12"></path><path d="m3.3 7 7.703 4.734a2 2 0 0 0 1.994 0L20.7 7"></path><path d="m7.5 4.27 9 5.15"></path></svg>
+                    <span class="text-xs md:text-sm font-medium text-[#1A2B56] group-hover:text-[#13213C] transition-colors">
                       {{ tag }}
                     </span>
                   </div>
@@ -80,7 +89,7 @@
                 :href="project.liveUrl"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="inline-flex items-center space-x-2 text-blue-400 hover:text-blue-300 transition-colors duration-200"
+                class="inline-flex items-center space-x-2 text-[#1A2B56] hover:text-[#13213C] transition-colors duration-200"
               >
                 <span class="text-sm font-medium">{{ project.liveLabel }}</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link w-4 h-4">
@@ -91,14 +100,14 @@
               <router-link
                 v-if="!project.inProgress"
                 :to="project.detailRoute"
-                class="inline-flex items-center space-x-2 px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10 text-white/90 transition-all duration-200 hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-purple-500/50"
+                class="inline-flex items-center space-x-2 px-4 py-2 rounded-lg bg-[#1A2B56] hover:bg-[#13213C] text-white transition-all duration-200 hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-[#1A2B56]/20"
               >
                 <span class="text-sm font-medium">Details</span>
               </router-link>
 
               <span
                 v-else
-                class="inline-flex items-center space-x-2 px-4 py-2 rounded-lg bg-white/5 text-white/90 opacity-50 pointer-events-none"
+                class="inline-flex items-center space-x-2 px-4 py-2 rounded-lg bg-[#E8DDC8] text-[#1A2B56] opacity-70 pointer-events-none"
               >
                 <span class="text-sm font-medium">In Progress</span>
               </span>
@@ -106,7 +115,7 @@
             </div>
           </div>
 
-          <div class="absolute inset-0 border border-white/0 group-hover:border-purple-500/50 rounded-xl transition-colors duration-300 -z-50"></div>
+          <div class="absolute inset-0 border border-transparent group-hover:border-[#1A2B56]/10 rounded-xl transition-colors duration-300 -z-50"></div>
         </div>
       </div>
 
@@ -121,9 +130,9 @@
         @click="viewMore"
         class="group relative p-0 md:p-3 block w-fit cursor-pointer transition-all duration-300"
       >
-        <div class="absolute inset-0 bg-gradient-to-r from-[#6366f1] to-[#a855f7] rounded-full blur opacity-20 group-hover:opacity-40 transition duration-300"></div>
-        <div class="relative rounded-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] px-6 py-3 flex items-center justify-center border border-transparent group-hover:shadow-lg transition-all duration-300">
-          <span class="text-white font-medium transition-colors">View More</span>
+        <div class="absolute inset-0 rounded-full bg-brand-accent blur opacity-15 group-hover:opacity-25 transition duration-300"></div>
+        <div class="relative rounded-full bg-white px-6 py-3 flex items-center justify-center border border-brand-accent/25 group-hover:border-brand-accent/40 group-hover:shadow-lg transition-all duration-300 shadow-sm">
+          <span class="text-[#13213C] font-medium transition-colors">View More</span>
         </div>
       </button>
     </div>

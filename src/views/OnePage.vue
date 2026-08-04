@@ -1,30 +1,36 @@
 <template>
-  <div class="w-full bg-white">
-    <section id="home" class="min-h-screen flex items-center justify-center bg-white">
+  <div class="relative w-full overflow-hidden bg-[#F7F1E8] text-[#13213C]">
+    <div class="pointer-events-none absolute inset-0 overflow-hidden">
+      <div class="absolute -top-32 left-1/2 h-96 w-96 -translate-x-1/2 rounded-full bg-[#1A2B56]/8 blur-3xl"></div>
+      <div class="absolute top-[35rem] -left-32 h-[28rem] w-[28rem] rounded-full bg-[#E3B65B]/10 blur-3xl"></div>
+      <div class="absolute top-[70rem] -right-32 h-[30rem] w-[30rem] rounded-full bg-white/30 blur-3xl"></div>
+    </div>
+
+    <section id="home" class="relative min-h-screen flex items-center justify-center bg-transparent scroll-mt-24">
       <div class="w-full max-w-7xl px-2">
         <Home />
       </div>
     </section>
 
-    <section id="about" class="min-h-screen flex items-center justify-center bg-white">
+    <section id="about" class="relative min-h-screen flex items-center justify-center bg-transparent scroll-mt-24">
       <div class="w-full max-w-7xl px-2">
         <About />
       </div>
     </section>
 
-    <section id="projects" class="min-h-screen flex items-center justify-center bg-white">
+    <section id="projects" class="relative min-h-screen flex items-center justify-center bg-transparent scroll-mt-24">
       <div class="w-full max-w-7xl px-2">
         <Project />
       </div>
     </section>
 
-    <section id="experience" class="min-h-screen flex items-center justify-center bg-white">
+    <section id="experience" class="relative min-h-screen flex items-center justify-center bg-transparent scroll-mt-24">
       <div class="w-full max-w-7xl px-2">
         <Experience />
       </div>
     </section>
 
-    <section id="contact" class="min-h-screen flex items-center justify-center bg-white">
+    <section id="contact" class="relative min-h-screen flex items-center justify-center bg-transparent scroll-mt-24">
       <div class="w-full max-w-7xl px-2">
         <Contact />
       </div>

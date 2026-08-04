@@ -1,9 +1,19 @@
 <template>
-  <nav class="sticky top-0 bg-white shadow-sm z-50 border-b border-gray-200">
+  <nav :class="navClasses">
     <div class="max-w-7xl mx-auto px-4 md:px-6 py-4">
       <div class="flex items-center justify-between">
-        <router-link to="#home" @click.prevent="scrollToSection('home')" class="text-xl md:text-2xl font-bold bg-gradient-to-r from-[#6366f1] to-[#a855f7] bg-clip-text text-transparent cursor-pointer hover:opacity-80 transition-opacity">
-          Marlon
+        <router-link
+          to="#home"
+          @click.prevent="scrollToSection('home')"
+          :class="[
+            'inline-flex items-center gap-2 transition-opacity hover:opacity-80',
+            isProjectPage
+              ? 'text-xl md:text-2xl font-bold text-brand-accent cursor-pointer'
+              : 'text-xl md:text-2xl font-bold text-[#13213C] cursor-pointer'
+          ]"
+        >
+          <img :src="logo" alt="Marlon logo" class="h-8 w-8 md:h-10 md:w-10 object-contain" />
+          <span>Marlon</span>
         </router-link>
 
         <div class="hidden md:flex items-center space-x-8">
@@ -29,11 +39,11 @@
 
         <div class="md:hidden flex items-center space-x-4">
 
-          <button @click="toggleMobileMenu" class="p-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors">
-            <svg v-if="!isMobileMenuOpen" class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <button @click="toggleMobileMenu" :class="isProjectPage ? 'p-2 rounded-lg bg-brand-soft hover:bg-brand-surface transition-colors border border-white/10' : 'p-2 rounded-lg bg-white border border-[#E8DDC8] hover:border-[#1A2B56]/20 transition-colors shadow-sm'">
+            <svg v-if="!isMobileMenuOpen" :class="isProjectPage ? 'w-6 h-6 text-white' : 'w-6 h-6 text-[#13213C]'" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
             </svg>
-            <svg v-else class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg v-else :class="isProjectPage ? 'w-6 h-6 text-white' : 'w-6 h-6 text-[#13213C]'" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
             </svg>
           </button>
@@ -41,7 +51,7 @@
       </div>
 
       <transition name="slide">
-        <div v-if="isMobileMenuOpen" class="md:hidden mt-4 pb-4 border-t border-gray-200 pt-4">
+        <div v-if="isMobileMenuOpen" :class="isProjectPage ? 'md:hidden mt-4 pb-4 border-t border-white/10 pt-4' : 'md:hidden mt-4 pb-4 border-t border-[#E8DDC8] pt-4'">
           <ul class="flex flex-col space-y-3">
             <li>
               <a href="#home" @click.prevent="handleMobileNavClick('home')" :class="getLinkClass('home')" class="block py-2 transition-all duration-300">Home</a>
@@ -66,14 +76,27 @@
 </template>
 
 <script>
+import logo from '../assets/logo.png';
+
 export default {
   name: "Navbar",
   data() {
     return {
+      logo,
       activeSection: 'home',
       isMobileMenuOpen: false,
       isDarkMode: false,
     };
+  },
+  computed: {
+    isProjectPage() {
+      return this.$route.path.startsWith('/project');
+    },
+    navClasses() {
+      return this.isProjectPage
+        ? 'sticky top-0 bg-brand-primary shadow-sm z-50 border-b border-white/10'
+        : 'sticky top-0 bg-white/85 backdrop-blur-md shadow-sm z-50 border-b border-[#E8DDC8]';
+    },
   },
   methods: {
     scrollToSection(sectionId) {
@@ -103,9 +126,15 @@ export default {
       this.isMobileMenuOpen = !this.isMobileMenuOpen;
     },
     getLinkClass(sectionId) {
+      if (this.isProjectPage) {
+        return this.activeSection === sectionId
+          ? 'text-base font-bold text-brand-accent'
+          : 'text-base font-semibold text-white/75 hover:text-white';
+      }
+
       return this.activeSection === sectionId
-        ? "text-base font-bold bg-gradient-to-r from-[#6366f1] to-[#a855f7] bg-clip-text text-transparent"
-        : 'text-base font-semibold text-gray-700 hover:text-gray-900';
+        ? 'text-base font-bold text-[#1A2B56]'
+        : 'text-base font-semibold text-[#4B5563] hover:text-[#13213C]';
     },
   },
   mounted() {
