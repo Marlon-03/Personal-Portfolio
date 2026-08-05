@@ -151,6 +151,7 @@ import goodWoodCarpentryImg from '../assets/goodwoodBanner.png'
 import kaibaImg from '../assets/kaibaBanner.png'
 import singaImg from '../assets/singaBanner.png'
 import pondDoseImg from '../assets/pondDoseBanner.png'
+import personalBlogImg from '../assets/blogBanner.webp'
 
 export default {
   name: 'Project',
@@ -165,8 +166,8 @@ export default {
           image: buildovateImg,
           description: 'Contributed to the development of a construction-focused CRM platform. Implemented backend and frontend features supporting core system workflows.',
           tags: ['Laravel', 'Nuxt JS', 'Vue JS', 'Tailwind CSS', 'MySQL', 'Third-party API Integration'],
-          category: 'project',
-          liveUrl: 'https://www.app.buildovate.com/login',
+          category: 'application',
+          liveUrl: 'https://app.buildovate.com/login',
           liveLabel: 'Live Demo',
           detailRoute: '/project/buildovate',
           inProgress: false,
@@ -177,7 +178,7 @@ export default {
           image: interlinkImg,
           description: 'Contributed to the development of a professional web application. The platform enables marketers to create and manage articles while purchasing channels directly from publishers.',
           tags: ['Laravel', 'JQuery', 'Bootstrap', 'MariaDB', 'Third-party API Integration'],
-          category: 'project',
+          category: 'application',
           liveUrl: 'https://app.interlinked.se/login',
           liveLabel: 'Live Demo',
           detailRoute: '/project/interlinked',
@@ -249,7 +250,7 @@ export default {
           image: hookscopeImg,
           description: 'Create custom endpoints, capture incoming requests, and inspect every detail in real-time. Perfect for testing and debugging webhooks.',
           tags: ['NextJS', 'Supabase', 'TypeScript', 'Tailwind CSS'],
-          category: 'zapier',
+          category: 'application',
           liveUrl: 'https://hookscope.vercel.app/',
           liveLabel: 'Live Demo',
           detailRoute: '/project/hookScope',
@@ -261,7 +262,7 @@ export default {
           image: pondDoseImg,
           description: 'A precision pond salt calculator built for Koi hobbyists. Supports forward calculation (how much salt to add) and reverse calculation (estimating pond volume from a known salt dose), with real-time unit conversion, salinity safety warnings, and a built-in beginner reference guide.',
           tags: ['NextJS', 'TypeScript', 'Tailwind CSS'],
-          category: 'project',
+          category: 'application',
           liveUrl: 'https://saltfrequencycalculator.vercel.app/',
           liveLabel: 'Live Demo',
           detailRoute: '/project/pondDose',
@@ -273,10 +274,22 @@ export default {
           image: shelfwiseImg,
           description: 'Comprehensive library management system with roles for super admin, admin, and users. Allows borrowing and returning books with admin inventory tools.',
           tags: ['Laravel', 'Livewire', 'Bootstrap', 'MySQL'],
-          category: 'project',
+          category: 'application',
           liveUrl: 'https://drive.google.com/drive/folders/1SnvzfUgy1h9S-W63n3vThjgIrZjk4dLY?usp=sharing',
           liveLabel: 'Preview',
           detailRoute: '/project/shelfwise',
+          inProgress: false,
+        },
+        {
+          id: 'personalBlog',
+          title: 'Personal Blog',
+          image: personalBlogImg,
+          description: 'A modern full-stack blogging application built with Vue.js on the frontend and Laravel on the backend. This project demonstrates proficiency in creating responsive web applications with real-time data synchronization, secure user authentication, and comprehensive content management. The application features a clean, intuitive interface for readers and a robust admin panel for authors to manage their blog posts efficiently.',
+          tags: ['Vue.js', 'Laravel', 'Tailwind CSS', 'MySQL', 'RESTful API'],
+          category: 'application',
+          liveUrl: 'https://drive.google.com/drive/folders/1mHdEqQcUoClQlwn9RaqK9y40kU9WQtjc?usp=sharing',
+          liveLabel: 'Preview',
+          detailRoute: '/project/personalBlog',
           inProgress: false,
         },
         {
@@ -343,7 +356,7 @@ export default {
     },
     formatCategoryLabel(category) {
       const labels = {
-        project: 'Project',
+        application: 'Applications',
         website: 'Websites',
         zapier: 'Zapier',
         make: 'Make',
