@@ -152,6 +152,9 @@ import kaibaImg from '../assets/kaibaBanner.png'
 import singaImg from '../assets/singaBanner.png'
 import pondDoseImg from '../assets/pondDoseBanner.png'
 import personalBlogImg from '../assets/blogBanner.webp'
+import constructionCrmImg from '../assets/constructionCRM.png'
+import proposalAutomationImg from '../assets/proposalAutomation.png'
+import contentRepurposingImg from '../assets/contentRepurposing.png'
 
 export default {
   name: 'Project',
@@ -302,6 +305,42 @@ export default {
           liveUrl: 'https://marlon-03.github.io/artruls/',
           liveLabel: 'Live Demo',
           detailRoute: '/project/artruls',
+          inProgress: false,
+        },
+        {
+          id: 'zapConstructionCrm',
+          title: 'Construction CRM Automation for Roofing Contractors',
+          image: constructionCrmImg,
+          description: 'A comprehensive CRM automation solution designed specifically for roofing contractors. This system streamlines project management, client communication, and workflow automation, enhancing operational efficiency and customer satisfaction.',
+          tags: ['Zapier', 'Asana', 'Google Drive', 'Gmail'],
+          category: 'zapier',
+          liveUrl: '',
+          liveLabel: '',
+          detailRoute: '/project/constructionCrm',
+          inProgress: false,
+        },
+        {
+          id: 'zapProposalAutomation',
+          title: 'AI Sales Qualification & Proposal Automation',
+          image: proposalAutomationImg,
+          description: 'An automated proposal generation system designed to streamline the quoting process for roofing contractors. This solution reduces manual effort, minimizes errors, and accelerates response times.',
+          tags: ['Zapier', 'Google Forms', 'Google Docs', 'Gmail', 'Slack', 'OpenAI'],
+          category: 'zapier',
+          liveUrl: '',
+          liveLabel: '',
+          detailRoute: '/project/proposalAutomation',
+          inProgress: false,
+        },
+        {
+          id: 'zapContentRepurposing',
+          title: 'AI Content Repurposing Automation',
+          image: contentRepurposingImg,
+          description: 'An AI-powered content repurposing automation system that transforms existing content into various formats for different platforms. This tool enhances content reach and engagement by efficiently adapting content to suit diverse audience preferences.',
+          tags: ['Zapier', 'Google Drive', 'Instagram', 'Facebook', 'Slack', 'Google Sheets'],
+          category: 'zapier',
+          liveUrl: '',
+          liveLabel: '',
+          detailRoute: '/project/contentRepurposing',
           inProgress: false,
         },
 

@@ -2,7 +2,7 @@
   <div class="flex justify-center px-3 md:px-6 py-16 md:py-24">
     <div class="w-full md:w-3/5 flex flex-col justify-center items-center text-center py-5 gap-6">
       <h1 class="text-5xl md:text-6xl font-bold mb-2 text-[#13213C]">Hi, I'm Marlon</h1>
-      <h1 class="text-4xl md:text-5xl font-semibold mb-2 pb-2 text-brand-accent">
+      <h1 class="inline-flex min-w-[9ch] justify-center text-4xl md:text-5xl font-semibold mb-2 pb-2 text-brand-accent">
         <span>{{ displayText }}</span>
       </h1>
       <p class="max-w-2xl text-[#4B5563] text-lg md:text-xl leading-relaxed">
@@ -174,6 +174,10 @@
         } else if (this.isDeleting && this.charIndex === 0) {
           this.isDeleting = false;
           this.wordIndex = (this.wordIndex + 1) % this.words.length; 
+          this.charIndex = 1;
+          this.currentText = this.words[this.wordIndex].substring(0, this.charIndex);
+          setTimeout(this.type, 120);
+          return;
         }
   
         const speed = this.isDeleting ? 80 : 120;

@@ -16,6 +16,9 @@ import GoodWoodCarpentry from '../components/goodWoodCarpentry.vue';
 import SingaGroup from '../components/singa.vue';
 import KaibaConstruction from '../components/kaiba.vue';
 import SaltCalculator from '../components/pondDose.vue';
+import ConstructionCrm from '../components/zapConstructionCrm.vue';
+import ProposalAutomation from '../components/zapProposalAutomation.vue'
+import ContentRepurposing from '../components/zapContentRepurposing.vue'
 
 const routes = [
   {
@@ -106,7 +109,23 @@ const routes = [
     path: '/project/pondDose',
     name: 'PondDose',
     component: SaltCalculator
+  },
+  {
+    path: '/project/constructionCrm',
+    name: 'constructionCrm',
+    component: ConstructionCrm
+  },
+  {
+    path: '/project/proposalAutomation',
+    name: 'ProposalAutomation',
+    component: ProposalAutomation
+  },
+  {
+    path: '/project/contentRepurposing',
+    name: 'ContentRepurposing',
+    component: ContentRepurposing
   }
+
 
 ];
 
