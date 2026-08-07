@@ -13,8 +13,6 @@
                     <span>Back</span>
                 </router-link>
                 <div class="flex items-center space-x-1 md:space-x-2 text-sm md:text-base text-[#4B5563]">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-3 h-3 md:w-4 md:h-4"><path d="m9 18 6-6-6-6"></path></svg>
-                    <span class="text-[#13213C] truncate">Automations</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-3 h-3 md:w-4 md:h-4"><path d="m9 18 6-6-6-6"></path></svg>
                     <span class="text-[#13213C] truncate">Construction CRM Automation</span>
                 </div>

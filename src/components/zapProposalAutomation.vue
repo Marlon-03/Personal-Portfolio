@@ -13,8 +13,6 @@
                     <span>Back</span>
                 </router-link>
                 <div class="flex items-center space-x-1 md:space-x-2 text-sm md:text-base text-[#4B5563]">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-3 h-3 md:w-4 md:h-4"><path d="m9 18 6-6-6-6"></path></svg>
-                    <span class="text-[#13213C] truncate">Automations</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-3 h-3 md:w-4 md:h-4"><path d="m9 18 6-6-6-6"></path></svg>
                     <span class="text-[#13213C] truncate">AI Sales Qualification & Proposal Automation</span>
                 </div>
@@ -42,7 +40,7 @@
                             <div class="bg-[#F7F1E8] p-1.5 md:p-2 rounded-full">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code-xml text-[#1A2B56] w-4 h-4 md:w-6 md:h-6"><path d="m18 16 4-4-4-4"></path><path d="m6 8-4 4 4 4"></path><path d="m14.5 4-5 16"></path></svg>
                             </div>
-                            <div class="flex-grow"><div class="text-lg md:text-xl font-semibold text-[#1A2B56]">7</div>
+                            <div class="flex-grow"><div class="text-lg md:text-xl font-semibold text-[#1A2B56]">6</div>
                                 <div class="text-[10px] md:text-xs text-[#4B5563]">Technology Used</div>
                             </div>
                         </div>
@@ -164,7 +162,7 @@ export default {
     data() {
         return {
             proposalAutomationImg,
-            technologies: ['Zapier', 'AI by Zapier', 'Google Forms', 'Google Docs', 'Gmail', 'Slack'],
+            technologies: ['Zapier', 'OpenAI', 'Google Forms', 'Google Docs', 'Gmail', 'Slack'],
             features: [
                 'Captures new project inquiries submitted through Google Forms.',
                 'Uses AI to evaluate leads based on project requirements, budget, timeline, and business goals.',
