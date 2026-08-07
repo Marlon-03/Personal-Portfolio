@@ -8,7 +8,7 @@
 
         <div class="relative max-w-7xl mx-auto my-6 md:my-10 px-4 md:px-6 py-8 md:py-16 bg-white min-h-screen rounded-3xl shadow-2xl border border-[#E8DDC8] overflow-hidden">
             <div class="flex items-center space-x-2 md:space-x-4 mb-8 md:mb-12 animate-fadeIn">
-                <router-link to="/projects" class="group inline-flex items-center space-x-1.5 md:space-x-2 px-3 md:px-5 py-2 md:py-2.5 bg-[#FBF7F1] hover:bg-[#F3EBDD] rounded-xl text-[#13213C] transition-all duration-300 border border-[#E8DDC8] hover:border-[#1A2B56]/20 text-sm md:text-base shadow-sm">
+                <router-link to="/" class="group inline-flex items-center space-x-1.5 md:space-x-2 px-3 md:px-5 py-2 md:py-2.5 bg-[#FBF7F1] hover:bg-[#F3EBDD] rounded-xl text-[#13213C] transition-all duration-300 border border-[#E8DDC8] hover:border-[#1A2B56]/20 text-sm md:text-base shadow-sm">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left w-4 h-4 md:w-5 md:h-5 group-hover:-translate-x-1 transition-transform"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg>
                     <span>Back</span>
                 </router-link>

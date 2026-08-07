@@ -204,7 +204,7 @@ export default {
           title: 'Neoleader',
           image: neoleaderImg,
           description: 'Custom WordPress website with Elementor, WooCommerce integration, optimized for speed, mobile responsiveness, and user experience.',
-          tags: ['Wordpress', 'Elementor', 'Woocommerce', 'Javascript'],
+          tags: ['Wordpress', 'Elementor', 'Woocommerce', 'PHP', 'Javascript'],
           category: 'website',
           liveUrl: 'https://neoleadercrane.com/',
           liveLabel: 'Live Demo',
