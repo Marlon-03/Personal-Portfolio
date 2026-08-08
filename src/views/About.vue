@@ -16,10 +16,10 @@
         <div class="rounded-3xl border border-[#D8CCB8] bg-white/80 p-6 md:p-8 backdrop-blur-sm shadow-sm">
           <h2 class="text-3xl font-bold text-[#13213C] mb-6">Crafting Digital Experiences</h2>
           <p class="text-[#4B5563] text-lg leading-relaxed mb-4">
-            Hi, I'm Marlon, a web developer and WordPress designer who helps businesses build professional, user-friendly websites that attract customers and grow online presence.
+            Hi, I'm Marlon, a Full-Stack Developer and AI Workflow Automation Specialist who helps businesses build professional, user-friendly websites that attract customers and grow online presence.
           </p>
           <p class="text-[#4B5563] text-lg leading-relaxed mb-4">
-            I specialize in creating fast, mobile-responsive websites with WordPress, Elementor, Laravel and Vue JS making it easy for clients to manage their content and scale their business.
+            I specialize in creating fast, mobile-responsive websites with WordPress, Elementor, Laravel, and Vue JS, making it easy for clients to manage their content and scale their business. I also build AI-powered workflow automations using tools like Zapier, connecting forms, emails, CRMs, and other systems so clients can run their business without manual busywork.
           </p>
           <p class="text-[#4B5563] text-lg leading-relaxed mb-8">
             When I'm not working on websites, you'll probably find me cycling, playing strategy games, or exploring new ideas in tech. My mix of creativity and problem-solving helps me deliver web solutions that are both functional and visually appealing.

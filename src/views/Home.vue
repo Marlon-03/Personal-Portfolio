@@ -1,12 +1,15 @@
 <template>
-  <div class="flex justify-center px-3 md:px-6 py-16 md:py-24">
+  <div class="flex flex-col md:flex-row justify-center items-center px-3 md:px-6 py-16 md:py-24 gap-10 md:gap-0">
     <div class="w-full md:w-3/5 flex flex-col justify-center items-center text-center py-5 gap-6">
       <h1 class="text-5xl md:text-6xl font-bold mb-2 text-[#13213C]">Hi, I'm Marlon</h1>
       <h1 class="inline-flex min-w-[9ch] justify-center text-4xl md:text-5xl font-semibold mb-2 pb-2 text-brand-accent">
         <span>{{ displayText }}</span>
       </h1>
-      <p class="max-w-2xl text-[#4B5563] text-lg md:text-xl leading-relaxed">
-        Creating Innovative, Functional, and User-Friendly Websites for Digital Solutions.
+      <p class="max-w-2xl text-[#4B5563] text-lg md:text-xl leading-relaxed font-medium">
+        Helping Service-Based Businesses Simplify The Way They Work Through Automation & Business Systems
+      </p>
+      <p class="max-w-2xl text-[#4B5563] text-base md:text-lg leading-relaxed">
+        I build innovative, user-friendly websites, and connect them with AI-powered automation, so your business runs smoothly behind the scenes. No more missed follow-ups, scattered customer information, or repetitive manual work.
       </p>
 
       <div class="flex space-x-4">
@@ -51,7 +54,15 @@
         </a>
       </div>
 
-      <div class="flex space-x-4 justify-center items-center">
+      <div class="flex flex-col md:flex-row gap-3 md:gap-4 justify-center items-center">
+
+          <button
+            @click="scrollToProjects" class="group relative p-1 md:p-3 block w-fit cursor-pointer">
+            <div class="absolute inset-0 rounded-full bg-[#1A2B56] blur opacity-10 group-hover:opacity-20 transition duration-300"></div>
+            <div class="relative rounded-full bg-[#1A2B56] px-6 py-3 flex items-center justify-center border border-[#1A2B56]/15 group-hover:border-[#1A2B56]/30 group-hover:shadow-lg transition-all duration-300 shadow-sm">
+              <span class="text-white font-medium transition-colors">Projects</span>
+            </div>
+          </button>
 
           <a href="https://drive.google.com/file/d/1eNnZPL-uFRub5_9DUOiu2fmfvQTQ81Ue/view?usp=sharing" target="_blank" class="group relative p-0 md:p-3 block w-fit cursor-pointer">
             <div class="absolute inset-0 rounded-full bg-[#1A2B56] blur opacity-10 group-hover:opacity-20 transition duration-300"></div>
@@ -71,10 +82,10 @@
 
     </div>
 
-    <div class="hidden md:flex md:w-2/5 justify-center items-center relative">
+    <div class="flex md:w-2/5 justify-center items-center relative">
       <div class="relative flex w-full max-w-md items-center justify-center">
         <div class="absolute inset-8 rounded-full bg-[#1A2B56]/8 blur-3xl"></div>
-        <div class="relative aspect-square w-[320px] lg:w-[380px] rounded-full bg-white p-2 shadow-[0_20px_60px_rgba(19,33,60,0.14)] border border-[#D8CCB8]">
+        <div class="relative aspect-square w-[240px] md:w-[320px] lg:w-[380px] rounded-full bg-white p-2 shadow-[0_20px_60px_rgba(19,33,60,0.14)] border border-[#D8CCB8]">
           <div class="h-full w-full overflow-hidden rounded-full border-4 border-[#E8DDC8] bg-white">
             <img
               src="../assets/Profile.png"
@@ -126,11 +137,13 @@
         <div class="p-6 bg-brand-surface rounded-lg shadow-sm hover:shadow-md transition-shadow border border-white/10">
           <div class="w-12 h-12 bg-brand-accent rounded-lg flex items-center justify-center mb-4">
             <svg class="w-6 h-6 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
+              <rect x="4" y="4" width="16" height="16" rx="2" stroke-width="2"></rect>
+              <rect x="9" y="9" width="6" height="6" stroke-width="2"></rect>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 2v2M9 2v2M15 20v2M9 20v2M20 15h2M20 9h2M2 15h2M2 9h2"></path>
             </svg>
           </div>
-          <h3 class="text-lg font-semibold text-white mb-2">Client First</h3>
-          <p class="text-white/70 text-sm">Solutions that fit your unique needs</p>
+          <h3 class="text-lg font-semibold text-white mb-2">AI & Automation</h3>
+          <p class="text-white/70 text-sm">Smart workflows that save time and streamline repetitive tasks</p>
         </div>
       </div>
     </div>
@@ -143,7 +156,7 @@
     name: 'Home',
     data() {
       return {
-        words: ["Developer", "Designer", "Creator"],
+        words: ["Developer", "AI & Automation Specialist", "Designer", "Creator"],
         currentText: "", 
         wordIndex: 0,
         charIndex: 0, 
@@ -194,6 +207,12 @@
           element.scrollIntoView({ behavior: 'smooth' });
         }
       },
+      scrollToProjects() {
+        const element = document.getElementById('projects')
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' })
+        }
+      }
     },
     computed: {
       displayText() {
