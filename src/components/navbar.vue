@@ -44,6 +44,17 @@
 
             <li>
               <a
+                href="#services"
+                @click.prevent="scrollToSection('services')"
+                :class="getLinkClass('services')"
+                class="transition-all text-lg duration-300"
+              >
+                Services
+              </a>
+            </li>
+
+            <li>
+              <a
                 href="#projects"
                 @click.prevent="scrollToSection('projects')"
                 :class="getLinkClass('projects')"
@@ -147,6 +158,17 @@
 
             <li>
               <a
+                href="#services"
+                @click.prevent="handleMobileNavClick('services')"
+                :class="getLinkClass('services')"
+                class="block py-2 transition-all duration-300"
+              >
+                Services
+              </a>
+            </li>
+
+            <li>
+              <a
                 href="#projects"
                 @click.prevent="handleMobileNavClick('projects')"
                 :class="getLinkClass('projects')"
@@ -217,7 +239,7 @@ export default {
     },
 
     updateActiveSection() {
-      const sections = ["home", "about", "projects", "experience", "contact"];
+      const sections = ["home", "about", "services", "projects", "experience", "contact"];
 
       for (const section of sections) {
         const element = document.getElementById(section);

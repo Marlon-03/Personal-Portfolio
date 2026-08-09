@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col md:flex-row justify-center items-center px-3 md:px-6 py-16 md:py-24 gap-10 md:gap-0">
+  <div class="flex flex-col md:flex-row justify-center items-center px-3 md:px-6 pt-16 md:pt-24 gap-10 md:gap-0">
     <div class="w-full md:w-3/5 flex flex-col justify-center items-center text-center py-5 gap-6">
       <h1 class="text-5xl md:text-6xl font-bold mb-2 text-[#13213C]">Hi, I'm Marlon</h1>
       <h1 class="inline-flex min-w-[9ch] justify-center text-4xl md:text-5xl font-semibold mb-2 pb-2 text-brand-accent">
@@ -97,58 +97,6 @@
       </div>
     </div>
   </div>
-
-  <div class="w-full py-20">
-    <div class="max-w-7xl mx-auto px-4 md:px-6">
-      <div class="mb-8 flex justify-center">
-        <span class="rounded-full border border-brand-accent/30 bg-brand-accent/10 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.32em] text-brand-accent">What I bring</span>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div class="p-6 bg-brand-surface rounded-lg shadow-sm hover:shadow-md transition-shadow border border-white/10">
-          <div class="w-12 h-12 bg-brand-accent rounded-lg flex items-center justify-center mb-4">
-            <svg class="w-6 h-6 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
-            </svg>
-          </div>
-          <h3 class="text-lg font-semibold text-white mb-2">Clean Code</h3>
-          <p class="text-white/70 text-sm">Maintainable & scalable solutions built with best practices</p>
-        </div>
-
-        <div class="p-6 bg-brand-surface rounded-lg shadow-sm hover:shadow-md transition-shadow border border-white/10">
-          <div class="w-12 h-12 bg-brand-accent rounded-lg flex items-center justify-center mb-4">
-            <svg class="w-6 h-6 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-            </svg>
-          </div>
-          <h3 class="text-lg font-semibold text-white mb-2">Performance</h3>
-          <p class="text-white/70 text-sm">Fast & optimized applications that deliver results</p>
-        </div>
-
-        <div class="p-6 bg-brand-surface rounded-lg shadow-sm hover:shadow-md transition-shadow border border-white/10">
-          <div class="w-12 h-12 bg-brand-accent rounded-lg flex items-center justify-center mb-4">
-            <svg class="w-6 h-6 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path>
-            </svg>
-          </div>
-          <h3 class="text-lg font-semibold text-white mb-2">Modern UI</h3>
-          <p class="text-white/70 text-sm">Pixel-perfect designs that look amazing</p>
-        </div>
-
-        <div class="p-6 bg-brand-surface rounded-lg shadow-sm hover:shadow-md transition-shadow border border-white/10">
-          <div class="w-12 h-12 bg-brand-accent rounded-lg flex items-center justify-center mb-4">
-            <svg class="w-6 h-6 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <rect x="4" y="4" width="16" height="16" rx="2" stroke-width="2"></rect>
-              <rect x="9" y="9" width="6" height="6" stroke-width="2"></rect>
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 2v2M9 2v2M15 20v2M9 20v2M20 15h2M20 9h2M2 15h2M2 9h2"></path>
-            </svg>
-          </div>
-          <h3 class="text-lg font-semibold text-white mb-2">AI & Automation</h3>
-          <p class="text-white/70 text-sm">Smart workflows that save time and streamline repetitive tasks</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
   </template>
   
   <script>

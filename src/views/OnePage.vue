@@ -18,6 +18,12 @@
       </div>
     </section>
 
+    <section id="services" class="relative min-h-screen flex items-center justify-center bg-transparent scroll-mt-24">
+      <div class="w-full max-w-7xl px-2">
+        <Services />
+      </div>
+    </section>
+
     <section id="projects" class="relative min-h-screen flex items-center justify-center bg-transparent scroll-mt-24">
       <div class="w-full max-w-7xl px-2">
         <Project />
@@ -41,6 +47,7 @@
 <script>
 import Home from './Home.vue';
 import About from './About.vue';
+import Services from './Services.vue';
 import Project from './Project.vue';
 import Experience from './Experience.vue';
 import Contact from './Contact.vue';
@@ -50,6 +57,7 @@ export default {
   components: {
     Home,
     About,
+    Services,
     Project,
     Experience,
     Contact,
