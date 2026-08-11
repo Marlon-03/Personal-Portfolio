@@ -42,7 +42,7 @@
           </div>
         </a>
 
-        <a href="https://www.instagram.com/post_marlonely/" target="_blank" class="group relative p-1 md:p-3 block w-fit">
+        <a href="https://www.instagram.com/marlon_web_dev/" target="_blank" class="group relative p-1 md:p-3 block w-fit">
           <div class="absolute inset-0 rounded-lg bg-[#1A2B56] blur opacity-10 group-hover:opacity-20 transition duration-300"></div>
           <div class="relative rounded-lg bg-[#1A2B56] border border-[#1A2B56]/15 p-3 flex items-center justify-center hover:border-[#1A2B56]/30 transition-all duration-300 shadow-sm">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram w-6 h-6 text-white transition-colors">

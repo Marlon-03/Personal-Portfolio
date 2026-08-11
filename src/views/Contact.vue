@@ -49,7 +49,7 @@
                   <div class="flex flex-col gap-4">
                                           
                         <div class="flex flex-col gap-4">
-                              <a href="https://www.instagram.com/post_marlonely/" target="_blank" rel="noopener noreferrer" class="group relative flex items-center gap-3 p-4 rounded-xl bg-[#FBF7F1] border border-[#E8DDC8] hover:border-[#1A2B56]/20 overflow-hidden transition-all duration-300">
+                              <a href="https://www.instagram.com/marlon_web_dev/" target="_blank" rel="noopener noreferrer" class="group relative flex items-center gap-3 p-4 rounded-xl bg-[#FBF7F1] border border-[#E8DDC8] hover:border-[#1A2B56]/20 overflow-hidden transition-all duration-300">
                                     <div class="absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-300 bg-[#1A2B56]"></div>
                                     <div class="relative flex items-center justify-center">
                                           <div class="relative p-2 rounded-lg">

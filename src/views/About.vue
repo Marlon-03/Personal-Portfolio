@@ -142,6 +142,7 @@ import slackIcon from "../assets/slack.png";
 import notionIcon from "../assets/notion.png";
 import openaiIcon from "../assets/openai.png";
 import apiIcon from "../assets/api.png";
+import ghlIcon from "../assets/ghl.png";
 
 export default {
   name: 'About',
@@ -168,6 +169,7 @@ export default {
         { name: "Zapier", icon: zapierIcon },
         { name: "Make", icon: makeIcon },
         { name: "n8n", icon: n8nIcon },
+        { name: "GHL", icon: ghlIcon },
         { name: "Airtable", icon: airtableIcon },
         { name: "Asana", icon: asanaIcon },
         { name: "Slack", icon: slackIcon },
