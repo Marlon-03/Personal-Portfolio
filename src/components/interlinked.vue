@@ -61,11 +61,6 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link relative w-4 h-4 md:w-5 md:h-5 group-hover:rotate-12 transition-transform"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
                             <span class="relative font-medium">Preview</span>
                         </a>
-                        <a href="https://app.interlinked.se/login" target="_blank" rel="noopener noreferrer" class="group relative inline-flex items-center space-x-1.5 md:space-x-2 px-4 md:px-8 py-2.5 md:py-4 bg-[#1A2B56] hover:bg-[#13213C] text-white rounded-xl transition-all duration-300 border border-[#1A2B56]/20 hover:border-[#1A2B56]/40 backdrop-blur-xl overflow-hidden text-sm md:text-base shadow-sm">
-                            <div class="absolute inset-0 translate-y-[100%] bg-[#E3B65B]/20 transition-transform duration-300 group-hover:translate-y-[0%]"></div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link relative w-4 h-4 md:w-5 md:h-5 group-hover:rotate-12 transition-transform"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
-                            <span class="relative font-medium">Live Demo</span>
-                        </a>
                     </div>
 
                     <div class="space-y-4 md:space-y-6">
