@@ -14,14 +14,14 @@
                 </router-link>
                 <div class="flex items-center space-x-1 md:space-x-2 text-sm md:text-base text-[#4B5563]">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-3 h-3 md:w-4 md:h-4"><path d="m9 18 6-6-6-6"></path></svg>
-                    <span class="text-[#13213C] truncate">AI Personal Portfolio Assistant</span>
+                    <span class="text-[#13213C] truncate">E-commerce Inventory & AI Low-Stock Automation</span>
                 </div>
             </div>
 
             <div class="grid lg:grid-cols-2 gap-8 md:gap-16">
                 <div class="space-y-6 md:space-y-10 animate-slideInLeft">
                     <div class="space-y-4 md:space-y-6">
-                        <h1 class="text-3xl md:text-6xl font-bold text-[#1A2B56] leading-tight pb-3">AI Personal Portfolio Assistant</h1>
+                        <h1 class="text-3xl md:text-6xl font-bold text-[#1A2B56] leading-tight pb-3">E-commerce Inventory & AI Low-Stock Automation</h1>
                         <div class="relative h-1 w-16 md:w-24">
                             <div class="absolute inset-0 bg-[#E3B65B] rounded-full animate-pulse"></div>
                             <div class="absolute inset-0 bg-[#1A2B56] rounded-full blur-sm opacity-30"></div>
@@ -30,7 +30,7 @@
 
                     <div class="prose max-w-none">
                         <p class="text-base md:text-lg text-[#4B5563] leading-relaxed">
-                            AI-powered portfolio assistant that gives visitors a conversational way to explore my skills, experience, projects, and background. It uses a structured portfolio knowledge base and Make AI Agent to provide relevant answers directly through an interactive chat interface.
+                            Make-powered AI inventory monitoring and alerting workflow that automatically detects low-stock products, evaluates restocking priority with Gemini AI, updates inventory records, and alerts the team when immediate action is needed.
                         </p>
                     </div>
 
@@ -40,7 +40,7 @@
                             <div class="bg-[#F7F1E8] p-1.5 md:p-2 rounded-full">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code-xml text-[#1A2B56] w-4 h-4 md:w-6 md:h-6"><path d="m18 16 4-4-4-4"></path><path d="m6 8-4 4 4 4"></path><path d="m14.5 4-5 16"></path></svg>
                             </div>
-                            <div class="flex-grow"><div class="text-lg md:text-xl font-semibold text-[#1A2B56]">7</div>
+                            <div class="flex-grow"><div class="text-lg md:text-xl font-semibold text-[#1A2B56]">6</div>
                                 <div class="text-[10px] md:text-xs text-[#4B5563]">Technology Used</div>
                             </div>
                         </div>
@@ -76,7 +76,7 @@
                 <div class="space-y-6 md:space-y-10 animate-slideInRight">
                     <div class="relative rounded-2xl overflow-hidden border border-[#E8DDC8] shadow-lg group">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                        <img :src="aiAssistantImg" alt="AI Personal Portfolio Assistant" class="w-full object-cover transform transition-transform duration-700 will-change-transform group-hover:scale-105">
+                        <img :src="makeEcommerceImg" alt="E-commerce Inventory & AI Low-Stock Automation" class="w-full object-cover transform transition-transform duration-700 will-change-transform group-hover:scale-105">
                         <div class="absolute inset-0 border-2 border-[#1A2B56]/0 group-hover:border-[#1A2B56]/20 transition-colors duration-300 rounded-2xl"></div>
                     </div>
 
@@ -107,13 +107,14 @@
                         The Problem
                     </h3>
                     <p class="text-sm md:text-base text-[#4B5563] leading-relaxed">
-                        Traditional portfolio websites mainly provide static information, requiring visitors to manually browse different sections to find specific details about a developer's skills, experience, or projects.
+                        E-commerce businesses can lose sales when products unexpectedly run out of stock. Manually checking inventory, identifying products that need urgent restocking, and notifying the team can be time-consuming and prone to delays.
                     </p>
                     <ul class="list-none space-y-2">
-                        <li class="flex items-start gap-3 text-sm md:text-base text-[#4B5563]"><span class="mt-2 h-2 w-2 rounded-full bg-[#E3B65B]"></span><span>Visitors have to manually search through portfolio sections</span></li>
-                        <li class="flex items-start gap-3 text-sm md:text-base text-[#4B5563]"><span class="mt-2 h-2 w-2 rounded-full bg-[#E3B65B]"></span><span>Relevant information can be difficult to find quickly</span></li>
-                        <li class="flex items-start gap-3 text-sm md:text-base text-[#4B5563]"><span class="mt-2 h-2 w-2 rounded-full bg-[#E3B65B]"></span><span>Static pages provide limited interaction</span></li>
-                        <li class="flex items-start gap-3 text-sm md:text-base text-[#4B5563]"><span class="mt-2 h-2 w-2 rounded-full bg-[#E3B65B]"></span><span>Visitors may leave without discovering relevant experience or projects</span></li>
+                        <li class="flex items-start gap-3 text-sm md:text-base text-[#4B5563]"><span class="mt-2 h-2 w-2 rounded-full bg-[#E3B65B]"></span><span>Manual inventory monitoring</span></li>
+                        <li class="flex items-start gap-3 text-sm md:text-base text-[#4B5563]"><span class="mt-2 h-2 w-2 rounded-full bg-[#E3B65B]"></span><span>Delayed identification of critical stock levels</span></li>
+                        <li class="flex items-start gap-3 text-sm md:text-base text-[#4B5563]"><span class="mt-2 h-2 w-2 rounded-full bg-[#E3B65B]"></span><span>No automated prioritization of restocking needs</span></li>
+                        <li class="flex items-start gap-3 text-sm md:text-base text-[#4B5563]"><span class="mt-2 h-2 w-2 rounded-full bg-[#E3B65B]"></span><span>Risk of missed sales due to stockouts</span></li>
+                        <li class="flex items-start gap-3 text-sm md:text-base text-[#4B5563]"><span class="mt-2 h-2 w-2 rounded-full bg-[#E3B65B]"></span><span>Time-consuming team notifications</span></li>
                     </ul>
                 </div>
 
@@ -123,15 +124,15 @@
                         The Solution
                     </h3>
                     <p class="text-sm md:text-base text-[#4B5563] leading-relaxed">
-                        Built an AI-powered portfolio assistant that allows visitors to ask questions about my experience, technical skills, projects, and background through a conversational interface. The assistant retrieves relevant information from a structured knowledge base and uses an AI agent to generate responses based on the available portfolio data.
+                        Built a Make-powered AI inventory monitoring workflow that automatically checks product stock levels, identifies items requiring attention, and uses Gemini AI to determine restocking priority. The workflow then routes alerts based on urgency while keeping the inventory analysis and recommendations recorded in Google Sheets.
                     </p>
                     <ul class="list-none space-y-2">
-                        <li class="flex items-start gap-3 text-sm md:text-base text-[#4B5563]"><span class="mt-2 h-2 w-2 rounded-full bg-[#1A2B56]"></span><span>Visitors ask questions through a custom Vue chat interface</span></li>
-                        <li class="flex items-start gap-3 text-sm md:text-base text-[#4B5563]"><span class="mt-2 h-2 w-2 rounded-full bg-[#1A2B56]"></span><span>Client-side validation and rate limiting help control requests</span></li>
-                        <li class="flex items-start gap-3 text-sm md:text-base text-[#4B5563]"><span class="mt-2 h-2 w-2 rounded-full bg-[#1A2B56]"></span><span>Questions are sent to a Make webhook</span></li>
-                        <li class="flex items-start gap-3 text-sm md:text-base text-[#4B5563]"><span class="mt-2 h-2 w-2 rounded-full bg-[#1A2B56]"></span><span>Make AI Agent generates a relevant response</span></li>
-                        <li class="flex items-start gap-3 text-sm md:text-base text-[#4B5563]"><span class="mt-2 h-2 w-2 rounded-full bg-[#1A2B56]"></span><span>The response is returned through the webhook and displayed in the chat</span></li>
-                    </ul>
+                        <li class="flex items-start gap-3 text-sm md:text-base text-[#4B5563]"><span class="mt-2 h-2 w-2 rounded-full bg-[#1A2B56]"></span><span>Scheduled inventory checks retrieve product data from Google Sheets</span></li>
+                        <li class="flex items-start gap-3 text-sm md:text-base text-[#4B5563]"><span class="mt-2 h-2 w-2 rounded-full bg-[#1A2B56]"></span><span>Filters identify products below their minimum stock level</span></li>
+                        <li class="flex items-start gap-3 text-sm md:text-base text-[#4B5563]"><span class="mt-2 h-2 w-2 rounded-full bg-[#1A2B56]"></span><span>Gemini AI analyzes inventory conditions and recommends restocking priority</span></li>
+                        <li class="flex items-start gap-3 text-sm md:text-base text-[#4B5563]"><span class="mt-2 h-2 w-2 rounded-full bg-[#1A2B56]"></span><span>JSON parsing extracts the AI-generated priority and recommendations</span></li>
+                        <li class="flex items-start gap-3 text-sm md:text-base text-[#4B5563]"><span class="mt-2 h-2 w-2 rounded-full bg-[#1A2B56]"></span><span>Critical products trigger both Gmail and Slack notifications</span></li>
+                        </ul>
                 </div>
             </div>
 
@@ -155,30 +156,29 @@
 </template>
 
 <script>
-import aiAssistantImg from '../assets/aiAssistant.png'
+import makeEcommerceImg from '../assets/make-ecommerce.png'
 
 export default {
-    name: 'AIAssistant',
+    name: 'makeEcommerce',
     data() {
         return {
-            aiAssistantImg,
-            technologies: ['Make', 'Make AI Agent', 'Webhooks', 'Structured Knowledge Base', 'Vue 3', 'JavaScript', 'Vercel'],
+            makeEcommerceImg,
+            technologies: ['Make', 'Google Sheets', 'Gemini AI', 'Gmail', 'Slack', 'JSON'],
             features: [
-                'Provides a conversational interface for exploring portfolio information.',
-                'Uses a structured knowledge base containing skills, experience, projects, and background.',
-                'Generates AI-powered responses through Make AI Agent.',
-                'Connects the Vue chat interface to Make using webhooks.',
-                'Applies client-side rate limiting to prevent excessive requests.',
-                'Includes request spacing and loading protection for a smoother experience.',
-                'Uses a custom responsive Vue chat interface.',
-                'Deployed on Vercel for fast and accessible delivery.'
+                'Automatically monitors product inventory on a scheduled basis.',
+                'Identifies products that reach or fall below their minimum stock levels.',
+                'Uses Gemini AI to evaluate restocking urgency and generate recommendations.',
+                'Routes critical and standard inventory issues through different workflows.',
+                'Saves AI priority, recommendations, and monitoring timestamps to Google Sheets.',
+                'Sends urgent inventory alerts through both Gmail and Slack.',
+                'Uses rate-limit delays to manage Gemini API requests reliably.',
             ],
             businessImpact: [
-                'Makes portfolio information easier and faster to explore',
-                'Creates a more interactive experience for potential clients and employers',
-                'Demonstrates practical AI integration rather than a static AI demo',
-                'Reduces the need for visitors to manually search through portfolio content',
-                'Shows how structured knowledge bases can be combined with AI agents and automation',
+                'Reduces the need for manual inventory monitoring',
+                'Helps teams identify critical stock issues faster',
+                'Keeps inventory monitoring and recommendations centralized',
+                'Provides faster multi-channel alerts for urgent stock issues',
+                'Helps reduce the risk of lost sales caused by unexpected stockouts',
             ],
         }
     },

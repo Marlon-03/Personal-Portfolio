@@ -20,6 +20,7 @@ import ConstructionCrm from '../components/zapConstructionCrm.vue';
 import ProposalAutomation from '../components/zapProposalAutomation.vue'
 import ContentRepurposing from '../components/zapContentRepurposing.vue'
 import PersonalChatBot from '../components/personalChatBot.vue'
+import makeEcommerce from '../components/makeEcommerce.vue'
 
 const routes = [
   {
@@ -130,6 +131,11 @@ const routes = [
     path: '/project/personalChatBot',
     name: 'PersonalChatBot',
     component: PersonalChatBot
+  },
+  {
+    path: '/project/ecommerceAutomation',
+    name: 'makeEcommerce',
+    component: makeEcommerce
   }
 
 

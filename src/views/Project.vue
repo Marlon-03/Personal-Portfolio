@@ -155,6 +155,8 @@ import personalBlogImg from '../assets/blogBanner.webp'
 import constructionCrmImg from '../assets/constructionCRM.png'
 import proposalAutomationImg from '../assets/proposalAutomation.png'
 import contentRepurposingImg from '../assets/contentRepurposing.png'
+import makeEcommerceImg from '../assets/make-ecommerce.png'
+import personalChatBotImg from '../assets/aiAssistant.png'
 
 export default {
   name: 'Project',
@@ -343,6 +345,30 @@ export default {
           detailRoute: '/project/contentRepurposing',
           inProgress: false,
         },
+        {
+          id: 'makeEcommerce',
+          title: 'E-commerce Inventory & AI Low-Stock Automation',
+          image: makeEcommerceImg,
+          description: 'Make-powered AI inventory monitoring and alerting workflow that automatically detects low-stock products, evaluates restocking priority with Gemini AI, updates inventory records, and alerts the team when immediate action is needed.',
+          tags: ['Make', 'Google Sheets', 'Gemini AI', 'Gmail', 'Slack', 'JSON'],
+          category: 'make',
+          liveUrl: '',
+          liveLabel: '',
+          detailRoute: '/project/ecommerceAutomation',
+          inProgress: false,
+        },
+        {
+          id: 'makePersonalChatBot',
+          title: 'AI Personal Portfolio Assistant',
+          image: personalChatBotImg,
+          description: 'AI-powered portfolio assistant that gives visitors a conversational way to explore my skills, experience, projects, and background. It uses a structured portfolio knowledge base and Make AI Agent to provide relevant answers directly through an interactive chat interface.',
+          tags: ['Make', 'Make AI Agent', 'Webhooks', 'Structured Knowledge Base', 'Vue 3', 'JavaScript', 'Vercel'],
+          category: 'make',
+          liveUrl: '',
+          liveLabel: '',
+          detailRoute: '/project/personalChatBot',
+          inProgress: false,
+        }
 
       ]
     }

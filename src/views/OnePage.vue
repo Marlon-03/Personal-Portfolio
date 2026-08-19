@@ -41,6 +41,8 @@
         <Contact />
       </div>
     </section>
+
+    <AIChatWidget />
   </div>
 </template>
 
@@ -51,6 +53,7 @@ import Services from './Services.vue';
 import Project from './Project.vue';
 import Experience from './Experience.vue';
 import Contact from './Contact.vue';
+import AIChatWidget from '../components/AIChatWidget.vue';
 
 export default {
   name: 'OnePage',
@@ -61,6 +64,7 @@ export default {
     Project,
     Experience,
     Contact,
+    AIChatWidget,
   },
 };
 </script>
