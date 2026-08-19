@@ -155,7 +155,7 @@ import personalBlogImg from '../assets/blogBanner.webp'
 import constructionCrmImg from '../assets/constructionCRM.png'
 import proposalAutomationImg from '../assets/proposalAutomation.png'
 import contentRepurposingImg from '../assets/contentRepurposing.png'
-import makeEcommerceImg from '../assets/make-ecommerce.png'
+import makeEcommerceImg from '../assets/make-Ecommerce.png'
 import personalChatBotImg from '../assets/aiAssistant.png'
 
 export default {
