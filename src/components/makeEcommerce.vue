@@ -156,7 +156,7 @@
 </template>
 
 <script>
-import makeEcommerceImg from '../assets/make-ecommerce.png'
+import makeEcommerceImg from '../assets/make-Ecommerce.png'
 
 export default {
     name: 'makeEcommerce',
