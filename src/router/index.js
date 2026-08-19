@@ -19,6 +19,7 @@ import SaltCalculator from '../components/pondDose.vue';
 import ConstructionCrm from '../components/zapConstructionCrm.vue';
 import ProposalAutomation from '../components/zapProposalAutomation.vue'
 import ContentRepurposing from '../components/zapContentRepurposing.vue'
+import PersonalChatBot from '../components/personalChatBot.vue'
 
 const routes = [
   {
@@ -124,6 +125,11 @@ const routes = [
     path: '/project/contentRepurposing',
     name: 'ContentRepurposing',
     component: ContentRepurposing
+  },
+  {
+    path: '/project/personalChatBot',
+    name: 'PersonalChatBot',
+    component: PersonalChatBot
   }
 
 
