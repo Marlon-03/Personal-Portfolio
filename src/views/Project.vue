@@ -146,7 +146,7 @@ import hookscopeImg from '../assets/HookScopeBanner.png'
 import dentalImg from '../assets/dentalbanner.webp'
 import neoleaderImg from '../assets/neoleaderBanner.png'
 import shelfwiseImg from '../assets/shelfwiseBanner.webp'
-import artrulsImg from '../assets/museumbanner.webp'
+import soslticeImg from '../assets/solsticeBanner.png'
 import goodWoodCarpentryImg from '../assets/goodwoodBanner.png'
 import kaibaImg from '../assets/kaibaBanner.png'
 import singaImg from '../assets/singaBanner.png'
@@ -289,8 +289,8 @@ export default {
           id: 'personalBlog',
           title: 'Personal Blog',
           image: personalBlogImg,
-          description: 'A modern full-stack blogging application built with Vue.js on the frontend and Laravel on the backend. This project demonstrates proficiency in creating responsive web applications with real-time data synchronization, secure user authentication, and comprehensive content management. The application features a clean, intuitive interface for readers and a robust admin panel for authors to manage their blog posts efficiently.',
-          tags: ['Vue.js', 'Laravel', 'Tailwind CSS', 'MySQL', 'RESTful API'],
+          description: 'A modern full-stack blogging application built with Vue JS on the frontend and Laravel on the backend. This project demonstrates proficiency in creating responsive web applications with real-time data synchronization, secure user authentication, and comprehensive content management. The application features a clean, intuitive interface for readers and a robust admin panel for authors to manage their blog posts efficiently.',
+          tags: ['Vue JS', 'Laravel', 'Tailwind CSS', 'MySQL', 'RESTful API'],
           category: 'application',
           liveUrl: 'https://drive.google.com/drive/folders/1mHdEqQcUoClQlwn9RaqK9y40kU9WQtjc?usp=sharing',
           liveLabel: 'Preview',
@@ -298,15 +298,15 @@ export default {
           inProgress: false,
         },
         {
-          id: 'artruls',
-          title: 'Artruls',
-          image: artrulsImg,
-          description: 'Inspired by the museum of modern art, this is a simple static landing page website. Fully responsive and mobile friendly.',
-          tags: ['HTML 5', 'CSS 3', 'Bootstrap'],
+          id: 'solstice',
+          title: 'Solstice',
+          image: soslticeImg,
+          description: 'Solstice is a modern real-estate landing page designed to showcase a boutique residential community in Littleton, Colorado. The website highlights available home collections, lifestyle features, and the surrounding natural environment while guiding potential buyers toward finding a home that fits their needs.',
+          tags: ['HTML 5', 'Tailwind CSS', 'JavaScript', 'SWAL', 'Supabase'],
           category: 'website',
-          liveUrl: 'https://marlon-03.github.io/artruls/',
+          liveUrl: 'https://solstice-landing-page.vercel.app/',
           liveLabel: 'Live Demo',
-          detailRoute: '/project/artruls',
+          detailRoute: '/project/solstice',
           inProgress: false,
         },
         {
@@ -362,7 +362,7 @@ export default {
           title: 'AI Personal Portfolio Assistant',
           image: personalChatBotImg,
           description: 'AI-powered portfolio assistant that gives visitors a conversational way to explore my skills, experience, projects, and background. It uses a structured portfolio knowledge base and Make AI Agent to provide relevant answers directly through an interactive chat interface.',
-          tags: ['Make', 'Make AI Agent', 'Webhooks', 'Structured Knowledge Base', 'Vue 3', 'JavaScript', 'Vercel'],
+          tags: ['Make', 'Make AI Agent', 'Webhooks', 'Structured Knowledge Base', 'Vue JS', 'JavaScript', 'Vercel'],
           category: 'make',
           liveUrl: '',
           liveLabel: '',

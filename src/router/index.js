@@ -4,7 +4,6 @@ import About from '../views/About.vue';
 import Project from '../views/Project.vue';
 import Contact from '../views/Contact.vue';
 import OnePage from '../views/OnePage.vue';
-import Artruls from'../components/artruls.vue';
 import PersonalBlog from '../components/personalBlog.vue';
 import Interlinked from '../components/interlinked.vue';
 import ShelfWise from '../components/shelfWise.vue';
@@ -21,6 +20,7 @@ import ProposalAutomation from '../components/zapProposalAutomation.vue'
 import ContentRepurposing from '../components/zapContentRepurposing.vue'
 import PersonalChatBot from '../components/personalChatBot.vue'
 import makeEcommerce from '../components/makeEcommerce.vue'
+import solstice from '../components/solstice.vue'
 
 const routes = [
   {
@@ -28,7 +28,6 @@ const routes = [
     name: 'Home',
     component: OnePage
   },
-
   {
     path: '/about',
     name: 'About',
@@ -45,13 +44,6 @@ const routes = [
     path: '/contact',
     name: 'Contact',
     component: Contact
-  },
-
-
-  {
-    path: '/project/artruls',
-    name: 'Artruls',
-    component: Artruls
   },
 
   {
@@ -136,7 +128,12 @@ const routes = [
     path: '/project/ecommerceAutomation',
     name: 'makeEcommerce',
     component: makeEcommerce
-  }
+  },
+  {
+    path: '/project/solstice',
+    name: 'solstice',
+    component: solstice
+  },
 
 
 ];

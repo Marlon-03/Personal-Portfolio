@@ -14,14 +14,14 @@
                 </router-link>
                 <div class="flex items-center space-x-1 md:space-x-2 text-sm md:text-base text-[#4B5563]">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-3 h-3 md:w-4 md:h-4"><path d="m9 18 6-6-6-6"></path></svg>
-                    <span class="text-[#13213C] truncate">Artruls</span>
+                    <span class="text-[#13213C] truncate">Solstice</span>
                 </div>
             </div>
 
             <div class="grid lg:grid-cols-2 gap-8 md:gap-16">
                 <div class="space-y-6 md:space-y-10 animate-slideInLeft">
                     <div class="space-y-4 md:space-y-6">
-                        <h1 class="text-3xl md:text-6xl font-bold text-[#1A2B56] leading-tight pb-3">Artruls</h1>
+                        <h1 class="text-3xl md:text-6xl font-bold text-[#1A2B56] leading-tight pb-3">Solstice</h1>
                         <div class="relative h-1 w-16 md:w-24">
                             <div class="absolute inset-0 bg-[#E3B65B] rounded-full animate-pulse"></div>
                             <div class="absolute inset-0 bg-[#1A2B56] rounded-full blur-sm opacity-30"></div>
@@ -30,7 +30,7 @@
 
                     <div class="prose max-w-none">
                         <p class="text-base md:text-lg text-[#4B5563] leading-relaxed">
-                           Inspired by the museum of modern art, this is a simple static landing page website built with HTML, CSS and Bootstrap. It is fully responsive and mobile friendly.
+                           Solstice is a modern real-estate landing page designed to showcase a boutique residential community in Littleton, Colorado. The website highlights available home collections, lifestyle features, and the surrounding natural environment while guiding potential buyers toward finding a home that fits their needs.
                         </p>
                     </div>
 
@@ -56,12 +56,12 @@
                     </div>
 
                     <div class="flex flex-wrap gap-3 md:gap-4">
-                        <a href="https://marlon-03.github.io/artruls/" target="_blank" rel="noopener noreferrer" class="group relative inline-flex items-center space-x-1.5 md:space-x-2 px-4 md:px-8 py-2.5 md:py-4 bg-[#1A2B56] hover:bg-[#13213C] text-white rounded-xl transition-all duration-300 border border-[#1A2B56]/20 hover:border-[#1A2B56]/40 backdrop-blur-xl overflow-hidden text-sm md:text-base shadow-sm">
+                        <a href="https://solstice-landing-page.vercel.app/" target="_blank" rel="noopener noreferrer" class="group relative inline-flex items-center space-x-1.5 md:space-x-2 px-4 md:px-8 py-2.5 md:py-4 bg-[#1A2B56] hover:bg-[#13213C] text-white rounded-xl transition-all duration-300 border border-[#1A2B56]/20 hover:border-[#1A2B56]/40 backdrop-blur-xl overflow-hidden text-sm md:text-base shadow-sm">
                             <div class="absolute inset-0 translate-y-[100%] bg-[#E3B65B]/20 transition-transform duration-300 group-hover:translate-y-[0%]"></div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link relative w-4 h-4 md:w-5 md:h-5 group-hover:rotate-12 transition-transform"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
                             <span class="relative font-medium">Live Demo</span>
                         </a>
-                        <a href="https://github.com/Marlon-03/artruls" target="_blank" rel="noopener noreferrer" class="group relative inline-flex items-center space-x-1.5 md:space-x-2 px-4 md:px-8 py-2.5 md:py-4 bg-[#1A2B56] hover:bg-[#13213C] text-white rounded-xl transition-all duration-300 border border-[#1A2B56]/20 hover:border-[#1A2B56]/40 backdrop-blur-xl overflow-hidden text-sm md:text-base shadow-sm">
+                        <a href="http://github.com/Marlon-03/solstice-landing-page" target="_blank" rel="noopener noreferrer" class="group relative inline-flex items-center space-x-1.5 md:space-x-2 px-4 md:px-8 py-2.5 md:py-4 bg-[#1A2B56] hover:bg-[#13213C] text-white rounded-xl transition-all duration-300 border border-[#1A2B56]/20 hover:border-[#1A2B56]/40 backdrop-blur-xl overflow-hidden text-sm md:text-base shadow-sm">
                             <div class="absolute inset-0 translate-y-[100%] bg-[#E3B65B]/20 transition-transform duration-300 group-hover:translate-y-[0%]"></div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link relative w-4 h-4 md:w-5 md:h-5 group-hover:rotate-12 transition-transform"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
                             <span class="relative font-medium">Github</span>
@@ -89,7 +89,7 @@
                 <div class="space-y-6 md:space-y-10 animate-slideInRight">
                     <div class="relative rounded-2xl overflow-hidden border border-[#E8DDC8] shadow-lg group">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                        <img :src="museumBannerImg" alt="Museum Banner" class="w-full object-cover transform transition-transform duration-700 will-change-transform group-hover:scale-105">
+                        <img :src="solsticeBanner" alt="Solstice Banner" class="w-full object-cover transform transition-transform duration-700 will-change-transform group-hover:scale-105">
                         <div class="absolute inset-0 border-2 border-[#1A2B56]/0 group-hover:border-[#1A2B56]/20 transition-colors duration-300 rounded-2xl"></div>
                     </div>
 
@@ -116,17 +116,20 @@
 </template>
 
 <script>
-import museumBannerImg from '../assets/museumbanner.webp'
+import solsticeBanner from '../assets/solsticeBanner.png'
 
 export default {
-    name: 'artruls',
+    name: 'solstice',
     data() {
         return {
-            museumBannerImg,
-            technologies: ['HTML 5', 'CSS 3', 'Bootstrap', 'JavaScript'],
+            solsticeBanner,
+            technologies: ['HTML 5', 'Tailwind CSS', 'JavaScript', 'SWAL', 'Supabase'],
             features: [
-                'Uses Bootstraps responsive grid system and utility classes to adapt to different screen sizes.',
-                'Optimized performance with minimal dependencies.',
+                'Built a modern, responsive real-estate landing page with a strong visual and conversion-focused layout',
+                'Built a multi-step 4-question home-matching quiz to help visitors discover suitable home options',
+                'Added lead-capture functionality for collecting visitor information such as name, email, and phone number',
+                'Implemented personalized recommendation results based on the user\'s quiz responses',
+                'Optimized the interface for a smooth experience across desktop and mobile devices',
             ],
         }
     },
