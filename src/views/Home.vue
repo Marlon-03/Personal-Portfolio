@@ -64,7 +64,7 @@
             </div>
           </button>
 
-          <a href="https://drive.google.com/file/d/1eNnZPL-uFRub5_9DUOiu2fmfvQTQ81Ue/view?usp=sharing" target="_blank" class="group relative p-0 md:p-3 block w-fit cursor-pointer">
+          <a href="https://drive.google.com/file/d/1XCOpO4GQfQX3-9_BEc6MHZrL1Uf88msA/view?usp=sharing" target="_blank" class="group relative p-0 md:p-3 block w-fit cursor-pointer">
             <div class="absolute inset-0 rounded-full bg-[#1A2B56] blur opacity-10 group-hover:opacity-20 transition duration-300"></div>
             <div class="relative rounded-full bg-[#1A2B56] px-6 py-3 flex items-center justify-center border border-[#1A2B56]/15 group-hover:border-[#1A2B56]/30 group-hover:shadow-lg transition-all duration-300 shadow-sm">
               <span class="text-white font-medium transition-colors">Download CV</span>
