@@ -83,7 +83,7 @@
             
             <div class="md:w-1/2 md:pr-12 md:text-right">
               <div class="group p-6 md:p-8 rounded-2xl bg-white border border-[#E8DDC8] hover:border-[#1A2B56]/15 hover:shadow-lg transition-all duration-300 shadow-sm">
-                <h2 class="text-2xl md:text-3xl font-bold text-[#13213C]">Full Stack Developer</h2>
+                <h2 class="text-2xl md:text-3xl font-bold text-[#13213C]">Full Stack Developer | Web & AI Automation</h2>
                 <p class="text-lg text-[#1A2B56] font-semibold mt-1">Freelance</p>
                 <p class="text-sm md:text-base text-[#4B5563] mt-2">Remote</p>
                 <p class="text-sm md:text-base font-semibold text-[#6B7280] mt-4">December 2022 - Present</p>
