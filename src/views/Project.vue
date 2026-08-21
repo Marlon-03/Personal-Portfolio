@@ -158,6 +158,7 @@ import contentRepurposingImg from '../assets/contentRepurposing.png'
 import makeEcommerceImg from '../assets/make-Ecommerce.png'
 import personalChatBotImg from '../assets/aiAssistant.png'
 import demoSquadImg from '../assets/demoSquadBanner.png'
+import vermeerImg from '../assets/vermeerBanner.png'
 
 export default {
   name: 'Project',
@@ -227,18 +228,6 @@ export default {
           inProgress: false,
         },
         {
-          id: 'kaibaConstruction',
-          title: 'Kaiba Construction',
-          image: kaibaImg,
-          description: 'A construction company website with a focus on showcasing projects, services, and contact information.',
-          tags: ['Wordpress', 'Elementor', 'PHP', 'Javascript'],
-          category: 'website',
-          liveUrl: 'https://kaiba.com.sg/',
-          liveLabel: 'Live Demo',
-          detailRoute: '/project/kaibaConstruction',
-          inProgress: false,
-        },
-        {
           id: 'singaGroup',
           title: 'Singa Group',
           image: singaImg,
@@ -248,6 +237,30 @@ export default {
           liveUrl: 'https://singagroup.com.sg/',
           liveLabel: 'Live Demo',
           detailRoute: '/project/singaGroup',
+          inProgress: false,
+        },
+        {
+          id: 'vermeer',
+          title: 'Vermeer Southeast Asia',
+          image: vermeerImg,
+          description: 'Vermeer Southeast Asia provides equipment, parts, and support solutions for industries including utility installation, pipeline construction, recycling, tree care, landscaping, and surface mining across Southeast Asia.',
+          tags: ['Wordpress', 'Elementor', 'PHP', 'CSS', 'Javascript'],
+          category: 'website',
+          liveUrl: 'https://vermeer.com.sg/',
+          liveLabel: 'Live Demo',
+          detailRoute: '/project/vermeer',
+          inProgress: false,
+        },
+        {
+          id: 'kaibaConstruction',
+          title: 'Kaiba Construction',
+          image: kaibaImg,
+          description: 'A construction company website with a focus on showcasing projects, services, and contact information.',
+          tags: ['Wordpress', 'Elementor', 'PHP', 'Javascript'],
+          category: 'website',
+          liveUrl: 'https://kaiba.com.sg/',
+          liveLabel: 'Live Demo',
+          detailRoute: '/project/kaibaConstruction',
           inProgress: false,
         },
         {

@@ -22,6 +22,7 @@ import PersonalChatBot from '../components/personalChatBot.vue'
 import makeEcommerce from '../components/makeEcommerce.vue'
 import solstice from '../components/solstice.vue'
 import demoSquad from '../components/demoSquad.vue'
+import vermeer from '../components/vermeer.vue'
 
 const routes = [
   {
@@ -139,6 +140,11 @@ const routes = [
     path: '/project/demoSquad',
     name: 'DemoSquad',
     component: demoSquad
+  },
+  {
+    path: '/project/vermeer',
+    name: 'vermeer',
+    component: vermeer
   }
 
 ];

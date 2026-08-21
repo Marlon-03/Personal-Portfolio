@@ -14,14 +14,14 @@
                 </router-link>
                 <div class="flex items-center space-x-1 md:space-x-2 text-sm md:text-base text-[#4B5563]">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-3 h-3 md:w-4 md:h-4"><path d="m9 18 6-6-6-6"></path></svg>
-                    <span class="text-[#13213C] truncate">Demo Squad</span>
+                    <span class="text-[#13213C] truncate">Vermeer Southeast Asia</span>
                 </div>
             </div>
 
             <div class="grid lg:grid-cols-2 gap-8 md:gap-16">
                 <div class="space-y-6 md:space-y-10 animate-slideInLeft">
                     <div class="space-y-4 md:space-y-6">
-                        <h1 class="text-3xl md:text-6xl font-bold text-[#1A2B56] leading-tight pb-3">Demo Squad</h1>
+                        <h1 class="text-3xl md:text-6xl font-bold text-[#1A2B56] leading-tight pb-3">Vermeer Southeast Asia</h1>
                         <div class="relative h-1 w-16 md:w-24">
                             <div class="absolute inset-0 bg-[#E3B65B] rounded-full animate-pulse"></div>
                             <div class="absolute inset-0 bg-[#1A2B56] rounded-full blur-sm opacity-30"></div>
@@ -30,7 +30,7 @@
 
                     <div class="prose max-w-none">
                         <p class="text-base md:text-lg text-[#4B5563] leading-relaxed">
-                            DemoSquad is a Singapore-based demolition and renovation contractor specializing in residential, commercial, and industrial projects, including hacking, reinstatement, partition installation, waste disposal, and renovation services.
+                            Vermeer Southeast Asia provides equipment, parts, and support solutions for industries including utility installation, pipeline construction, recycling, tree care, landscaping, and surface mining across Southeast Asia.
                         </p>
                     </div>
 
@@ -111,20 +111,20 @@
 </template>
 
 <script>
-import demoSquadImg from '../assets/demoSquadBanner.png'
+import vermeerImg from '../assets/vermeerBanner.png'
 
 export default {
-    name: 'demoSquad',
+    name: 'vermeer',
     data() {
         return {
-            demoSquadImg,
+            vermeerImg,
             technologies: ['WordPress','Elementor', 'PHP', 'CSS', 'JavaScript'],
             features: [
                 'Designed and implemented a modern, visually appealing layout that reflects the company\'s brand and values',
-                'Created dedicated service pages to clearly showcase demolition, hacking, reinstatement, and renovation services',
-                'Organized project showcases to highlight completed projects and previous work',
-                'Added conversion-focused contact forms and Get a Free Quote sections to generate customer enquiries',
-                'Built a responsive and user-friendly layout optimized for desktop and mobile devices'
+                'Organized a large equipment catalog with categories for drills, chippers, grinders, shredders, trenchers, and other machinery',
+                'Created application-focused sections to help visitors explore equipment based on their industry and use case',
+                'Integrated service, parts, news, and regional location sections to provide customers with complete product and support information',
+                'Built responsive layouts with clear navigation, contact forms, and calls-to-action for desktop and mobile users'
             ],
         }
     },
