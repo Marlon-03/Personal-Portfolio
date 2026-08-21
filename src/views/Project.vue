@@ -159,6 +159,7 @@ import makeEcommerceImg from '../assets/make-Ecommerce.png'
 import personalChatBotImg from '../assets/aiAssistant.png'
 import demoSquadImg from '../assets/demoSquadBanner.png'
 import vermeerImg from '../assets/vermeerBanner.png'
+import floImg from '../assets/floBanner.png'
 
 export default {
   name: 'Project',
@@ -189,6 +190,18 @@ export default {
           liveUrl: 'https://drive.google.com/drive/folders/1BXyOnmPkq14luxxTIb3x0DdUsca-BFKJ?usp=sharing',
           liveLabel: 'Preview',
           detailRoute: '/project/interlinked',
+          inProgress: false,
+        },
+        {
+          id: 'flo',
+          title: 'FLO Aroma',
+          image: floImg,
+          description: 'FLO Aroma is a Singapore-based wellness and aromatherapy brand offering essential oils, diffusers, aromatic products, hand and body care, gifts, and other wellness products.',
+          tags: ['Shopify', 'Liquid', 'HTML', 'CSS', 'JavaScript'],
+          category: 'website',
+          liveUrl: 'https://floaroma.sg/',
+          liveLabel: 'Live Demo',
+          detailRoute: '/project/flo',
           inProgress: false,
         },
         {

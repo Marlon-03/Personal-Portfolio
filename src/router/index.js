@@ -23,6 +23,7 @@ import makeEcommerce from '../components/makeEcommerce.vue'
 import solstice from '../components/solstice.vue'
 import demoSquad from '../components/demoSquad.vue'
 import vermeer from '../components/vermeer.vue'
+import flo from '../components/flo.vue'
 
 const routes = [
   {
@@ -145,6 +146,11 @@ const routes = [
     path: '/project/vermeer',
     name: 'vermeer',
     component: vermeer
+  },
+  {
+    path: '/project/flo',
+    name: 'flo',
+    component: flo
   }
 
 ];

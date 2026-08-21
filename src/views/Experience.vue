@@ -90,19 +90,23 @@
                 <ul class="space-y-3 mt-4">
                   <li class="flex items-start gap-3 text-[#4B5563] text-sm md:text-base">
                     <span class="text-[#1A2B56] font-bold flex-shrink-0">•</span>
-                    <span>Developed dynamic websites and web applications using WordPress, Shopify, Laravel, Vue.js, and Figma, ensuring a seamless and engaging user experience</span>
+                    <span>Developed and customized websites and web applications using Laravel, PHP, Vue.js, Next.js, WordPress, Elementor, WooCommerce, and Shopify based on client requirements.</span>
                   </li>
                   <li class="flex items-start gap-3 text-[#4B5563] text-sm md:text-base">
                     <span class="text-[#1A2B56] font-bold flex-shrink-0">•</span>
-                    <span>Designed and implemented RESTful APIs to enable smooth communication between frontend and backend, optimizing data retrieval and system efficiency</span>
+                    <span>Built responsive and user-friendly interfaces using HTML5, CSS3, JavaScript, Vue.js, and Next.js, with a focus on performance, accessibility, and cross-device compatibility.</span>
                   </li>
                   <li class="flex items-start gap-3 text-[#4B5563] text-sm md:text-base">
                     <span class="text-[#1A2B56] font-bold flex-shrink-0">•</span>
-                    <span>Led the effort to enhance the website's speed and accessibility, driving the performance to achieve faster load time and improved user experience</span>
+                    <span>Designed and integrated REST APIs, webhooks, and third-party services to connect websites and applications with external platforms and business tools.</span>
                   </li>
                   <li class="flex items-start gap-3 text-[#4B5563] text-sm md:text-base">
                     <span class="text-[#1A2B56] font-bold flex-shrink-0">•</span>
-                    <span>Built responsive and visually appealing user interfaces using HTML5, CSS3, and JavaScript, ensuring smooth performance across devices</span>
+                    <span>Built workflow automations and AI-powered solutions using Make, n8n, Zapier, APIs, and AI services to automate lead management, notifications, data processing, and repetitive business tasks.</span>
+                  </li>
+                  <li class="flex items-start gap-3 text-[#4B5563] text-sm md:text-base">
+                    <span class="text-[#1A2B56] font-bold flex-shrink-0">•</span>
+                    <span>Troubleshot and optimized websites and web applications, including performance improvements, integrations, plugin configurations, and custom functionality.</span>
                   </li>
                 </ul>
               </div>

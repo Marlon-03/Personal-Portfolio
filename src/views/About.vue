@@ -121,6 +121,7 @@ import cssIcon from "../assets/css.svg";
 import phpIcon from "../assets/php.png";
 import laravelIcon from "../assets/laravel.png";
 import wpIcon from "../assets/wp.jpg";
+import shopifyIcon from "../assets/shopify.png";
 import jsIcon from "../assets/javascript.png";
 import vueIcon from "../assets/vue.png";
 import reactIcon from "../assets/reactjs.svg";
@@ -154,6 +155,7 @@ export default {
         { name: "PHP", icon: phpIcon },
         { name: "Laravel", icon: laravelIcon },
         { name: "WordPress", icon: wpIcon },
+        { name: 'Shopify', icon: shopifyIcon },
         { name: "JavaScript", icon: jsIcon },
         { name: "TypeScript", icon: typeScriptIcon },
         { name: "Vue Js", icon: vueIcon },
