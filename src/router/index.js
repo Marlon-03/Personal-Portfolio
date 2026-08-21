@@ -21,6 +21,7 @@ import ContentRepurposing from '../components/zapContentRepurposing.vue'
 import PersonalChatBot from '../components/personalChatBot.vue'
 import makeEcommerce from '../components/makeEcommerce.vue'
 import solstice from '../components/solstice.vue'
+import demoSquad from '../components/demoSquad.vue'
 
 const routes = [
   {
@@ -134,7 +135,11 @@ const routes = [
     name: 'solstice',
     component: solstice
   },
-
+  {
+    path: '/project/demoSquad',
+    name: 'DemoSquad',
+    component: demoSquad
+  }
 
 ];
 

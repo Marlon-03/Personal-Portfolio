@@ -157,6 +157,7 @@ import proposalAutomationImg from '../assets/proposalAutomation.png'
 import contentRepurposingImg from '../assets/contentRepurposing.png'
 import makeEcommerceImg from '../assets/make-Ecommerce.png'
 import personalChatBotImg from '../assets/aiAssistant.png'
+import demoSquadImg from '../assets/demoSquadBanner.png'
 
 export default {
   name: 'Project',
@@ -190,15 +191,15 @@ export default {
           inProgress: false,
         },
         {
-          id: 'dixondental',
-          title: 'Dixon Road Dental Surgery',
-          image: dentalImg,
-          description: 'Professional website for Rockingham Smile Dental Clinic built using WordPress and Elementor. Fully mobile-responsive with SEO best practices.',
-          tags: ['Wordpress', 'Elementor', 'Javascript'],
+          id: 'demoSquad',
+          title: 'Demo Squad',
+          image: demoSquadImg,
+          description: 'DemoSquad is a Singapore-based demolition and renovation contractor specializing in residential, commercial, and industrial projects, including hacking, reinstatement, partition installation, waste disposal, and renovation services.',
+          tags: ['Wordpress', 'Elementor', 'PHP', 'CSS', 'JavaScript'],
           category: 'website',
-          liveUrl: 'https://dixonrddental.com.au/',
+          liveUrl: 'https://demosquad.sg/',
           liveLabel: 'Live Demo',
-          detailRoute: '/project/dixonDental',
+          detailRoute: '/project/demoSquad',
           inProgress: false,
         },
         {
@@ -247,6 +248,18 @@ export default {
           liveUrl: 'https://singagroup.com.sg/',
           liveLabel: 'Live Demo',
           detailRoute: '/project/singaGroup',
+          inProgress: false,
+        },
+        {
+          id: 'dixondental',
+          title: 'Dixon Road Dental Surgery',
+          image: dentalImg,
+          description: 'Professional website for Rockingham Smile Dental Clinic built using WordPress and Elementor. Fully mobile-responsive with SEO best practices.',
+          tags: ['Wordpress', 'Elementor', 'Javascript'],
+          category: 'website',
+          liveUrl: 'https://dixonrddental.com.au/',
+          liveLabel: 'Live Demo',
+          detailRoute: '/project/dixonDental',
           inProgress: false,
         },
         {
