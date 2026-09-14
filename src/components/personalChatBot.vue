@@ -151,14 +151,21 @@
                     </div>
                 </div>
             </div>
+
+
+            <AIChatWidget />
     </div>
 </template>
 
 <script>
 import aiAssistantImg from '../assets/aiAssistant.png'
+import AIChatWidget from '../components/AIChatWidget.vue';
 
 export default {
     name: 'AIAssistant',
+    components: {
+        AIChatWidget
+    },
     data() {
         return {
             aiAssistantImg,
