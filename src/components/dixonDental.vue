@@ -82,11 +82,7 @@
                 </div>
 
                 <div class="space-y-6 md:space-y-10 animate-slideInRight">
-                    <div class="relative rounded-2xl overflow-hidden border border-[#E8DDC8] shadow-lg group">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                        <img :src="dentalBannerImg" alt="Dixon Dental" class="w-full object-cover transform transition-transform duration-700 will-change-transform group-hover:scale-105">
-                        <div class="absolute inset-0 border-2 border-[#1A2B56]/0 group-hover:border-[#1A2B56]/20 transition-colors duration-300 rounded-2xl"></div>
-                    </div>
+                    <ImageModal :src="dentalBannerImg" alt="Dixon Road Dental Surgery Banner" />
 
                     <div class="bg-[#FBF7F1] backdrop-blur-xl rounded-2xl p-8 border border-[#E8DDC8] space-y-6 hover:border-[#1A2B56]/20 transition-colors duration-300 group shadow-sm">
                         <h3 class="text-xl font-semibold text-[#13213C] flex items-center gap-3">
@@ -112,9 +108,13 @@
 
 <script>
 import dentalBannerImg from '../assets/dentalbanner.webp'
+import ImageModal from './ImageModal.vue'
 
 export default {
     name: 'dixonDental',
+    components: {
+        ImageModal,
+    },
     data() {
         return {
             dentalBannerImg,
