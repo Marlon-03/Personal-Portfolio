@@ -162,7 +162,7 @@ export default {
     data() {
         return {
             proposalAutomationImg,
-            technologies: ['Zapier', 'OpenAI', 'Google Forms', 'Google Docs', 'Gmail', 'Slack'],
+            technologies: ['Zapier', 'AI', 'Google Forms', 'Google Docs', 'Gmail', 'Slack'],
             features: [
                 'Captures new project inquiries submitted through Google Forms.',
                 'Uses AI to evaluate leads based on project requirements, budget, timeline, and business goals.',

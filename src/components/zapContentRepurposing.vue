@@ -162,7 +162,7 @@ export default {
     data() {
         return {
             contentRepurposingImg,
-            technologies: ['Zapier', 'OpenAI', 'Google Drive', 'Gmail', 'Google Sheets', 'Instagram for Business', 'Facebook Pages', 'Slack'],
+            technologies: ['Zapier', 'AI', 'Google Drive', 'Gmail', 'Google Sheets', 'Instagram for Business', 'Facebook Pages', 'Slack'],
             features: [
                 'Detects newly uploaded videos from Google Drive automatically.',
                 'Filters uploads to process only supported video files.',
