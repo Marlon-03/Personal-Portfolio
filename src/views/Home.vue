@@ -60,7 +60,7 @@
             @click="scrollToProjects" class="group relative p-1 md:p-3 block w-fit cursor-pointer">
             <div class="absolute inset-0 rounded-full bg-[#1A2B56] blur opacity-10 group-hover:opacity-20 transition duration-300"></div>
             <div class="relative rounded-full bg-[#1A2B56] px-6 py-3 flex items-center justify-center border border-[#1A2B56]/15 group-hover:border-[#1A2B56]/30 group-hover:shadow-lg transition-all duration-300 shadow-sm">
-              <span class="text-white font-medium transition-colors">Projects</span>
+              <span class="text-white font-medium transition-colors">View Projects</span>
             </div>
           </button>
 
@@ -104,7 +104,7 @@
     name: 'Home',
     data() {
       return {
-        words: ["Developer", "AI & Automation Specialist", "Designer", "Creator"],
+        words: ["AI Full Stack Developer", "AI & Automation Specialist", "Designer", "Creator"],
         currentText: "", 
         wordIndex: 0,
         charIndex: 0, 
