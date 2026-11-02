@@ -77,6 +77,17 @@
 
             <li>
               <a
+                href="#testimonials"
+                @click.prevent="scrollToSection('testimonials')"
+                :class="getLinkClass('testimonials')"
+                class="transition-all text-lg duration-300"
+              >
+                Testimonials
+              </a>
+            </li>
+
+            <li>
+              <a
                 href="#contact"
                 @click.prevent="scrollToSection('contact')"
                 :class="getLinkClass('contact')"
@@ -191,6 +202,17 @@
 
             <li>
               <a
+                href="#testimonials"
+                @click.prevent="handleMobileNavClick('testimonials')"
+                :class="getLinkClass('testimonials')"
+                class="block py-2 transition-all duration-300"
+              >
+                Testimonials
+              </a>
+            </li>
+
+            <li>
+              <a
                 href="#contact"
                 @click.prevent="handleMobileNavClick('contact')"
                 :class="getLinkClass('contact')"
@@ -239,7 +261,7 @@ export default {
     },
 
     updateActiveSection() {
-      const sections = ["home", "about", "services", "projects", "experience", "contact"];
+      const sections = ["home", "about", "services", "projects", "experience", "testimonials", "contact"];
 
       for (const section of sections) {
         const element = document.getElementById(section);

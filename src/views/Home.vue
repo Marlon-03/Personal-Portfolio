@@ -2,7 +2,7 @@
   <div class="flex flex-col md:flex-row justify-center items-center px-3 md:px-6 pt-16 md:pt-24 gap-10 md:gap-0">
     <div class="w-full md:w-3/5 flex flex-col justify-center items-center text-center py-5 gap-6">
       <h1 class="text-5xl md:text-6xl font-bold mb-2 text-[#13213C]">Hi, I'm Marlon</h1>
-      <h1 class="inline-flex min-w-[9ch] justify-center text-4xl md:text-5xl font-semibold mb-2 pb-2 text-brand-accent">
+      <h1 class="inline-flex min-w-[9ch] justify-center text-2xl md:text-3xl lg:text-5xl font-semibold mb-2 pb-2 text-brand-accent">
         <span>{{ displayText }}</span>
       </h1>
       <p class="max-w-2xl text-[#4B5563] text-lg md:text-xl leading-relaxed font-medium">

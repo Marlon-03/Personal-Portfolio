@@ -36,6 +36,12 @@
       </div>
     </section>
 
+    <section id="testimonials" class="relative flex items-center justify-center bg-transparent scroll-mt-24">
+      <div class="w-full max-w-7xl px-2">
+        <Testimonials />
+      </div>
+    </section>
+
     <section id="contact" class="relative min-h-screen flex items-center justify-center bg-transparent scroll-mt-24">
       <div class="w-full max-w-7xl px-2">
         <Contact />
@@ -51,6 +57,7 @@ import About from './About.vue';
 import Services from './Services.vue';
 import Project from './Project.vue';
 import Experience from './Experience.vue';
+import Testimonials from './Testimonials.vue';
 import Contact from './Contact.vue';
 
 export default {
@@ -61,6 +68,7 @@ export default {
     Services,
     Project,
     Experience,
+    Testimonials,
     Contact,
   },
 };
